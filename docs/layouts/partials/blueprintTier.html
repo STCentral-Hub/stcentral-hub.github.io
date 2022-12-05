@@ -1,0 +1,38 @@
+{{ $data := newScratch }}
+
+{{ if eq (float .) (float 1) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_one_selected.png" }}
+{{ else if eq (float .) (float 2) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_two_selected.png" }}
+{{ else if eq (float .) (float 3) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_three_selected.png" }}
+{{ else if eq (float .) (float 4) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_four_selected.png" }}
+{{ else if eq (float .) (float 5) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_five_selected.png" }}
+{{ else if eq (float .) (float 6) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_six_selected.png" }}
+{{ else if eq (float .) (float 7) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_seven_selected.png" }}
+{{ else if eq (float .) (float 8) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_eight_selected.png" }}
+{{ else if eq (float .) (float 9) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_nine_selected.png" }}
+{{ else if eq (float .) (float 10) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_ten_selected.png" }}
+{{ else if eq (float .) (float 11) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_eleven_selected.png" }}
+{{ else if eq (float .) (float 12) }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_twelve_selected.png" }}
+{{ else }}
+    {{ $data.Set "tierImage" "/Market Filters/Tier Filters/icon_global_search_all_glow.png" }}
+{{ end }}
+
+<div style="position: absolute; ">
+    <div style="position: absolute; padding: 2.5rem; z-index: -1;">
+        <img src="/fankit/Misc%20Icons/icon_global_level_item_s_r.png" alt="item tier background" style=" max-width: 2.5rem">
+    </div>
+    <div style="position: absolute; padding: 2.96875rem;">
+        <img src="/fankit{{ $data.Get "tierImage" }}" alt="tier {{ . }} item" style=" max-width: 1.5rem">
+    </div>
+</div>

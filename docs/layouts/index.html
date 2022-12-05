@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <section>
+        {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+        <div style="display: flex; align-items: center;">
+            <h3><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{- .Name -}}</a></h3>
+            {{ with .Summary }}
+                <p>&nbsp;- {{ . }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </section>
+{{ end }}
