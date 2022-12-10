@@ -1,5 +1,6 @@
 {{ define "main" }}
-    {{ $data := $.Site.Data.blueprints }}
+{{ $data := .Site.Data.blueprints }}
+<main>
     <table>
         <thead>
         <tr>
@@ -12,60 +13,20 @@
         </thead>
         <tbody>
             {{ range $data }}
-                {{ range . }}
-                {{ $affinity := .affinity }}
-                {{ $stats := .stats }}
+                {{ $assets := .assets }}
+                {{ $lang := .language.en }}
+                {{ $tier := .stats.tier }}
                 <tr>
-<!--                    <td><img src="/fankit{{ .classImage }}" alt="{{ .class }}" style="width: 13rem"></td>-->
-<!--                    <td><img src="/fankit{{ .typeImage }}" alt="{{ .type }}" style="width: 13rem"></td>-->
-<!--                    <td><img src="/fankit{{ .tierImage }}" alt="{{ .tier }}" style="width: 13rem"></td>-->
+<!--                    <td><img src="/fankit{{ $assets.classDark }}" alt="{{ $lang.class }}" style="width: 13rem"></td>-->
+<!--                    <td><img src="/fankit{{ $assets.typeDark }}" alt="{{ $lang.type }}" style="width: 13rem"></td>-->
+<!--                    <td><img src="/fankit{{ $assets.tier }}" alt="{{ $tier }}" style="width: 13rem"></td>-->
                     <td>
-                        <div style="display: flex; flex-direction: column; padding: 1rem; width: 15.625rem; height: 16.6875rem">
-                            <img src="/fankit{{ .backgroundImage }}"
-                                 alt="scroll"
-                                 style="position: absolute; z-index: -2;"
-                            >
-                            {{ partial "blueprintTier.html" .tier }}
-                            <div style="display: flex">
-                                <div class="stats" style="display: flex; flex-direction: column; padding-left: 2.5rem; padding-top: 5rem; padding-bottom: 2.5rem; max-width: 2.5rem">
-                                    {{ with $stats.attack }}
-                                    <img src="/fankit{{ $stats.attackImage }}" alt="atk: {{ $stats.attack }}">
-                                    {{ end }}
-                                    {{ with $stats.defense }}
-                                    <img src="/fankit{{ $stats.defenseImage }}" alt="def: {{ $stats.defense }}">
-                                    {{ end }}
-                                    {{ with $stats.hp }}
-                                    <img src="/fankit{{ $stats.hpImage }}" alt="hp: {{ $stats.hp }}">
-                                    {{ end }}
-                                    {{ with $stats.evasion }}
-                                    <img src="/fankit{{ $stats.evasionImage }}" alt="eva: {{ $stats.evasion }}">
-                                    {{ end }}
-                                    {{ with $stats.crit }}
-                                    <img src="/fankit{{ $stats.critImage }}" alt="crit: {{ $stats.crit }}">
-                                    {{ end }}
-                                </div>
-                                <div style="display: flex; align-items: center; justify-content: center; text-align: center; padding-left: 0.25rem; padding-top: 2.5rem; padding-right: 0.25rem; width: 5.125rem; height: 2.5rem">
-                                    <p><strong>{{ .name }}</strong></p>
-                                </div>
-                                <img src="/fankit{{ .image }}"
-                                     alt="{{ .name }}"
-                                     style="position: absolute; z-index: 1; padding: 3.875rem; width: 7.8125rem"
-                                >
-                                <div class="affinity" style="display: flex; flex-direction: column; padding-right: 2.5rem; padding-top: 5rem; padding-bottom: 2.5rem;  max-width: 2.5rem">
-                                {{ if $affinity.element }}
-                                <img src="/fankit/{{ $affinity.elementImage }}" alt="{{ $affinity.element }}">
-                                {{ end }}
-                                {{ if $affinity.spirit }}
-                                <img src="/fankit/{{ $affinity.spiritImage }}" alt="{{ $affinity.spirit }}">
-                                {{ end }}
-                            </div>
-                            </div>
-                        </div>
+                        {{ partial "blueprint/base.html" . }}
                     </td>
-                    <td><strong>{{ .name }}</strong></td>
+                    <td><strong>{{ $lang.name }}</strong></td>
                 </tr>
-                {{ end }}
             {{ end }}
         </tbody>
     </table>
+</main>
 {{ end }}

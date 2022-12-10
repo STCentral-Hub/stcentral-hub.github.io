@@ -1,0 +1,13 @@
+---
+date: 2022-12-04T02:47:55Z
+title: "Blueprint Shortcode Selector"
+summary: ""
+tags: ""
+layout: "single"
+
+author: "Nerilea"
+draft: true
+---
+
+{{< bp name="Gladius" >}}
+{{< bp name="Thorn Baron Armor" >}}

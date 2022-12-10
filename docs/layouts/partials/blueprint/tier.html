@@ -1,0 +1,11 @@
+{{ $tier := .stats.tier }}
+{{ $tierAsset := .assets.tier }}
+
+<div style="position: absolute; ">
+    <div style="position: absolute; padding: 2.5rem; z-index: 1;">
+        <img src="/fankit/Misc%20Icons/icon_global_level_item_s_r.png" alt="item tier background" style=" max-width: 2.5rem">
+    </div>
+    <div style="position: absolute; padding: 2.96875rem; z-index: 2">
+        <img src="/fankit{{ $tierAsset }}" alt="tier {{ $tier }} item" style=" max-width: 1.5rem">
+    </div>
+</div>

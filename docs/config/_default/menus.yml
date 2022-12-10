@@ -1,6 +1,14 @@
 ---
 main:
+- identifier: home
+  name: Home
+  url: /
+  weight: 101
+- identifier: stc
+  name: ST Central
+  url: https://st-central.net/
+  weight: 201
 - identifier: posts
   name: Posts
   url: /posts/
-  weight: 101
+  weight: 301

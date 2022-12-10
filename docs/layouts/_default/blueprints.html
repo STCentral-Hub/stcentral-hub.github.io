@@ -1,5 +1,6 @@
 {{ define "main" }}
-    {{ $data := getJSON "https://script.google.com/macros/s/AKfycbwI9j5ykx9ueY27bDbjwM7lKjHFDIet9l2-cIIPN6VfOYBEowhJlXQHS3driZ2kSrQ/exec?data=blueprints" }}
+{{ $data := getJSON "https://script.google.com/macros/s/AKfycbwI9j5ykx9ueY27bDbjwM7lKjHFDIet9l2-cIIPN6VfOYBEowhJlXQHS3driZ2kSrQ/exec?data=blueprints" }}
+<main>
     <table>
         <thead>
         <tr>
@@ -18,4 +19,5 @@
             {{ end }}
         </tbody>
     </table>
+</main>
 {{ end }}

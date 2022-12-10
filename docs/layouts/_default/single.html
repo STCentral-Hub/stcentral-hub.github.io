@@ -1,8 +1,11 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <br/>
-    {{ .Content }}
-    {{ range $.Site.Data.blueprints }}
-        {{ partial "blueprint.html" . }}
-    {{ end }}
+    <main>
+        <article>
+            <header>
+                <h1>{{ .Title }}</h1>
+            </header>
+            {{ .Content }}
+        </article>
+    </main>
+
 {{ end }}

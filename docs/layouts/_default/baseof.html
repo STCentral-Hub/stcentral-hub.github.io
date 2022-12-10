@@ -2,9 +2,8 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        {{- partial "nav.html" . -}}
+        {{- partial "layout/header.html" . -}}
         {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
+        {{- partial "layout/footer.html" . -}}
     </body>
 </html>

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "curseCasual";
+    src: url("/fonts/Curse Casual.ttf");
+}
+
+body {
+    font-family: CurseCasual;
+}

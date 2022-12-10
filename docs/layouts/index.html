@@ -1,12 +1,16 @@
 {{ define "main" }}
-    <section>
-        {{ range .Site.RegularPages.ByPublishDate.Reverse }}
-        <div style="display: flex; align-items: center;">
-            <h3><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{- .Name -}}</a></h3>
-            {{ with .Summary }}
-                <p>&nbsp;- {{ . }}</p>
-            {{ end }}
+<main class="home-main">
+    <header>
+        <h1 class="home-welcome">Welcome to {{ .Site.Title }}</h1>
+    </header>
+    <article class="home-article">
+        <img src="/fankit/Logos/ShopTitans_Logo_RGB.png">
+        <div class="home-about">
+            <p>STC Hub is a collection of resources hosted on ST Central.</p>
+            <p>For those that have been with the ST community for a while you know there are vast amount of player built spreadsheets floating around. ST Central is host to many of these spreadsheets and other tables of data that have outgrown what should be done in those formats. Specifically, loading times have become a serious issue.</p>
+            <p>STC Hub has been created to replace those bulky spreadsheets with lean statically generated html which will also enable much richer content.</p>
+            <h1>Please join us on the <a href="https://discord.gg/u4pPT732pM" title="STC Discord">ST Central Discord</a>!</h1>
         </div>
-        {{ end }}
-    </section>
+    </article>
+</main>
 {{ end }}
