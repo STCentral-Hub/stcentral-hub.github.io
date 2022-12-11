@@ -1,11 +1,11 @@
 ---
 date: 2022-12-04T04:58:27Z
+layout: "blueprints-local"
 title: "Blueprints"
 summary: "All the games prints in one place"
-tags: "blueprints"
-layout: "blueprints-local"
+categories: [Blueprints, Game]
+tags: "Blueprints"
 
 author: "Nerilea"
 draft: true
 ---
-

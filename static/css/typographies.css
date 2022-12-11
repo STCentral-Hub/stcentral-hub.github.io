@@ -1,0 +1,35 @@
+h1 {
+    margin: 1rem 0 1rem 0;
+}
+
+h2 {
+    margin: 1rem 0 1rem 0;
+}
+
+h3 {
+    margin: 1rem 0 1rem 0;
+}
+
+h4 {
+    margin: 1rem 0 1rem 0;
+}
+
+h5 {
+    margin: 1rem 0 1rem 0;
+}
+h6 {
+    margin: 1rem 0 1rem 0;
+}
+
+p {
+    margin: 1rem 0 1rem 0;
+}
+
+a {
+    color: #7f0a29;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

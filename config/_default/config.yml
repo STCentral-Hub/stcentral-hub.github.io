@@ -1,10 +1,11 @@
 ---
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-
-baseUrl: https://example.com
 languageCode: en-us
 languageName: English
+
+baseUrl: https://example.com
 title: STC Hub
 
 sectionPagesMenu: main
+enableGitInfo: true

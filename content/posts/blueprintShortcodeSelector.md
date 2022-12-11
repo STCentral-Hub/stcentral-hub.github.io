@@ -1,8 +1,9 @@
 ---
 date: 2022-12-04T02:47:55Z
 title: "Blueprint Shortcode Selector"
-summary: ""
-tags: ""
+summary: "Use shortcodes to show individual blueprints"
+categories: [Blueprints]
+tags: []
 layout: "single"
 
 author: "Nerilea"

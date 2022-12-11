@@ -1,0 +1,45 @@
+{{ $metaColor := .Site.Data.styling.listHeaderContentMeta.color }}
+<header class="list-item-header">
+    {{ with .Params.categories }}
+    <div class="list-item-header-wrapper">
+        {{ range . }}
+        <p class="list-item-header-content list-item-header-category-content">
+            <a class="list-item-header-category-link" href="/categories/{{ . }}">{{ strings.ToUpper . }}</a>
+        </p>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h1><a class="list-item-header-title-link" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+
+    <div class="list-item-header-meta-wrapper">
+        {{ with .Params.author }}
+        <div class="list-item-header-wrapper">
+            <div class="list-item-header-meta-svg">
+                {{ partial "svg/author.svg" $metaColor }}
+            </div>
+            <p class="list-item-header-content list-item-header-meta-content">By {{ . }}</p>
+        </div>
+        {{ end }}
+
+        <div class="list-item-header-wrapper">
+            {{ with .Date }}
+            <div class="list-item-header-meta-svg">
+                {{ partial "svg/calendar.svg" $metaColor }}
+            </div>
+            <p class="list-item-header-content list-item-header-meta-content">{{ dateFormat ":date_long" .Local }} {{
+                time.Format
+                "15:04 MST" .Local }}</p>
+            {{ end }}
+
+            {{ with .Lastmod }}
+            <div class="list-item-header-meta-svg">
+                {{ partial "svg/edit.svg" $metaColor }}
+            </div>
+            <p class="list-item-header-content list-item-header-meta-content">{{ dateFormat ":date_long" .Local }} {{
+                time.Format
+                "15:04 MST" .Local }}</p>
+            {{ end }}
+        </div>
+    </div>
+</header>

@@ -1,0 +1,45 @@
+{{ $metaColor := .Site.Data.styling.mainHeaderContentMeta.color }}
+<header>
+    {{ with .Params.categories }}
+    <div class="main-header-wrapper">
+        {{ range . }}
+        <p class="main-header-content main-header-category-content">
+            <a class="main-header-category-link" href="/categories/{{ . }}">{{ strings.ToUpper . }}</a>
+        </p>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h1>{{ .Title }}</h1>
+
+    <div class="main-header-meta-wrapper">
+        {{ with .Params.author }}
+        <div class="main-header-wrapper">
+            <div class="main-header-meta-svg">
+                {{ partial "svg/author.svg" $metaColor }}
+            </div>
+            <p class="main-header-content main-header-meta-content">By {{ . }}</p>
+        </div>
+        {{ end }}
+
+        <div class="main-header-wrapper">
+            {{ with .Date }}
+            <div class="main-header-meta-svg">
+                {{ partial "svg/calendar.svg" $metaColor }}
+            </div>
+            <p class="main-header-content main-header-meta-content">{{ dateFormat ":date_long" .Local }} {{
+                time.Format
+                "15:04 MST" .Local }}</p>
+            {{ end }}
+
+            {{ with .Lastmod }}
+            <div class="main-header-meta-svg">
+                {{ partial "svg/edit.svg" $metaColor }}
+            </div>
+            <p class="main-header-content main-header-meta-content">{{ dateFormat ":date_long" .Local }} {{
+                time.Format
+                "15:04 MST" .Local }}</p>
+            {{ end }}
+        </div>
+    </div>
+</header>

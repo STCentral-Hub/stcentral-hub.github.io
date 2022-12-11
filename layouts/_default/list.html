@@ -1,17 +1,20 @@
 {{ define "main" }}
 <main>
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
+    {{ range .Site.RegularPages.ByPublishDate.Reverse }}
     <article>
-        <header>
-            <h1>{{ .Title }}</h1>
-        </header>
-        {{ range .Site.RegularPages.ByPublishDate.Reverse }}
-        <div style="display: flex; align-items: center;">
-            <h3><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{- .Name -}}</a></h3>
-            {{ with .Summary }}
-            <p>&nbsp;- {{ . }}</p>
-            {{ end }}
-        </div>
+        {{- partial "layout/list-item-header.html" . -}}
+        {{ with .Summary }}
+        <h3>{{ . }}</h3>
         {{ end }}
     </article>
+    <div class="list-button">
+        <a href="{{ .RelPermalink }}">CONTINUE READING</a>
+    </div>
+    <hr>
+    {{ end }}
+    {{- partial "layout/list-footer.html" .Site.RegularPages -}}
 </main>
 {{ end }}

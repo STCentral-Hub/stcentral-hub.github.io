@@ -1,6 +1,7 @@
 {{ define "main" }}
 {{ $data := .Site.Data.blueprints }}
 <main>
+    {{- partial "layout/main-header.html" . -}}
     <table>
         <thead>
         <tr>
