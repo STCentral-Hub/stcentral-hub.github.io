@@ -11,13 +11,13 @@
         </tr>
         </thead>
         <tbody>
-            {{ range $data }}
-            <tr>
-                <td>{{ .type }}</td>
-                <td>{{ .tier }}</td>
-                <td>{{ .name }}</td>
-            </tr>
-            {{ end }}
+        {{ range $data }}
+        <tr>
+            <td>{{ .type }}</td>
+            <td>{{ .tier }}</td>
+            <td>{{ .name }}</td>
+        </tr>
+        {{ end }}
         </tbody>
     </table>
 </main>

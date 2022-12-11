@@ -5,28 +5,28 @@
     <table>
         <thead>
         <tr>
-<!--            <th></th>-->
-<!--            <th></th>-->
-<!--            <th>Tier</th>-->
+            <!--            <th></th>-->
+            <!--            <th></th>-->
+            <!--            <th>Tier</th>-->
             <th></th>
             <th>Name</th>
         </tr>
         </thead>
         <tbody>
-            {{ range $data }}
-                {{ $assets := .assets }}
-                {{ $lang := .language.en }}
-                {{ $tier := .stats.tier }}
-                <tr>
-<!--                    <td><img src="/fankit{{ $assets.classDark }}" alt="{{ $lang.class }}" style="width: 13rem"></td>-->
-<!--                    <td><img src="/fankit{{ $assets.typeDark }}" alt="{{ $lang.type }}" style="width: 13rem"></td>-->
-<!--                    <td><img src="/fankit{{ $assets.tier }}" alt="{{ $tier }}" style="width: 13rem"></td>-->
-                    <td>
-                        {{ partial "blueprint/base.html" . }}
-                    </td>
-                    <td><strong>{{ $lang.name }}</strong></td>
-                </tr>
-            {{ end }}
+        {{ range $data }}
+        {{ $assets := .assets }}
+        {{ $lang := .language.en }}
+        {{ $tier := .stats.tier }}
+        <tr>
+            <!--                    <td><img src="/fankit{{ $assets.classDark }}" alt="{{ $lang.class }}" style="width: 13rem"></td>-->
+            <!--                    <td><img src="/fankit{{ $assets.typeDark }}" alt="{{ $lang.type }}" style="width: 13rem"></td>-->
+            <!--                    <td><img src="/fankit{{ $assets.tier }}" alt="{{ $tier }}" style="width: 13rem"></td>-->
+            <td>
+                {{ partial "blueprint/base.html" . }}
+            </td>
+            <td><strong>{{ $lang.name }}</strong></td>
+        </tr>
+        {{ end }}
         </tbody>
     </table>
 </main>

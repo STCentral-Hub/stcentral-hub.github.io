@@ -3,11 +3,12 @@
 {{ $stats := .stats }}
 <style>
     img {
-       z-index: 1;
+        z-index: 1;
     }
 </style>
 
-<div class="stats" style="display: flex; flex-direction: column; padding-left: 2.5rem; padding-top: 5rem; padding-bottom: 2.5rem; max-width: 2.5rem">
+<div class="stats"
+     style="display: flex; flex-direction: column; padding-left: 2.5rem; padding-top: 5rem; padding-bottom: 2.5rem; max-width: 2.5rem">
     {{ with $stats.attack }}
     <img src="/fankit{{ $assets.statAttack }}" alt="{{ $lang.atk }}: {{ $stats.attack }}">
     {{ end }}
