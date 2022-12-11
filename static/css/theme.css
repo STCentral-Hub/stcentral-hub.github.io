@@ -34,11 +34,41 @@ article {
     flex-direction: column;
     align-items: center;
     background-color: #aeabab;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 hr {
-    background-color: #3b3a3a;
-    border: none;
-    height: 0.05rem;
-    width: calc(100% - 4rem);
+    border-style: none;
+    background-color: transparent !important;
+    background-image:
+        linear-gradient(to left,
+            currentColor calc(50% - 16px),
+            transparent calc(50% - 16px),
+            transparent calc(50% + 16px),
+            currentColor calc(50% + 16px)
+        );
+    position: relative;
+    overflow: visible;
+    height: 0.1rem;
+    margin: 2rem;
+}
+
+hr::before,
+hr::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: calc(50% - 0.6rem);
+    transform: rotate(22.5deg);
+    background-color: currentColor;
+    height: 1.2rem;
+    width: 0.1rem;
+}
+
+hr:before {
+    left: calc(50% - 0.4rem);
+}
+
+hr::after {
+    right: calc(50% - 0.4rem);
 }
