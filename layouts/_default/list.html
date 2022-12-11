@@ -9,10 +9,10 @@
         {{ with .Summary }}
         <h3>{{ . }}</h3>
         {{ end }}
+        <div class="list-button">
+            <a href="{{ .RelPermalink }}">CONTINUE READING</a>
+        </div>
     </article>
-    <div class="list-button">
-        <a href="{{ .RelPermalink }}">CONTINUE READING</a>
-    </div>
     <hr>
     {{ end }}
     {{- partial "layout/list-footer.html" .Site.RegularPages -}}
