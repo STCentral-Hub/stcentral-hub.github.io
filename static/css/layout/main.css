@@ -30,7 +30,21 @@
     padding-bottom: 1rem;
 }
 
-.main-header-meta-content {
+.main-header-author {
+    color: #a6a7c3;
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+.main-header-author a {
+    color: #a6a7c3;
+    text-decoration: none;
+}
+
+.main-header-author a:hover {
+    text-decoration: underline;
+}
+
+.main-header-date {
     color: #a6a7c3;
     padding: 0.5rem 1rem 0.5rem 0.25rem;
 }

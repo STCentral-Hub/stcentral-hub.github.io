@@ -2,11 +2,11 @@
 date: 2022-12-04T02:47:55Z
 title: "Blueprint Shortcode Selector"
 summary: "Use shortcodes to show individual blueprints"
-categories: [Blueprints]
+categories: ["Blueprints"]
 tags: []
 layout: "single"
 
-author: "Nerilea"
+authors: ["Nerilea", "Regia", "Some Hamster", "A-Turtle"]
 draft: true
 ---
 

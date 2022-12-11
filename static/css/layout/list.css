@@ -1,7 +1,6 @@
 .list-item-header {
     background-color: #aeabab;
     color: black;
-
 }
 
 .list-item-header-wrapper {
@@ -39,7 +38,21 @@
     flex-direction: column;
 }
 
-.list-item-header-meta-content {
+.list-item-header-author {
+    color: #3b3a3a;
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+.list-item-header-author a {
+    color: #3b3a3a;
+    text-decoration: none;
+}
+
+.list-item-header-author a:hover {
+    text-decoration: underline;
+}
+
+.list-item-header-date {
     color: #3b3a3a;
     padding: 0.5rem 1rem 0.75rem 0.25rem;
 }

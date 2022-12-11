@@ -3,10 +3,9 @@ date: {{ .Date }}
 layout: ""
 title: "{{ replace .Name "-" " " | title }}"
 summary: ""
-category: ""
-tags: ""
+categories: []
+tags: []
 
-author: "Nerilea"
+authors: ["Nerilea", ]
 draft: true
 ---
-

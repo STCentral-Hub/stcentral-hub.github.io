@@ -9,3 +9,8 @@ title: STC Hub
 
 sectionPagesMenu: main
 enableGitInfo: true
+
+taxonomies:
+  author: authors
+  category: categories
+  tag: tags
