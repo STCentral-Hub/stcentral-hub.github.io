@@ -4,7 +4,7 @@
     <div class="main-header-wrapper">
         {{ range . }}
         <p class="main-header-content main-header-category-content">
-            <a class="main-header-category-link" href="/categories/{{ . }}">{{ strings.ToUpper . }}</a>
+            <a class="main-header-category-link" href="/categories/{{  strings.ToLower . }}" title="{{ strings.ToUpper . }}">{{ strings.ToUpper . }}</a>
         </p>
         {{ end }}
     </div>

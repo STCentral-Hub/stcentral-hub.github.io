@@ -41,7 +41,7 @@
 
 .list-item-header-meta-content {
     color: #3b3a3a;
-    padding: 0.5rem 1rem 0.5rem 0.25rem;
+    padding: 0.5rem 1rem 0.75rem 0.25rem;
 }
 
 .list-item-header-meta-svg {
@@ -52,8 +52,12 @@
     width: 1rem;
     padding: 0.5rem 0.25rem 0.5rem 1rem
 }
+.list-item-summary {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
 
-.list-button {
+.list-item-button {
     display: flex;
     align-self: center;
     justify-content: center;
@@ -61,10 +65,11 @@
     background-color: #7f0a29;
     height: 2.5rem;
     width: 10rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 
-.list-button a {
+.list-item-button a {
     color: #aeabab;
 }
 
