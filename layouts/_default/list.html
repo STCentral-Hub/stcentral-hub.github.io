@@ -1,9 +1,10 @@
 {{ define "main" }}
+{{ $paginator := .Paginate .Pages.ByPublishDate 5 }}
 <main>
     <header>
         <h1>{{ .Title }}</h1>
     </header>
-    {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+    {{ range $paginator.Pages }}
     <article>
         {{- partial "layout/list-item-header.html" . -}}
         {{ with .Summary }}
@@ -15,6 +16,6 @@
     </article>
     <hr>
     {{ end }}
-    {{- partial "layout/list-footer.html" .Site.RegularPages -}}
+    {{- partial "layout/list-footer.html" $paginator -}}
 </main>
 {{ end }}
