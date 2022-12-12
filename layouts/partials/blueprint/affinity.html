@@ -1,0 +1,17 @@
+{{ $affinity := .affinity }}
+{{ $assets := .assets }}
+{{ $lang := .language.en }}
+
+<div class="affinity"
+     style="display: flex; flex-direction: column; padding-right: 2.5rem; padding-top: 5rem; padding-bottom: 2.5rem;  max-width: 2.5rem">
+    {{ if $lang.innateElement }}
+    <img src="/fankit{{ $assets.innateElement }}" alt="{{ $lang.innateElement }}">
+    {{ else if $lang.element }}
+    <img src="/fankit{{ $assets.affinityElement }}" alt="{{ $lang.element }}">
+    {{ end }}
+    {{ if $affinity.innateSpirit }}
+    <img src="/fankit{{ $assets.innateSpirit }}" alt="{{ $lang.innateSpirit }}">
+    {{ else if $lang.spirit }}
+    <img src="/fankit{{ $assets.affinitySpirit }}" alt="{{ $lang.spirit }}">
+    {{ end }}
+</div>

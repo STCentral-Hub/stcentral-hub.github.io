@@ -1,0 +1,50 @@
+{{ $firstPager := .First }}
+{{ $currentPager := . }}
+{{ $lastPager := .Last }}
+
+{{ $newer := "← Newer Posts" }}
+{{ $older := "Older Posts →" }}
+
+<footer class="list-footer">
+    {{ with $currentPager.Prev }}
+    <h3 class="list-footer-pagination-content">
+        <a href="{{ .URL }}" title="Go to page {{ .PageNumber }}">{{ $newer }}</a>
+    </h3>
+    {{ else }}
+    <span class="list-footer-pagination-hidden" aria-hidden="true">{{ $newer }}</span>
+    {{ end }}
+
+    <div class="list-footer-pagination-page-wrapper">
+        {{ if eq $currentPager.PageNumber (add $firstPager.PageNumber 1) }}
+            {{ partial "layout/list-pagination-page-number-link" $firstPager }}
+        {{ else if eq $currentPager.PageNumber (add $firstPager.PageNumber 2) }}
+            {{ partial "layout/list-pagination-page-number-link" $firstPager }}
+            {{ partial "layout/list-pagination-page-number-link" $firstPager.Next }}
+        {{ else if gt $currentPager.PageNumber (add $firstPager.PageNumber 2) }}
+            {{ partial "layout/list-pagination-page-number-link" $firstPager }}
+            <h3 class="list-footer-pagination-content list-footer-pagination-dots">&middot;&middot;&middot;</h3>
+            {{ partial "layout/list-pagination-page-number-link" $currentPager.Prev }}
+        {{ end }}
+
+        <h3 class="list-footer-pagination-content">{{ $currentPager.PageNumber }}</h3>
+
+        {{ if lt (add $currentPager.PageNumber 2) $lastPager.PageNumber }}
+            {{ partial "layout/list-pagination-page-number-link" $currentPager.Next }}
+            <h3 class="list-footer-pagination-content list-footer-pagination-dots">&middot;&middot;&middot;</h3>
+            {{ partial "layout/list-pagination-page-number-link" $lastPager }}
+        {{ else if eq (add $currentPager.PageNumber 2) $lastPager.PageNumber }}
+            {{ partial "layout/list-pagination-page-number-link" $lastPager.Prev }}
+            {{ partial "layout/list-pagination-page-number-link" $lastPager }}
+        {{ else if eq (add $currentPager.PageNumber 1) $lastPager.PageNumber }}
+            {{ partial "layout/list-pagination-page-number-link" $lastPager }}
+        {{ end }}
+    </div>
+
+    {{ with $currentPager.Next }}
+    <h3 class="list-footer-pagination-content">
+        <a href="{{ .URL }}" title="Go to page {{ .PageNumber }}">{{ $older }}</a>
+    </h3>
+    {{ else }}
+    <span class="list-footer-pagination-hidden" aria-hidden="true">{{ $older }}</span>
+    {{ end }}
+</footer>

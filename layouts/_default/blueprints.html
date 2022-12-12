@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ $data := getJSON "https://script.google.com/macros/s/AKfycbwI9j5ykx9ueY27bDbjwM7lKjHFDIet9l2-cIIPN6VfOYBEowhJlXQHS3driZ2kSrQ/exec?data=blueprints" }}
+<main>
+    {{- partial "layout/main-header.html" . -}}
+    <table>
+        <thead>
+        <tr>
+            <th>Type</th>
+            <th>Tier</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range $data }}
+        <tr>
+            <td>{{ .type }}</td>
+            <td>{{ .tier }}</td>
+            <td>{{ .name }}</td>
+        </tr>
+        {{ end }}
+        </tbody>
+    </table>
+</main>
+{{ end }}

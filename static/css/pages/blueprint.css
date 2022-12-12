@@ -1,0 +1,8 @@
+.blueprint-root {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 15.625rem;
+    height: 16.6875rem
+}
+

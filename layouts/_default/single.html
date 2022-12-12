@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main>
+    {{- partial "layout/main-header.html" . -}}
+    <article>
+        <h3>{{ .Summary }}</h3>
+        {{ .Content }}
+    </article>
+    <hr>
+    {{- partial "layout/main-footer.html" . -}}
+</main>
+{{ end }}

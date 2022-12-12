@@ -1,0 +1,4 @@
+{{ $data := .Site.Data.blueprints }}
+{{ range where $data "language.en.name" "==" (.Get "name") }}
+{{ partial "blueprint/base.html" . }}
+{{ end }}

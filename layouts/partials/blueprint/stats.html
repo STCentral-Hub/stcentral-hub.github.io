@@ -1,0 +1,27 @@
+{{ $assets := .assets }}
+{{ $lang := .language.en }}
+{{ $stats := .stats }}
+<style>
+    img {
+        z-index: 1;
+    }
+</style>
+
+<div class="stats"
+     style="display: flex; flex-direction: column; padding-left: 2.5rem; padding-top: 5rem; padding-bottom: 2.5rem; max-width: 2.5rem">
+    {{ with $stats.attack }}
+    <img src="/fankit{{ $assets.statAttack }}" alt="{{ $lang.atk }}: {{ $stats.attack }}">
+    {{ end }}
+    {{ with $stats.defense }}
+    <img src="/fankit{{ $assets.statDefense }}" alt="{{ $lang.def }}: {{ $stats.defense }}">
+    {{ end }}
+    {{ with $stats.hp }}
+    <img src="/fankit{{ $assets.statHp }}" alt="{{ $lang.hp }}: {{ $stats.hp }}">
+    {{ end }}
+    {{ with $stats.evasion }}
+    <img src="/fankit{{ $assets.statEvasion }}" alt="{{ $lang.eva }}: {{ $stats.evasion }}">
+    {{ end }}
+    {{ with $stats.crit }}
+    <img src="/fankit{{ $assets.statCrit }}" alt="{{ $lang.crit }}: {{ $stats.crit }}">
+    {{ end }}
+</div>

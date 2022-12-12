@@ -1,0 +1,55 @@
+{{ $metaColor := .Site.Data.styling.mainHeaderContentMeta.color }}
+{{ $authors := .Params.authors }}
+<header>
+    {{ with .Params.categories }}
+    <div class="main-header-wrapper">
+        {{ range . }}
+        <p class="main-header-content main-header-category-content">
+            <a class="main-header-category-link" href="/categories/{{ . | urlize }}"
+               title="{{ strings.ToUpper . }}">{{ strings.ToUpper . }}</a>
+        </p>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <h1>{{ .Title }}</h1>
+
+    <div class="main-header-meta-wrapper">
+        {{ with $authors }}
+        <div class="main-header-wrapper">
+            <div class="main-header-meta-svg">
+                {{ partial "svg/author.svg" $metaColor }}
+            </div>
+            <p class="main-header-content main-header-author">By
+                {{ range $index, $author := $authors }}
+                <a href="/authors/{{ $author | urlize }}" title="Authored by {{ $author }}">{{ $author }}</a>
+                {{- if and ( eq (len $authors) 2 ) ( eq $index 0 ) -}}&nbsp;&&nbsp;
+                {{- else if lt (add $index 2) (len $authors) -}},&nbsp;
+                {{- else if lt (add $index 1) (len $authors) -}},&nbsp;&&nbsp;
+                {{- end -}}
+                {{- end -}}
+            </p>
+        </div>
+        {{ end }}
+
+        <div class="main-header-wrapper">
+            {{ with .Date }}
+            <div class="main-header-meta-svg">
+                {{ partial "svg/calendar.svg" $metaColor }}
+            </div>
+            <p class="main-header-content main-header-date">{{ dateFormat ":date_long" .Local }} {{
+                time.Format
+                "15:04 MST" .Local }}</p>
+            {{ end }}
+
+            {{ with .Lastmod }}
+            <div class="main-header-meta-svg">
+                {{ partial "svg/edit.svg" $metaColor }}
+            </div>
+            <p class="main-header-content main-header-date">{{ dateFormat ":date_long" .Local }} {{
+                time.Format
+                "15:04 MST" .Local }}</p>
+            {{ end }}
+        </div>
+    </div>
+</header>

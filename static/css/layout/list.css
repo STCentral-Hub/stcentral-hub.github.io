@@ -1,0 +1,116 @@
+.list-item-header {
+    background-color: #aeabab;
+    color: black;
+}
+
+.list-item-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-item-header-content {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.list-item-header-category-content {
+    padding: 0.5rem;
+}
+
+.list-item-header-category-link {
+    color: #7f0a29;
+    text-decoration: underline;
+}
+
+.list-item-header-category-link:hover {
+    text-decoration: none;
+}
+
+.list-item-header-title-link {
+    color: black;
+}
+
+.list-item-header-meta-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list-item-header-author {
+    color: #3b3a3a;
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
+.list-item-header-author a {
+    color: #3b3a3a;
+    text-decoration: none;
+}
+
+.list-item-header-author a:hover {
+    text-decoration: underline;
+}
+
+.list-item-header-date {
+    color: #3b3a3a;
+    padding: 0.5rem 1rem 0.75rem 0.25rem;
+}
+
+.list-item-header-meta-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+    padding: 0.5rem 0.25rem 0.5rem 1rem
+}
+.list-item-summary {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.list-item-button {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f0a29;
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.list-item-button a {
+    color: #aeabab;
+}
+
+.list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.list-footer-pagination-content {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.list-footer-pagination-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.list-footer-pagination-hidden{
+    visibility: hidden;
+}
+
+.list-footer-pagination-dots {
+    font-size: 1.5rem;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+{{ $assets := .assets }}
+{{ $lang := .language.en }}
+{{ $tier := .stats.tier }}
+
+<div class="blueprint-root">
+    <img src="/fankit{{ $assets.background }}"
+         alt="scroll"
+         style="position: absolute; z-index: 0; max-width: 15.625rem;"
+    >
+    {{ partial "blueprint/tier.html" . }}
+    <div style="display: flex">
+        {{ partial "blueprint/stats.html" . }}
+        <div style="display: flex; align-items: center; justify-content: center; text-align: center; padding-left: 0.25rem; padding-top: 2.5rem; padding-right: 0.25rem; width: 5.125rem; height: 2.5rem">
+            <p style="z-index: 1"><strong>{{ $lang.name }}</strong></p>
+        </div>
+        <img src="/fankit{{ $assets.image }}"
+             alt="{{ $lang.name }}"
+             style="position: absolute; z-index: 2; padding: 3.875rem; width: 7.8125rem"
+        >
+        {{ partial "blueprint/affinity.html" . }}
+    </div>
+</div>

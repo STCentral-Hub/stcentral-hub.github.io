@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ $paginator := .Paginate .Pages.ByPublishDate 5 }}
+<main>
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
+    {{ range $paginator.Pages }}
+    <article>
+        {{- partial "layout/list-item-header.html" . -}}
+        {{ with .Summary }}
+        <h3 class="list-item-summary">{{ . }}</h3>
+        {{ end }}
+        <div class="list-item-button">
+            <a href="{{ .RelPermalink }}" title="Continue Reading">CONTINUE READING</a>
+        </div>
+    </article>
+    <hr>
+    {{ end }}
+    {{- partial "layout/list-footer.html" $paginator -}}
+</main>
+{{ end }}
