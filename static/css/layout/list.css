@@ -94,21 +94,23 @@
     margin-right: 1rem;
 }
 
-.list-pager-content {
+.list-footer-pagination-content {
     padding: 1rem;
     font-size: 1.3rem;
 }
 
-.list-pager-newer {
-    text-align: left;
+.list-footer-pagination-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
 }
 
-.list-pager-older {
-    text-align: right;
-    flex-grow: 1;
+.list-footer-pagination-hidden{
+    visibility: hidden;
 }
 
-.list-pager-dots {
+.list-footer-pagination-dots {
     font-size: 1.5rem;
+    text-align: center;
 }
