@@ -16,7 +16,13 @@
 }
 
 .footer-column {
+    display: flex;
     padding: 0 0.5rem 0.5rem 0.5rem;
+    width: 50%;
+}
+
+.footer-column-padding {
+    flex-grow: 1;
 }
 
 .footer-column p {
@@ -25,6 +31,15 @@
 
 .footer-column img {
     width: 15rem
+}
+
+.footer-link {
+    color: #fcfcfc;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    text-decoration: none;
 }
 
 .footer-copyright {
