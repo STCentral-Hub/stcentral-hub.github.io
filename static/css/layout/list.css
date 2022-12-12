@@ -90,8 +90,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .list-pager-content {
-    padding: 1rem
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.list-pager-newer {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.list-pager-older {
+    text-align: right;
+    flex-grow: 1;
+}
+
+.list-pager-dots {
+    font-size: 1.5rem;
 }

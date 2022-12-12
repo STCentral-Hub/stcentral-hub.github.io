@@ -4,7 +4,7 @@
 
 <footer class="list-footer">
     {{ with $currentPager.Prev }}
-    <h3 class="list-pager-content"><a href="{{ .URL }}" title="Go to page {{ .PageNumber }}"><-- Newer Posts</a></h3>
+    <h3 class="list-pager-content list-pager-newer"><a href="{{ .URL }}" title="Go to page {{ .PageNumber }}">← Newer Posts</a></h3>
     {{ end }}
 
     {{ if eq $currentPager.PageNumber (add $firstPager.PageNumber 1) }}
@@ -26,7 +26,7 @@
         <a href="{{ $firstPager.URL }}" title="Jump to page {{ $firstPager.PageNumber }}">{{ $firstPager.PageNumber
             }}</a>
     </h3>
-    <h3 class="list-pager-content">...</h3>
+    <h3 class="list-pager-content list-pager-dots">&middot;&middot;&middot;</h3>
     <h3 class="list-pager-content">
         <a href="{{ $currentPager.Prev.URL }}" title="Jump to page {{ $currentPager.Prev.PageNumber }}">{{
             $currentPager.Prev.PageNumber }}</a>
@@ -40,7 +40,7 @@
         <a href="{{ $currentPager.Next.URL }}" title="Jump to page {{ $currentPager.Next.PageNumber }}">{{
             $currentPager.Next.PageNumber }}</a>
     </h3>
-    <h3 class="list-pager-content">...</h3>
+    <h3 class="list-pager-content list-pager-dots">&middot;&middot;&middot;</h3>
     <h3 class="list-pager-content">
         <a href="{{ $lastPager.URL }}" title="Jump to page {{ $lastPager.PageNumber }}">{{ $lastPager.PageNumber }}</a>
     </h3>
@@ -60,6 +60,6 @@
 
 
     {{ with $currentPager.Next }}
-    <h3 class="list-pager-content"><a href="{{ .URL }}" title="Go to page {{ .PageNumber }}">Older Posts --></a></h3>
+    <h3 class="list-pager-content list-pager-older"><a href="{{ .URL }}" title="Go to page {{ .PageNumber }}">Older Posts →</a></h3>
     {{ end }}
 </footer>
