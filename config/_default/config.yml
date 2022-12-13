@@ -4,7 +4,7 @@ defaultContentLanguageInSubdir: false
 languageCode: en-us
 languageName: English
 
-baseUrl: https://example.com
+baseUrl: https://STCentral-Hub.github.io.git
 title: STC Hub
 
 sectionPagesMenu: main
