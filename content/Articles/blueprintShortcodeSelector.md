@@ -6,9 +6,10 @@ categories: ["Blueprints"]
 tags: []
 layout: "single"
 
-authors: ["Nerilea", "Regia", "Some Hamster", "A-Turtle"]
+authors: ["Nerilea", "Reiga", "Some Hamster", "A-Turtle"]
 draft: false
 ---
 
 {{< bp name="Gladius" >}}
 {{< bp name="Thorn Baron Armor" >}}
+{{< bp name="Merry Christmace" >}}
