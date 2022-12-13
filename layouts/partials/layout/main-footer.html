@@ -1,3 +1,19 @@
-<footer class="main-footer">
-    <p>Pagination Under Construction!</p>
+<footer class="page-footer">
+    {{ with .Prev }}
+    <h3 class="page-footer-pagination-content">
+        <a href="{{ .RelPermalink }}" title="Go to page {{ .Title }}">← {{ .Title }}</a>
+    </h3>
+    {{ else }}
+    <span class="page-footer-pagination-hidden" aria-hidden="true">← {{ .Title }}</span>
+    {{ end }}
+
+    <span class="page-footer-pagination-page-wrapper" aria-hidden="true"></span>
+
+    {{ with .Next }}
+    <h3 class="page-footer-pagination-content">
+        <a href="{{ .RelPermalink }}" title="Go to page {{ .Title }}">{{ .Title }} →</a>
+    </h3>
+    {{ else }}
+    <span class="page-footer-pagination-hidden" aria-hidden="true">{{ .Title }} →</span>
+    {{ end }}
 </footer>

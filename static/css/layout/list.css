@@ -85,32 +85,3 @@
 .list-item-button a {
     color: #aeabab;
 }
-
-.list-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.list-footer-pagination-content {
-    padding: 1rem;
-    font-size: 1.3rem;
-}
-
-.list-footer-pagination-page-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-}
-
-.list-footer-pagination-hidden{
-    visibility: hidden;
-}
-
-.list-footer-pagination-dots {
-    font-size: 1.5rem;
-    text-align: center;
-}
