@@ -1,4 +1,5 @@
 /.git/
 /.idea/
+/public/
 .hugo_build.lock
 STC.Hub.iml
