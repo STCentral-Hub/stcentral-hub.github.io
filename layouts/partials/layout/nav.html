@@ -6,11 +6,17 @@
         </h3>
         {{ end }}
 
-        {{ range .Site.Home.Translations }}
-        <h3 class="nav-menu-header-item">
-            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-        </h3>
-        {{ end }}
+        <div class="nav-menu-sub-menu">
+            <h3 class="nav-menu-header-item">Languages</h3><p> - {{ .Language.LanguageName -}}</p>
+            <div class="nav-menu-sub-menu-dropdown">
+                {{ range .Site.Home.Translations }}
+                <div class="nav-menu-sub-menu-dropdown-item">
+                    <h3><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></h3>
+                </div>
+                <span class="nav-menu-sub-menu-dropdown-item-filler"></span>
+                {{ end }}
+            </div>
+        </div>
 
     </div>
 </nav>
