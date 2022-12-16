@@ -5,7 +5,7 @@
     <div class="list-item-header-wrapper">
         {{ range . }}
         <p class="list-item-header-content list-item-header-category-content">
-            <a class="list-item-header-category-link" href="/categories/{{ . | urlize }}"
+            <a class="list-item-header-category-link" href="{{ relLangURL (path.Join "/categories/" .) | urlize }}"
                title="{{ strings.ToUpper . }}">{{ strings.ToUpper . }}</a>
         </p>
         {{ end }}
@@ -22,7 +22,7 @@
             </div>
             <p class="list-item-header-content list-item-header-author">By&nbsp;
                 {{ range $index, $author := $authors }}
-                <a href="/authors/{{ $author | urlize }}" title="Authored by {{ $author }}">{{ $author }}</a>
+                <a href="{{ relLangURL (path.Join "/authors/" $author) | urlize }}" title="Authored by {{ $author }}">{{ $author }}</a>
                 {{- if and ( eq (len $authors) 2 ) ( eq $index 0 ) -}}&nbsp;&&nbsp;
                 {{- else if lt (add $index 2) (len $authors) -}},&nbsp;
                 {{- else if lt (add $index 1) (len $authors) -}},&nbsp;&&nbsp;

@@ -2,8 +2,24 @@
     <div class="nav-menu">
         {{ range .Site.Menus.main }}
         <h3 class="nav-menu-header-item">
-            <a href="{{ .URL }}" title="{{ .Name }}">{{- .Name -}}</a>
+            <a href="{{ relLangURL .URL }}" title="{{ .Name }}">{{- .Name -}}</a>
         </h3>
         {{ end }}
+
+        <div class="nav-menu-sub-menu">
+            <h3 class="nav-menu-header-item">Languages</h3>
+            <p> - {{ .Language.LanguageName }}</p>
+            <div class="nav-menu-sub-menu-dropdown">
+                {{ range .Site.Home.Translations }}
+                <a class="nav-menu-sub-menu-dropdown-link" href="{{ .Permalink }}">
+                    <div class="nav-menu-sub-menu-dropdown-item">
+                        <h3>{{ .Language.LanguageName }}</h3>
+                    </div>
+                </a>
+                <span class="nav-menu-sub-menu-dropdown-item-filler"></span>
+                {{ end }}
+            </div>
+        </div>
+
     </div>
 </nav>

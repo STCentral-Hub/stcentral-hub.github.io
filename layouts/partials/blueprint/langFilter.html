@@ -1,0 +1,10 @@
+{{ $blueprint := .blueprint }}
+{{ $lang := .lang }}
+
+{{ range $bpLangKey, $value := $blueprint.language }}
+
+{{ if eq $bpLangKey $lang }}
+{{ partial "blueprint/base.html" (dict "assets" $blueprint.assets "strings" $value "stats" $blueprint.stats) }}
+{{ end }}
+
+{{ end }}
