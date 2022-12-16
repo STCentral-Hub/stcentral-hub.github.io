@@ -7,12 +7,15 @@
         {{ end }}
 
         <div class="nav-menu-sub-menu">
-            <h3 class="nav-menu-header-item">Languages</h3><p> - {{ .Language.LanguageName -}}</p>
+            <h3 class="nav-menu-header-item">Languages</h3>
+            <p> - {{ .Language.LanguageName }}</p>
             <div class="nav-menu-sub-menu-dropdown">
                 {{ range .Site.Home.Translations }}
-                <div class="nav-menu-sub-menu-dropdown-item">
-                    <h3><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></h3>
-                </div>
+                <a class="nav-menu-sub-menu-dropdown-link" href="{{ .Permalink }}">
+                    <div class="nav-menu-sub-menu-dropdown-item">
+                        <h3>{{ .Language.LanguageName }}</h3>
+                    </div>
+                </a>
                 <span class="nav-menu-sub-menu-dropdown-item-filler"></span>
                 {{ end }}
             </div>

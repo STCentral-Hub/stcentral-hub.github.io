@@ -51,6 +51,15 @@
     z-index: 999;
 }
 
+.nav-menu-sub-menu-dropdown-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.nav-menu-sub-menu-dropdown-link:hover {
+    text-decoration: none;
+}
+
 .nav-menu-sub-menu-dropdown-item {
     display: flex;
     align-items: center;
@@ -62,11 +71,6 @@
 
 .nav-menu-sub-menu-dropdown-item:hover {
     background-color: #aeabab;
-}
-
-.nav-menu-sub-menu-dropdown-item a {
-    color: #666;
-    text-decoration: none;
 }
 
 .nav-menu-sub-menu:hover .nav-menu-sub-menu-dropdown {
