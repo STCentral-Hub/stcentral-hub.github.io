@@ -1,0 +1,13 @@
+.page-not-found-header {
+    background-color: unset;
+    color: unset;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0;
+}
+
+.page-not-found-content {
+    text-align: center;
+    padding: 0;
+    margin: 0.5rem
+}
