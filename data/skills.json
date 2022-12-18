@@ -1,0 +1,67 @@
+[
+  {
+    "assets": {
+      "image": "/Skills/Innates/icon_global_skill_c_redmage.png"
+    },
+    "language": {
+      "en": {
+        "tier1": "Archmagic",
+        "tier2": "",
+        "tier3": "",
+        "tier4": ""
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Skills/Hero/icon_global_skill_s_arcanemaster.png"
+    },
+    "language": {
+      "en": {
+        "tier1": "Adept",
+        "tier2": "",
+        "tier3": "",
+        "tier4": ""
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Skills/Hero/icon_global_skill_p_doublecast.png"
+    },
+    "language": {
+      "en": {
+        "tier1": "Double Cast",
+        "tier2": "",
+        "tier3": "",
+        "tier4": ""
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Skills/Hero/icon_global_skill_s_megacritmult.png"
+    },
+    "language": {
+      "en": {
+        "tier1": "Death Dealer",
+        "tier2": "",
+        "tier3": "",
+        "tier4": ""
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Skills/Hero/icon_global_skill_s_megacrit.png"
+    },
+    "language": {
+      "en": {
+        "tier1": "All Natural",
+        "tier2": "",
+        "tier3": "",
+        "tier4": ""
+      }
+    }
+  }
+]

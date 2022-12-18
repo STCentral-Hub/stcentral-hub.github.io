@@ -7,7 +7,8 @@
     <article>
         <h3>{{ .Summary }}</h3>
             {{ range $data }}
-                {{ partial "blueprint/langFilter.html" (dict "blueprint" . "lang" $lang) }}
+                {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
+                {{ partial "blueprint/base.html" (dict "assets" .assets "strings" $translations "stats" .stats) }}
             {{ end }}
     </article>
     <hr>

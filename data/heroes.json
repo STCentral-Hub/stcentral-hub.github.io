@@ -1,0 +1,25 @@
+[
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_archmage_128.png"
+    },
+    "equipment": {
+      "slot1": ["Wand", "Staff", "Crossbow"],
+      "slot2": ["Clothes"],
+      "slot3": ["Magician Hat"],
+      "slot4": ["Light Footwear"],
+      "slot5": ["Spell"],
+      "slot6": ["Ring", "Cloak"]
+    },
+    "language":{
+      "en": {
+        "type": "Spellcaster",
+        "class": "Archmage"
+      },
+      "fr": {
+        "type": "La Spellcaster",
+        "class": "La Archmage"
+      }
+    }
+  }
+]

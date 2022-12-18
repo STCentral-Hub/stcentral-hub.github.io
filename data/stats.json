@@ -1,0 +1,29 @@
+{
+  "assets": {
+    "starPower": "/Stat Indicators/Heroes/icon_global_power.png",
+    "diPower": "/Stat Indicators/icon_global_dragoninvasion_airshippower.png",
+    "atk": "/Stat Indicators/Heroes/icon_global_attack.png",
+    "def": "/Stat Indicators/Heroes/icon_global_defense.png",
+    "hp": "/Stat Indicators/Heroes/icon_global_health.png",
+    "eva": "/Stat Indicators/Heroes/icon_global_evasion.png",
+    "critChance": "/Stat Indicators/Heroes/icon_global_critchance.png"
+  },
+  "language": {
+    "en": {
+      "starPower": "Power",
+      "diPower": "Airship Power",
+      "hp": "HP",
+      "health": "Health",
+      "atk": "ATK",
+      "attack": "Attack",
+      "def": "DEF",
+      "defense": "Defense",
+      "threat": "Threat",
+      "threatRating": "Threat Rating",
+      "eva": "EVA",
+      "evasion": "Evasion",
+      "critChance": "Critical Hit Chance",
+      "critDmg": "Critical Hit Damage"
+    }
+  }
+}

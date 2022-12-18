@@ -1,0 +1,121 @@
+{{ $lang := .page.Lang }}
+{{ $statData := .page.Site.Data.stats }}
+{{ $stats := .stats }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" $statData "lang" $lang)) }}
+
+{{ with $stats.starPower }}
+{{ $heroStarPower := . }}
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon-power"
+             src="/fankit/Stat Indicators/Heroes/icon_global_power.png"
+             alt="{{ ($scratch.Get "translations").starPower }}">
+    </td>
+    <td><p class="hero-stat-power">{{ $heroStarPower | lang.FormatNumber 0 }}</p></td>
+</tr>
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon"
+             src="/fankit/Stat%20Indicators/icon_global_dragoninvasion_airshippower.png"
+             alt="{{ ($scratch.Get "translations").diPower }}">
+    </td>
+    <td class="hero-stat hero-stat-tag">
+        <p>{{- ($scratch.Get "translations").diPower -}}</p>
+    </td>
+    {{ if lt $heroStarPower 15000 }}
+    <td><p>{{ add (mul $heroStarPower 0.0714) 77.3 | lang.FormatNumber 0 }}</p></td>
+    {{ else if lt $heroStarPower 50000 }}
+    <td><p>{{ add (mul $heroStarPower 0.0625) 255 | lang.FormatNumber 0 }}</p></td>
+    {{ else if lt $heroStarPower 100000 }}
+    <td><p>{{ add (mul $heroStarPower 0.05 ) 881 | lang.FormatNumber 0 }}</p></td>
+    {{ else if lt $heroStarPower 250000 }}
+    <td><p>{{ add (mul $heroStarPower 0.04 ) 1880 | lang.FormatNumber 0 }}</p></td>
+    {{ else }}
+    <td><p>{{ add (mul $heroStarPower 0.0333) 3547 | lang.FormatNumber 0 }}</p></td>
+    {{ end }}
+</tr>
+{{ end }}
+
+{{ with $stats.hp }}
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon"
+             src="/fankit/Stat%20Indicators/Heroes/icon_global_health.png"
+             alt="{{ ($scratch.Get "translations").hp }}">
+    </td>
+    <td class="hero-stat hero-stat-tag">
+        <p>{{- ($scratch.Get "translations").hp -}}</p>
+    </td>
+    <td><p>{{ . | lang.FormatNumber 0 }}</p></td>
+</tr>
+{{ end }}
+
+{{ with $stats.atk }}
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon"
+             src="/fankit/Stat%20Indicators/Heroes/icon_global_attack.png"
+             alt="{{ ($scratch.Get "translations").attack }}">
+    </td>
+    <td class="hero-stat hero-stat-tag">
+        <p>{{- ($scratch.Get "translations").atk -}}</p>
+    </td>
+    <td><p>{{ . | lang.FormatNumber 0 }}</p></td>
+</tr>
+{{ end }}
+
+{{ with $stats.def }}
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon"
+             src="/fankit/Stat%20Indicators/Heroes/icon_global_defense.png"
+             alt="{{ ($scratch.Get "translations").defense }}">
+    </td>
+    <td class="hero-stat-multi hero-stat-tag">
+        <p>{{- ($scratch.Get "translations").def -}}</p>
+        <p>{{- ($scratch.Get "translations").threat -}}</p>
+    </td>
+    <td class="hero-stat-multi">
+        <p>{{ . | lang.FormatNumber 0 }}</p>
+        {{ with $stats.threat }}
+        <p>{{ . | lang.FormatNumber 0 }}</p>
+        {{ end }}
+    </td>
+</tr>
+{{ end }}
+
+{{ with $stats.eva }}
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon"
+             src="/fankit/Stat%20Indicators/Heroes/icon_global_evasion.png"
+             alt="{{ ($scratch.Get "translations").evasion }}">
+    </td>
+    <td class="hero-stat hero-stat-tag">
+        <p>{{- ($scratch.Get "translations").eva -}}</p>
+    </td>
+    <td><p>{{ . | lang.FormatPercent 0 }}</p></td>
+</tr>
+{{ end }}
+
+{{ with $stats.critChance }}
+<tr class="hero-stat">
+    <td>
+        <img class="hero-stat-icon"
+             src="/fankit/Stat%20Indicators/Heroes/icon_global_critchance.png"
+             alt="{{ ($scratch.Get "translations").critChance }}">
+    </td>
+    <td class="hero-stat-multi hero-stat-tag">
+        <p>{{- ($scratch.Get "translations").critChance -}}</p>
+        <p>{{- ($scratch.Get "translations").critDmg -}}</p>
+    </td>
+    <td class="hero-stat-multi">
+        <p>{{ . | lang.FormatPercent 0 }}</p>
+        {{ with $stats.critDmg }}
+        <p>{{ . | lang.FormatNumber 1 -}}x</p>
+        {{ end }}
+    </td>
+</tr>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ $data := .data }}
+{{ $lang := .lang }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "translation" $data.language.en }}
+
+{{ range $k, $v := $data.language }}
+    {{ if eq $k $lang }}
+        {{ $scratch.Set "translation" $v }}
+    {{ end }}
+{{ end }}
+
+{{ return $scratch.Get "translation" }}
