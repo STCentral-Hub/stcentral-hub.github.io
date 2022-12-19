@@ -40,7 +40,6 @@
 
 {{ range where $heroData "language.en.class" "==" (.Get "class") }}
 {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
-<p>{{ . }}</p>
 
 <div class="hero-wrapper">
     <div class="hero-class-banner">
@@ -49,28 +48,13 @@
     </div>
     <div class="hero-data-wrapper">
         {{ partial "hero/stats.html" (dict "page" $page "stats" $stats) }}
-        <div class="hero-equipment-wrapper">
+        <div class="hero-info-wrapper">
             {{ partial "hero/skills.html" (dict "page" $page "skills" $skills) }}
-            <div class="hero-equipment-slot-wrapper">
-                <p>{{ $hero.Get "slot1" }}</p>
-                <p>{{ $hero.Get "slot2" }}</p>
-                <p>{{ $hero.Get "slot3" }}</p>
-            </div>
-            <div class="hero-equipment-slot-wrapper">
-                <p>{{ $hero.Get "slot4" }}</p>
-                <p>{{ $hero.Get "slot5" }}</p>
-                <p>{{ $hero.Get "slot6" }}</p>
-            </div>
+            {{ partial "hero/equipment.html" (dict "page" $page "equipment" $equipment) }}
         </div>
     </div>
 </div>
 
-
-<p>{{ $hero.Get "skill0" }}</p>
-<p>{{ $hero.Get "skill1" }}</p>
-<p>{{ $hero.Get "skill2" }}</p>
-<p>{{ $hero.Get "skill3" }}</p>
-<p>{{ $hero.Get "skill4" }}</p>
 <p>{{ $hero.Get "sim" }}</p>
 
 {{ end }}
