@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    color: #fcfcfc;
+    color: var(--color-stc-text-white);
     /*color: #9c577bff;*/
     background-color: #5c2f46;
     border-radius: 1.5rem;
@@ -107,8 +107,3 @@
 .hero-equipment-slot-wrapper {
     display: flex;
 }
-
-/*
-yellow text: #fc0
-light rows: #714059
-*/

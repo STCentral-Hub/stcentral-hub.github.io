@@ -14,7 +14,7 @@
 }
 
 .main-header-category-link {
-    color: #fcfcfc;
+    color: var(--color-stc-text-white);
     text-decoration: underline;
 }
 
@@ -31,12 +31,12 @@
 }
 
 .main-header-author {
-    color: #a6a7c3;
+    color: var(--color-stc-text-blue-gray);
     padding: 0.5rem 0.25rem 0.5rem 0.25rem;
 }
 
 .main-header-author a {
-    color: #a6a7c3;
+    color: var(--color-stc-text-blue-gray);
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .main-header-date {
-    color: #a6a7c3;
+    color: var(--color-stc-text-blue-gray);
     padding: 0.5rem 1rem 0.5rem 0.25rem;
 }
 

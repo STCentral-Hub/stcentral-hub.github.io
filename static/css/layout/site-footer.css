@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fcfcfc;
+    color: var(--color-stc-text-white);
     padding: 1rem;
     margin: 0;
 }
@@ -34,7 +34,7 @@
 }
 
 .footer-link {
-    color: #fcfcfc;
+    color: var(--color-stc-text-white);
     text-decoration: underline;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .footer-copyright {
-    border-top-color: #393a88;
+    border-top-color: var(--color-stc-border-blue);
     border-top-style: solid;
     border-top-width: 0.1rem;
     flex-grow: 1;

@@ -1,5 +1,5 @@
 .list-item-header {
-    background-color: #aeabab;
+    background-color: var(--color-stc-background-gray);
     color: black;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .list-item-header-category-link {
-    color: #7f0a29;
+    color: var(--color-stc-text-link-red);
     text-decoration: underline;
 }
 
@@ -39,12 +39,12 @@
 }
 
 .list-item-header-author {
-    color: #3b3a3a;
+    color: var(--color-stc-text-dark-gray);
     padding: 0.5rem 0.25rem 0.5rem 0.25rem;
 }
 
 .list-item-header-author a {
-    color: #3b3a3a;
+    color: var(--color-stc-text-dark-gray);
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .list-item-header-date {
-    color: #3b3a3a;
+    color: var(--color-stc-text-dark-gray);
     padding: 0.5rem 1rem 0.75rem 0.25rem;
 }
 
@@ -75,7 +75,7 @@
     align-self: center;
     justify-content: center;
     align-items: center;
-    background-color: #7f0a29;
+    background-color: var(--color-stc-text-link-red);;
     height: 2.5rem;
     width: 10rem;
     margin-top: 1rem;
@@ -83,5 +83,5 @@
 }
 
 .list-item-button a {
-    color: #aeabab;
+    color: var(--color-stc-background-gray);
 }
