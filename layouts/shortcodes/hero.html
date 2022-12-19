@@ -41,12 +41,9 @@
         <p class="hero-class-name">{{ $translations.class }}</p>
     </div>
     <div class="hero-data-wrapper">
-        {{ with $stats }}
-        <table class="hero-stats-table">
-            {{ partial "hero/stats.html" (dict "page" $page "stats" $stats) }}
-        </table>
-        {{ end }}
+        {{ partial "hero/stats.html" (dict "page" $page "stats" $stats) }}
         <div class="hero-equipment-wrapper">
+            {{ partial "hero/skills.html" (dict "page" $page "skills" $skills) }}
             <div class="hero-equipment-slot-wrapper">
                 <p>{{ $hero.Get "slot1" }}</p>
                 <p>{{ $hero.Get "slot2" }}</p>
