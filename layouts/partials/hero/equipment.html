@@ -1,76 +1,15 @@
-{{ $lang := .page.Lang }}
-{{ $blueprintData := .page.Site.Data.blueprints }}
+{{ $page := .page }}
 {{ $equipment := .equipment }}
-
-{{ $scratch := newScratch }}
 
 {{ with $equipment }}
 <div class="hero-equipment-row">
-    {{ range where $blueprintData "language.en.name" "==" $equipment.slot1 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <div class="hero-equipment-slot">
-        <div class="hero-equipment-slot-tier">
-            <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-            <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
-        </div>
-        <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
-    </div>
-    {{ end }}
-
-    {{ range where $blueprintData "language.en.name" "==" $equipment.slot2 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <div class="hero-equipment-slot">
-        <div class="hero-equipment-slot-tier">
-            <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-            <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
-        </div>
-        <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
-    </div>
-    {{ end }}
-
-    {{ range where $blueprintData "language.en.name" "==" $equipment.slot3 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <div class="hero-equipment-slot">
-        <div class="hero-equipment-slot-tier">
-            <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-            <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
-        </div>
-        <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
-    </div>
-    {{ end }}
+    {{ partial "hero/slot.html" (dict "page" $page "slot" $equipment.slot1) }}
+    {{ partial "hero/slot.html" (dict "page" $page "slot" $equipment.slot2) }}
+    {{ partial "hero/slot.html" (dict "page" $page "slot" $equipment.slot3) }}
 </div>
 <div class="hero-equipment-row">
-    {{ range where $blueprintData "language.en.name" "==" $equipment.slot4 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <div class="hero-equipment-slot">
-        <div class="hero-equipment-slot-tier">
-            <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-            <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
-        </div>
-        <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
-    </div>
-    {{ end }}
-
-    {{ range where $blueprintData "language.en.name" "==" $equipment.slot5 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <div class="hero-equipment-slot">
-        <div class="hero-equipment-slot-tier">
-            <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-            <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
-        </div>
-        <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
-    </div>
-    {{ end }}
-
-    {{ range where $blueprintData "language.en.name" "==" $equipment.slot6 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <div class="hero-equipment-slot">
-        <div class="hero-equipment-slot-tier">
-            <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-            <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
-        </div>
-        <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
-    </div>
-    {{ end }}
+    {{ partial "hero/slot.html" (dict "page" $page "slot" $equipment.slot4) }}
+    {{ partial "hero/slot.html" (dict "page" $page "slot" $equipment.slot5) }}
+    {{ partial "hero/slot.html" (dict "page" $page "slot" $equipment.slot6) }}
 </div>
 {{ end }}

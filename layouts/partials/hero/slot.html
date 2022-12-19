@@ -1,0 +1,16 @@
+{{ $lang := .page.Lang }}
+{{ $blueprintData := .page.Site.Data.blueprints }}
+{{ $slot := .slot }}
+
+{{ $scratch := newScratch }}
+
+{{ range where $blueprintData "language.en.name" "==" $slot }}
+{{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+<div class="hero-equipment-slot">
+    <div class="hero-equipment-slot-tier">
+        <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
+        <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
+    </div>
+    <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
+</div>
+{{ end }}
