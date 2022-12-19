@@ -4,13 +4,42 @@
 
 {{ $scratch := newScratch }}
 
-{{ range where $blueprintData "language.en.name" "==" $slot }}
-{{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+{{ range where $blueprintData "language.en.name" "==" $slot.item }}
+{{ $scratch.Set "item" (dict
+    "assets" .assets
+    "stats" .stats
+    "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+    )
+}}
+{{ end }}
+
+{{ range where $blueprintData "language.en.name" "==" $slot.element }}
+{{ $scratch.Set "element" (dict
+    "assets" .assets
+    "stats" .stats
+    "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+    )
+}}
+{{ end }}
+
+{{ range where $blueprintData "language.en.name" "==" $slot.spirit }}
+{{ $scratch.Set "spirit" (dict
+    "assets" .assets
+    "stats" .stats
+    "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+    )
+}}
+{{ end }}
+
+{{ $item := $scratch.Get "item" }}
+{{ $element := $scratch.Get "element" }}
+{{ $spirit := $scratch.Get "spirit" }}
+
+
 <div class="hero-equipment-slot">
     <div class="hero-equipment-slot-tier">
         <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-        <img src="/fankit{{ .assets.tier }}" alt="tier {{ .stats.tier }} item">
+        <img src="/fankit{{ $item.assets.tier }}" alt="tier {{ $item.stats.tier }} item">
     </div>
-    <img class="hero-equipment-slot-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get " translations").name }}">
+    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="{{ $item.lang.name }}">
 </div>
-{{ end }}
