@@ -1,4 +1,5 @@
 :root {
+    /* Shop Titans - colors */
     --color-stat-hp-pink: #F66770;
     --color-stat-atk-red: #F53A1E;
     --color-stat-def-blue: #4CC2F9;
@@ -16,6 +17,10 @@
     --color-quality-flawless-text: #00DFFF;
     --color-quality-epic-text: #ED95F9;
     --color-quality-legendary-text: #FFD936;
+    --color-herocard-background: #5C2F46;
+    --color-herocard-border: #A74C7D;
+
+    /* STC - Colors */
     --color-stc-background-gray: #AEABAB;
     --color-stc-background-blue: #27285B;
     --color-stc-background-submenu-white: #F1F1F1;

@@ -3,8 +3,10 @@
     flex-direction: column;
     padding: 1rem;
     color: var(--color-stc-text-white);
-    /*color: #9c577bff;*/
-    background-color: #5c2f46;
+    background-color: var(--color-herocard-background);
+    border-color: var(--color-herocard-border);
+    border-style: solid;
+    border-width: 0.2rem;
     border-radius: 1.5rem;
     box-shadow: 0.2rem 0.2rem 0.6rem black;;
 }
@@ -51,10 +53,7 @@
 }
 
 .hero-stat p {
-    margin-left: 0.2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: right;
+    margin: 0;
     text-shadow: 0.1rem 0.1rem 0.2rem black;
     -webkit-text-stroke-width: 0.03rem;
     -webkit-text-stroke-color: black;
@@ -95,13 +94,41 @@
     visibility: hidden;
     opacity: 0;
 }
-.hero-stat-tag p {
+
+.hero-stat-tag-hp {
     text-align: left;
+    color: var(--color-stat-hp-pink);
+}
+
+.hero-stat-tag-atk {
+    text-align: left;
+    color: var(--color-stat-atk-red);
+}
+
+.hero-stat-tag-def {
+    text-align: left;
+    color: var(--color-stat-def-blue);
+}
+
+.hero-stat-tag-eva {
+    text-align: left;
+    color: var(--color-stat-eva-green);
+}
+
+.hero-stat-tag-crit {
+    text-align: left;
+    color: var(--color-stat-crit-orange);
+}
+
+.hero-stat-value {
+    text-align: right;
+    color: var(--color-stat-text-almond);
 }
 
 .hero-equipment-wrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 0.5rem;
 }
 
 .hero-equipment-slot-wrapper {
