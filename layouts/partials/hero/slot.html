@@ -44,26 +44,35 @@
         <img src="/fankit{{ $item.assets.tier }}" alt="tier {{ $item.stats.tier }} item">
     </div>
     <div class="hero-equipment-slot-stats">
-        {{ with $item.stats.attack }}
+        {{ with $item.stats.atk }}
         <img src="/fankit{{ $statData.assets.atk }}"
-             alt="{{ $item.lang.atk }}: {{ $item.stats.attack | lang.FormatNumber 0 }}">
+             alt="{{ $item.lang.atk }}: {{ $item.stats.atk | lang.FormatNumber 0 }}">
         {{ end }}
-        {{ with $item.stats.defense }}
+        {{ with $item.stats.def }}
         <img src="/fankit{{ $statData.assets.def }}"
-             alt="{{ $item.lang.def }}: {{ $item.stats.defense | lang.FormatNumber 0 }}">
+             alt="{{ $item.lang.def }}: {{ $item.stats.def | lang.FormatNumber 0 }}">
         {{ end }}
-        {{ with $item.stats.health }}
+        {{ with $item.stats.hp }}
         <img src="/fankit{{ $statData.assets.hp }}"
-             alt="{{ $item.lang.hp }}: {{ $item.stats.health | lang.FormatNumber 0 }}">
+             alt="{{ $item.lang.hp }}: {{ $item.stats.hp | lang.FormatNumber 0 }}">
         {{ end }}
-        {{ with $item.stats.evasion }}
+        {{ with $item.stats.eva }}
         <img src="/fankit{{ $statData.assets.eva }}"
-             alt="{{ $item.lang.eva }}: {{ $item.stats.evasion | lang.FormatPercent 0 }}">
+             alt="{{ $item.lang.eva }}: {{ (float $item.stats.eva | mul 100) | lang.FormatPercent 0 }}">
         {{ end }}
         {{ with $item.stats.crit }}
         <img src="/fankit{{ $statData.assets.critChance }}"
-             alt="{{ $item.lang.critChance }}: {{ $item.stats.crit | lang.FormatPercent 0 }}">
+             alt="{{ $item.lang.critChance }}: {{ (float $item.stats.crit | mul 100) | lang.FormatPercent 0 }}">
         {{ end }}
     </div>
+    {{ with $item.stats.antiqueDate }}
+    <div class="hero-equipment-slot-antique">
+        {{ if (now | time) | gt (replace . "/" "-" | time) }}
+        <img src="/fankit{{ $item.assets.notAntique }}" alt="{{ $item.lang.notInAntiqueShop }}">
+        {{ else }}
+        <img src="/fankit{{ $item.assets.antique }}"  alt="{{ $item.lang.inAntiqueShop }}">
+        {{ end }}
+    </div>
+    {{ end }}
     <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="{{ $item.lang.name }}">
 </div>
