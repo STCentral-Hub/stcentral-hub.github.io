@@ -148,6 +148,8 @@
 }
 
 .hero-equipment-slot {
+    display: flex;
+    flex-direction: column;
     margin: 0.5rem;
     padding: 0.5rem;
     border-style: solid;
@@ -162,12 +164,12 @@
 }
 
 .hero-equipment-slot-tier {
+    display: flex;
     position: absolute;
     translate: -1rem -1rem;
 }
 
 .hero-equipment-slot-tier img:first-child {
-    position: absolute;
     z-index: 1;
     width: 1.75rem;
 }
@@ -177,4 +179,18 @@
     z-index: 2;
     width: 1.25rem;
     padding: 0.25rem;
+}
+
+.hero-equipment-slot-stats {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    translate: -1rem 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.hero-equipment-slot-stats img {
+    width: 1.25rem;
+    z-index: 2;
 }

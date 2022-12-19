@@ -1,5 +1,6 @@
 {{ $lang := .page.Lang }}
 {{ $blueprintData := .page.Site.Data.blueprints }}
+{{ $statData := .page.Site.Data.stats }}
 {{ $slot := .slot }}
 
 {{ $scratch := newScratch }}
@@ -8,7 +9,9 @@
 {{ $scratch.Set "item" (dict
     "assets" .assets
     "stats" .stats
-    "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+        "lang" (merge (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+                      (partial "getDataTranslations.html" (dict "data" $statData "lang" $lang))
+               )
     )
 }}
 {{ end }}
@@ -35,11 +38,32 @@
 {{ $element := $scratch.Get "element" }}
 {{ $spirit := $scratch.Get "spirit" }}
 
-
 <div class="hero-equipment-slot">
     <div class="hero-equipment-slot-tier">
         <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
         <img src="/fankit{{ $item.assets.tier }}" alt="tier {{ $item.stats.tier }} item">
+    </div>
+    <div class="hero-equipment-slot-stats">
+        {{ with $item.stats.attack }}
+        <img src="/fankit{{ $statData.assets.atk }}"
+             alt="{{ $item.lang.atk }}: {{ $item.stats.attack | lang.FormatNumber 0 }}">
+        {{ end }}
+        {{ with $item.stats.defense }}
+        <img src="/fankit{{ $statData.assets.def }}"
+             alt="{{ $item.lang.def }}: {{ $item.stats.defense | lang.FormatNumber 0 }}">
+        {{ end }}
+        {{ with $item.stats.health }}
+        <img src="/fankit{{ $statData.assets.hp }}"
+             alt="{{ $item.lang.hp }}: {{ $item.stats.health | lang.FormatNumber 0 }}">
+        {{ end }}
+        {{ with $item.stats.evasion }}
+        <img src="/fankit{{ $statData.assets.eva }}"
+             alt="{{ $item.lang.eva }}: {{ $item.stats.evasion | lang.FormatPercent 0 }}">
+        {{ end }}
+        {{ with $item.stats.crit }}
+        <img src="/fankit{{ $statData.assets.critChance }}"
+             alt="{{ $item.lang.critChance }}: {{ $item.stats.crit | lang.FormatPercent 0 }}">
+        {{ end }}
     </div>
     <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="{{ $item.lang.name }}">
 </div>
