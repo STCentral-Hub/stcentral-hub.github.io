@@ -4,13 +4,20 @@
 {{ $heroData := $page.Site.Data.heroes }}
 
 {{ $hero := . }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "eva" ($hero.Get "eva") }}
+{{ if eq ($scratch.Get "eva") 0 }}
+    {{ $scratch.Set "eva" 0.0001 }}
+{{ end }}
+
 {{ $stats := dict
     "starPower" ($hero.Get "starPower")
     "hp" ($hero.Get "hp")
     "atk" ($hero.Get "atk")
     "def" ($hero.Get "def")
     "threat" ($hero.Get "threat")
-    "eva" ($hero.Get "eva")
+    "eva" ($scratch.Get "eva")
     "critChance" ($hero.Get "critChance")
     "critDmg" ($hero.Get "critDmg")
 }}
