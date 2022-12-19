@@ -205,3 +205,18 @@
     width: 1.75rem;
     z-index: 2;
 }
+
+.hero-equipment-slot-enchant {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: absolute;
+    translate: 1rem 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.hero-equipment-slot-enchant img {
+    width: 1.25rem;
+    z-index: 2;
+}
