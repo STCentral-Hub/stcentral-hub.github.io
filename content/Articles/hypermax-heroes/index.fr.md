@@ -7,7 +7,7 @@ categories: [Heroes]
 tags: [Hypermax]
 
 authors: ["Nerilea", ]
-draft: true
+draft: false
 ---
 
 {{< hero class="Archmage"

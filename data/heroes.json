@@ -17,8 +17,8 @@
         "class": "Archmage"
       },
       "fr": {
-        "type": "La Spellcaster",
-        "class": "La Archmage"
+        "type": "Spellcaster (in French)",
+        "class": "Archmage (in French)"
       }
     }
   }
