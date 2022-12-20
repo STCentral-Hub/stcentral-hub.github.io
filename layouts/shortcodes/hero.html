@@ -75,10 +75,14 @@
         <div class="hero-info-wrapper">
             {{ partial "hero/skills.html" (dict "page" $page "skills" $skills) }}
             {{ partial "hero/equipment.html" (dict "page" $page "equipment" $equipment) }}
+            {{ with $sim }}
+            <div class="hero-sim-wrapper">
+                <p class="hero-sim-title">Hero Sim</p>
+                <p class="hero-sim-string">{{ $hero.Get "sim" }}</p>
+            </div>
+            {{ end }}
         </div>
     </div>
 </div>
-
-<p>{{ $hero.Get "sim" }}</p>
 
 {{ end }}
