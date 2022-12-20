@@ -77,11 +77,11 @@
     <div class="hero-equipment-slot-enchant">
         {{ with $element }}
         <img src="/fankit{{ $element.assets.image }}"
-             alt="{{ $item.lang.atk }}: {{ $item.stats.atk | lang.FormatNumber 0 }}">
+             alt="{{ $element.lang.name }}">
         {{ end }}
         {{ with $spirit }}
         <img src="/fankit{{ $spirit.assets.affinitySpirit }}"
-             alt="{{ $item.lang.def }}: {{ $item.stats.def | lang.FormatNumber 0 }}">
+             alt="{{ $spirit.lang.name }}">
         {{ end }}
     </div>
     <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="{{ $item.lang.name }}">
