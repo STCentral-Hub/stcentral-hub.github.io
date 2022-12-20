@@ -1,0 +1,88 @@
+{{ $page := .Page }}
+{{ $lang := $page.Lang }}
+{{ $bpData := $page.Site.Data.blueprints }}
+{{ $heroData := $page.Site.Data.heroes }}
+
+{{ $hero := . }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Set "eva" ($hero.Get "eva") }}
+{{ if eq ($scratch.Get "eva") 0 }}
+    {{ $scratch.Set "eva" 0.0001 }}
+{{ end }}
+
+{{ $stats := dict
+    "starPower" ($hero.Get "starPower")
+    "hp" ($hero.Get "hp")
+    "atk" ($hero.Get "atk")
+    "def" ($hero.Get "def")
+    "threat" ($hero.Get "threat")
+    "eva" ($scratch.Get "eva")
+    "critChance" ($hero.Get "critChance")
+    "critDmg" ($hero.Get "critDmg")
+}}
+{{ $skills := dict
+    "skill0" ($hero.Get "skill0")
+    "skill1" ($hero.Get "skill1")
+    "skill2" ($hero.Get "skill2")
+    "skill3" ($hero.Get "skill3")
+    "skill4" ($hero.Get "skill4")
+}}
+{{ $equipment := dict
+    "slot1" (dict
+        "item" ($hero.Get "slot1")
+        "element" ($hero.Get "element1")
+        "spirit" ($hero.Get "spirit1")
+    )
+    "slot2" (dict
+        "item" ($hero.Get "slot2")
+        "element" ($hero.Get "element2")
+        "spirit" ($hero.Get "spirit2")
+    )
+    "slot3" (dict
+        "item" ($hero.Get "slot3")
+        "element" ($hero.Get "element3")
+        "spirit" ($hero.Get "spirit3")
+    )
+    "slot4" (dict
+        "item" ($hero.Get "slot4")
+        "element" ($hero.Get "element4")
+        "spirit" ($hero.Get "spirit4")
+    )
+    "slot5" (dict
+        "item" ($hero.Get "slot5")
+        "element" ($hero.Get "element5")
+        "spirit" ($hero.Get "spirit5")
+    )
+    "slot6" (dict
+        "item" ($hero.Get "slot6")
+        "element" ($hero.Get "element6")
+        "spirit" ($hero.Get "spirit6")
+    )
+}}
+{{ $sim := $hero.Get "sim" }}
+
+{{ range where $heroData "language.en.class" "==" (.Get "class") }}
+{{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
+
+<div class="hero-wrapper">
+    <div class="hero-class-banner">
+        <img class="hero-class-icon" src="/fankit{{ .assets.image }}" alt="{{ $translations.class }}">
+        <p class="hero-class-name">{{ $translations.class }}</p>
+    </div>
+    <div class="hero-data-wrapper">
+        {{ partial "hero/stats.html" (dict "page" $page "stats" $stats) }}
+        <div class="hero-info-wrapper">
+            {{ partial "hero/skills.html" (dict "page" $page "skills" $skills) }}
+            {{ partial "hero/equipment.html" (dict "page" $page "equipment" $equipment) }}
+            {{ with $sim }}
+            <div class="hero-sim-wrapper">
+                <p class="hero-sim-title">Hero Sim</p>
+                <p class="hero-sim-string">{{ $hero.Get "sim" }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}

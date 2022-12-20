@@ -1,0 +1,254 @@
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--color-stc-text-white);
+    background-color: var(--color-herocard-background);
+    border-color: var(--color-herocard-border);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem black;;
+}
+
+.hero-class-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-class-icon {
+    height: 4rem;
+    width: 4rem;
+    padding-right: 0.25rem;
+}
+
+.hero-class-name {
+    margin: 0;
+    padding-left: 0.25rem;
+    font-size: 4rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem black;
+    -webkit-text-stroke-width: 0.06rem;
+    -webkit-text-stroke-color: black;
+}
+
+.hero-data-wrapper {
+    display: flex;
+}
+
+.hero-stats-table {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-right: 0.5rem
+}
+
+.hero-stats-table tr:nth-child(even) {
+    background-image: linear-gradient(
+            to right,
+            var(--color-herocard-background-dark),
+            var(--color-herocard-background-dark-transparency)
+    );
+}
+
+.hero-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 3rem;
+}
+
+.hero-stat p {
+    margin: 0;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+    -webkit-text-stroke-width: 0.01rem;
+    -webkit-text-stroke-color: black;
+}
+
+.hero-stat:hover .hero-stat-tag {
+    transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero-stat-power {
+    font-size: 3rem;
+    text-shadow: 0.3rem 0.3rem 0.6rem black;
+    -webkit-text-stroke-width: 0.09rem;
+    -webkit-text-stroke-color: black;
+}
+
+.hero-stat-icon {
+    height: 2rem;
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hero-stat-icon-power {
+    height: 4rem;
+    width: 4rem;
+}
+
+.hero-stat-multi {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stat-tag {
+    flex-grow: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hero-stat-tag-hp {
+    text-align: left;
+    color: var(--color-stat-hp-pink);
+}
+
+.hero-stat-tag-atk {
+    text-align: left;
+    color: var(--color-stat-atk-red);
+}
+
+.hero-stat-tag-def {
+    text-align: left;
+    color: var(--color-stat-def-blue);
+}
+
+.hero-stat-tag-eva {
+    text-align: left;
+    color: var(--color-stat-eva-green);
+}
+
+.hero-stat-tag-crit {
+    text-align: left;
+    color: var(--color-stat-crit-orange);
+}
+
+.hero-stat-value {
+    font-size: 1.25rem;
+    text-align: right;
+    color: var(--color-stat-text-almond);
+}
+
+.hero-skill-wrapper {
+    display: flex;
+}
+
+.hero-skill-icon {
+    height: 3.75rem;
+    width: 3.75rem;
+}
+
+.hero-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+}
+
+.hero-equipment-row {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-equipment-slot {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 0.1875rem;
+    border-radius: 1rem;
+    border-color: var(--color-herocard-equipment-border);
+    background-color: var(--color-herocard-background-dark);
+}
+
+.hero-equipment-slot-icon {
+    height: 4rem;
+    width: 4rem;
+}
+
+.hero-equipment-slot-tier {
+    display: flex;
+    position: absolute;
+    translate: -1rem -1rem;
+}
+
+.hero-equipment-slot-tier img:first-child {
+    z-index: 1;
+    width: 1.75rem;
+}
+
+.hero-equipment-slot-tier img:last-child {
+    position: absolute;
+    z-index: 2;
+    width: 1.25rem;
+    padding: 0.25rem;
+}
+
+.hero-equipment-slot-stats {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    translate: -1rem 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.hero-equipment-slot-stats img {
+    width: 1.25rem;
+    z-index: 2;
+}
+
+.hero-equipment-slot-antique {
+    align-self: flex-end;
+    position: absolute;
+    translate: 1rem -1rem;
+}
+
+.hero-equipment-slot-antique img {
+    width: 1.75rem;
+    z-index: 2;
+}
+
+.hero-equipment-slot-enchant {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: absolute;
+    translate: 1rem 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.hero-equipment-slot-enchant img {
+    width: 1.25rem;
+    z-index: 2;
+}
+
+.hero-sim-wrapper {
+    flex-grow: 1;
+    width: 18rem;
+    border-style: solid;
+    border-width: 0.1875rem;
+    border-radius: 1rem;
+    border-color: var(--color-herocard-equipment-border);
+    background-color: var(--color-herocard-background-dark);
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+}
+
+.hero-sim-title {
+    margin: 0;
+    text-align: center;
+}
+
+.hero-sim-string {
+    font-size: 0.45rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}

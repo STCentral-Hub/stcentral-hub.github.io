@@ -1,3 +1,40 @@
+:root {
+    /* Shop Titans - colors */
+    --color-stat-hp-pink: #F66770;
+    --color-stat-atk-red: #F53A1E;
+    --color-stat-def-blue: #4CC2F9;
+    --color-stat-eva-green: #5CFFAA;
+    --color-stat-crit-orange: #F8AE12;
+    --color-stat-text-almond: #EDE7D4;
+    --color-element-fire-text: #F45930;
+    --color-element-water-text: #2BBCDD;
+    --color-element-air-text: #DDF2F6;
+    --color-element-earth-text: #9AE048;
+    --color-element-light-text: #DFCE88;
+    --color-element-dark-text: #7D5FF4;
+    --color-quality-normal-text: #FFFFFF;
+    --color-quality-superior-text: #67C664;
+    --color-quality-flawless-text: #00DFFF;
+    --color-quality-epic-text: #ED95F9;
+    --color-quality-legendary-text: #FFD936;
+    --color-herocard-background: #5C2F46;
+    --color-herocard-background-dark: #442337FF;
+    --color-herocard-background-dark-transparency: #44233744;
+    --color-herocard-border: #A74C7D;
+    --color-herocard-equipment-border: #6D3657;
+
+    /* STC - Colors */
+    --color-stc-background-gray: #AEABAB;
+    --color-stc-background-blue: #27285B;
+    --color-stc-background-submenu-white: #F1F1F1;
+    --color-stc-border-blue: #393A88;
+    --color-stc-text-white: #FCFCFC;
+    --color-stc-text-dark-gray: #3B3A3A;
+    --color-stc-text-blue-gray: #A6A7C3;
+    --color-stc-text-link-red: #7F0A29;
+    --color-stc-text-submenu-gray: #666666;
+}
+
 html {
     min-height: 100%;
     display: flex;
@@ -8,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: #27285b;
+    background-color: var(--color-stc-background-blue);
     margin: 0;
 
 }
@@ -16,14 +53,14 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    background-color: #aeabab;
+    background-color: var(--color-stc-background-gray);
     padding: 0;
     flex-grow: 1;
 }
 
 header {
-    background-color: #27285b;
-    color: #fcfcfc;
+    background-color: var(--color-stc-background-blue);
+    color: var(--color-stc-text-white);
     text-align: center;
     font-size: 2.5rem;
     padding: 0;
@@ -33,7 +70,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #aeabab;
+    background-color: var(--color-stc-background-gray);
     margin: 1rem 2rem 1rem 2rem;
 }
 

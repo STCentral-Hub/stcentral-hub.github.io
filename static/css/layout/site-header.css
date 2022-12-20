@@ -30,7 +30,7 @@
 }
 
 .nav-menu-header-item a {
-    color: #fcfcfc;
+    color: var(--color-stc-text-white);
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .nav-menu-sub-menu-dropdown-link {
-    color: #666;
+    color: var(--color-stc-text-submenu-gray);
     text-decoration: none;
 }
 
@@ -63,14 +63,14 @@
 .nav-menu-sub-menu-dropdown-item {
     display: flex;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: var(--color-stc-background-submenu-white);
     width: 22rem;
     height: 2rem;
     padding: 0.5rem;
 }
 
 .nav-menu-sub-menu-dropdown-item:hover {
-    background-color: #aeabab;
+    background-color: var(--color-stc-background-gray);
 }
 
 .nav-menu-sub-menu:hover .nav-menu-sub-menu-dropdown {
@@ -89,6 +89,6 @@
 }
 
 .nav-menu-sub-menu-dropdown-item-filler {
-    background-color: #f1f1f1;
+    background-color: var(--color-stc-background-submenu-white);
     flex-grow: 1;
 }
