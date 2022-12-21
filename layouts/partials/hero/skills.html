@@ -8,27 +8,27 @@
 <div class="hero-skill-wrapper">
     {{ range where $skillData "language.en.tier1" "==" $skills.skill0 }}
     {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+    <img class="hero-skill-icon" src="/fankit{{ .assets.tier1 }}" alt="{{ ($scratch.Get "translations").tier1 }}">
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill1 }}
     {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+    <img class="hero-skill-icon" src="/fankit{{ .assets.tier1 }}" alt="{{ ($scratch.Get "translations").tier1 }}">
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill2 }}
     {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+    <img class="hero-skill-icon" src="/fankit{{ .assets.tier1 }}" alt="{{ ($scratch.Get "translations").tier1 }}">
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill3 }}
     {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+    <img class="hero-skill-icon" src="/fankit{{ .assets.tier1 }}" alt="{{ ($scratch.Get "translations").tier1 }}">
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill4 }}
     {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+    <img class="hero-skill-icon" src="/fankit{{ .assets.tier1 }}" alt="{{ ($scratch.Get "translations").tier1 }}">
     {{ end }}
 </div>
 {{ end }}
