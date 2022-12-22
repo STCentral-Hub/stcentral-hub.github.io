@@ -8,7 +8,7 @@ main:
     name: ST Central
     url: https://st-central.net/
     weight: 201
-  - identifier: articles
-    name: Articles
-    url: /articles/
+  - identifier: posts
+    name: Posts
+    url: /posts/
     weight: 301
