@@ -102,7 +102,7 @@ hr::after {
     width: 0.1rem;
 }
 
-hr:before {
+hr::before {
     left: calc(50% - 0.4rem);
 }
 
