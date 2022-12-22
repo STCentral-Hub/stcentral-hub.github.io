@@ -66,8 +66,8 @@
     display: flex;
     align-items: center;
     background-color: var(--color-stc-background-submenu-white);
-    width: 22rem;
-    height: 2rem;
+    width: 12rem;
+    height: 1.5rem;
     padding: 0.5rem;
 }
 
@@ -82,7 +82,7 @@
     align-items: stretch;
     align-content: stretch;
     justify-content: stretch;
-    height: 18rem;
+    height: 15rem;
     transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
     transform: translate(0, 3.5rem);
     opacity: 1;
