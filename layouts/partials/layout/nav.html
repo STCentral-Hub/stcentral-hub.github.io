@@ -1,3 +1,13 @@
+{{ $page := .Page }}
+
+{{ $scratch := newScratch }}
+{{ range .Page.Translations }}
+    {{ $scratch.Add "pageLang" (slice .Language.LanguageName) }}
+{{ end }}
+{{ range where .Site.Home.Translations "Language.LanguageName" "not in" ($scratch.Get "pageLang") }}
+    {{ $scratch.Add "siteLang" (slice .) }}
+{{ end }}
+
 <nav class="nav-banner">
     <div class="nav-menu">
         {{ range .Site.Menus.main }}
@@ -11,16 +21,22 @@
             <p>-&nbsp;{{- .Language.LanguageName -}}&nbsp;&nbsp;</p>
             <h6>&#9660;</h6>
             <div class="nav-menu-sub-menu-dropdown">
-                {{ range .Site.Home.Translations }}
-                <a class="nav-menu-sub-menu-dropdown-link" href="{{ .Permalink }}">
+                {{ range $page.Translations }}
+                <a class="nav-menu-sub-menu-dropdown-link" href="{{ .RelPermalink }}">
                     <div class="nav-menu-sub-menu-dropdown-item">
                         <h4>{{ .Language.LanguageName }}</h4>
                     </div>
                 </a>
-                <span class="nav-menu-sub-menu-dropdown-item-filler"></span>
                 {{ end }}
+                {{ range $scratch.Get "siteLang" }}
+                <a class="nav-menu-sub-menu-dropdown-link nav-menu-sub-menu-dropdown-link-home" href="{{ .RelPermalink }}">
+                    <div class="nav-menu-sub-menu-dropdown-item nav-menu-sub-menu-dropdown-item-home">
+                        <p>{{ .Language.LanguageName }}</p>
+                    </div>
+                </a>
+                {{ end }}
+                <span class="nav-menu-sub-menu-dropdown-item-filler"></span>
             </div>
         </div>
-
     </div>
 </nav>
