@@ -7,7 +7,7 @@ tags: []
 layout: "single"
 
 authors: ["Nerilea", "Reiga", "Some Hamster", "A-Turtle"]
-draft: false
+draft: true
 ---
 
 {{< bp name="Gladius" >}}

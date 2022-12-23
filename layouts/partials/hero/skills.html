@@ -2,33 +2,45 @@
 {{ $skillData := .page.Site.Data.skills }}
 {{ $skills := .skills }}
 
-{{ $scratch := newScratch }}
-
 {{ with $skills }}
-<div class="hero-skill-wrapper">
+    {{ $scratch := newScratch }}
+
     {{ range where $skillData "language.en.tier1" "==" $skills.skill0 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+        {{ $scratch.Set "skill0Translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+        {{ $scratch.Set "skill0Assets" .assets }}
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill1 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+        {{ $scratch.Set "skill1Translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+        {{ $scratch.Set "skill1Assets" .assets }}
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill2 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+        {{ $scratch.Set "skill2Translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+        {{ $scratch.Set "skill2Assets" .assets }}
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill3 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+        {{ $scratch.Set "skill3Translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+        {{ $scratch.Set "skill3Assets" .assets }}
     {{ end }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill4 }}
-    {{ $scratch.Set "translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
-    <img class="hero-skill-icon" src="/fankit{{ .assets.image }}" alt="{{ ($scratch.Get "translations").tier1 }}">
+        {{ $scratch.Set "skill4Translations" (partial "getDataTranslations.html" (dict "data" . "lang" $lang)) }}
+        {{ $scratch.Set "skill4Assets" .assets }}
     {{ end }}
-</div>
+
+    {{ $skill0 := dict "assets" ($scratch.Get "skill0Assets") "translations" ($scratch.Get "skill0Translations") }}
+    {{ $skill1 := dict "assets" ($scratch.Get "skill1Assets") "translations" ($scratch.Get "skill1Translations") }}
+    {{ $skill2 := dict "assets" ($scratch.Get "skill2Assets") "translations" ($scratch.Get "skill2Translations") }}
+    {{ $skill3 := dict "assets" ($scratch.Get "skill3Assets") "translations" ($scratch.Get "skill3Translations") }}
+    {{ $skill4 := dict "assets" ($scratch.Get "skill4Assets") "translations" ($scratch.Get "skill4Translations") }}
+
+    <div class="hero-skill-wrapper">
+        <img class="hero-skill-icon" src="/fankit{{ ($skill0.assets).tier1 }}" alt="{{ ($skill0.translations).tier1 }}">
+        <img class="hero-skill-icon" src="/fankit{{ ($skill1.assets).tier1 }}" alt="{{ ($skill1.translations).tier1 }}">
+        <img class="hero-skill-icon" src="/fankit{{ ($skill2.assets).tier1 }}" alt="{{ ($skill2.translations).tier1 }}">
+        <img class="hero-skill-icon" src="/fankit{{ ($skill3.assets).tier1 }}" alt="{{ ($skill3.translations).tier1 }}">
+        <img class="hero-skill-icon" src="/fankit{{ ($skill4.assets).tier1 }}" alt="{{ ($skill4.translations).tier1 }}">
+    </div>
 {{ end }}

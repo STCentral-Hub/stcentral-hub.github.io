@@ -1,24 +1,3002 @@
 [
   {
     "assets": {
+      "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_swordmaster_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Spear",
+        "Bow"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Helmet"
+      ],
+      "slot5": [
+        "Heavy Footwear"
+      ],
+      "slot6": [
+        "Potion",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Samurai",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Samouraï",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Samurái",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Samurai",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Samurai",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Samurai",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Самурай",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Samuray",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "武士",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "武士",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "サムライ",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "사무라이",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Самурай",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_barbarian_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Axe",
+        "Mace",
+        "Spear"
+      ],
+      "slot2": [
+        "Helmet"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Dessert"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Cloak",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Barbarian",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Barbare",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Bárbaro",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Barbar",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Barbaro",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Bárbaro",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Варвар",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Barbar",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "斗士",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "野蠻人",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "バーバリアン",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "야만전사",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Варвар",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_ranger_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Bow",
+        "Gun",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Meal"
+      ],
+      "slot6": [
+        "Ring",
+        "Cloak"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Ranger",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Forestier",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Guardabosques",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Waldhüter",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Esploratore",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Patrulheiro",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Охотник",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Korucu",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "游侠",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "遊俠",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "レンジャー",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "레인저",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Рейнджер",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_knight_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Axe",
+        "Spear"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Helmet"
+      ],
+      "slot5": [
+        "Heavy Footwear"
+      ],
+      "slot6": [
+        "Shield"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Knight",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Chevalier",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Caballero",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Ritter",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Cavaliere",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Cavaleiro",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Рыцарь",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Şövalye",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "骑士",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "騎士",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "ナイト",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "기사",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Лицар",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_berserker_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Axe",
+        "Mace",
+        "Gun"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Shield",
+        "Cloak"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Potion",
+        "Dessert"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Berserker",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Berserker",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Fanático",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Berserker",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Berserker",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Berserker",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Берсерк",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Vahşi Savaşçı",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "狂战士",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "狂戰士",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "狂戦士",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "광전사",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Берсерк",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_soldier_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Dagger",
+        "Mace"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Meal"
+      ],
+      "slot6": [
+        "Shield"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Soldier",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Soldat",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Soldado",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Soldat",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Soldato",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Soldado",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Солдат",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Asker",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "士兵",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "士兵",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "ソルジャー",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "병사",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Солдат",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_sorcerer_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Dagger",
+        "Wand",
+        "Staff"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Gloves",
+        "Dessert"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Spell"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Sorcerer",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Sorcelleur",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Hechicero",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Zauberer",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Negromante",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Feiticeiro",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Волшебник",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Efsuncu",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "巫师",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "術師",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "ソーサラー",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "소서러",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Знахар",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_druid_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Bow",
+        "Wand",
+        "Staff"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Herbal Medicine",
+        "Meal"
+      ],
+      "slot4": [
+        "Herbal Medicine",
+        "Meal"
+      ],
+      "slot5": [
+        "Amulet"
+      ],
+      "slot6": [
+        "Spell"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Druid",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Druide",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Druida",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Druide",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Druido",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Druida",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Друид",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Druid",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "德鲁伊",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "德魯伊",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "ドルイド",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "드루이드",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Друїд",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_cleric_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Mace",
+        "Spear",
+        "Wand"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Magician Hat"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Shield",
+        "Cloak"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Cleric",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Clerc",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Clérigo",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Kleriker",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Chierico",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Clérigo",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Священник",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Rahip",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "魔术师",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "牧師",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "クレリック",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "성직자",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Церковник",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_geomancer_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Mace",
+        "Wand",
+        "Staff"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Magician Hat"
+      ],
+      "slot4": [
+        "Gloves"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Shield",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Geomancer",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Géomancien",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Geomántico",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Geomant",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Geomante",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Geomante",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Геомант",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Yeryüzü Büyücüsü",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "地卜师",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "風水師",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "風水師",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "풍수사",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Геомант",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_redmage_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Axe",
+        "Bow",
+        "Staff"
+      ],
+      "slot2": [
+        "Heavy Armor",
+        "Light Armor",
+        "Clothes"
+      ],
+      "slot3": [
+        "Helmet",
+        "Magician Hat",
+        "Gauntlets",
+        "Gloves"
+      ],
+      "slot4": [
+        "Heavy Footwear",
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Spell",
+        "Ring",
+        "Amulet"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Shield",
+        "Ring",
+        "Amulet"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Spellblade",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Sorcelame",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Conjurador",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Zauberklinge",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Incantalama",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Magilâmina",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Чудотворец",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Kılıç Büyücüsü",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "魔法剑士",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "魔刀",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "スペルブレード",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "마법검",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Чудотворець",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_mage_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Wand",
+        "Staff",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Magician Hat"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Ring",
+        "Cloak"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Mage",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Mage",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Nigromante",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Magier",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Mago",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Mago",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Маг",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Sihirbaz",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "法师",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "法師",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "メイジ",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "마법사",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Маг",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_wanderer_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Axe",
+        "Dagger",
+        "Gun"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Herbal Medicine",
+        "Cloak",
+        "Meal"
+      ],
+      "slot6": [
+        "Amulet",
+        "Dessert"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Wanderer",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Vagabond",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Nómada",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Wanderer",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Girovago",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Andarilho",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Бродяга",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Gezgin",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "流浪者",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "流浪者",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "ワンダラー",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "방랑자",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Бродяга",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_dancer_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Dagger",
+        "Bow",
+        "Wand",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot5": [
+        "Gloves"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot6": [
+        "Ring",
+        "Amulet"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Dancer",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Baladin",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Bailarín",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Tänzer",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Bardo",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Dançarino",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Танцор",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Dansçı",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "舞者",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "舞者",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "踊り子",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "무희",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Танцюрист",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_thief_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Dagger",
+        "Bow",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot4": [
+        "Gloves"
+      ],
+      "slot5": [
+        "Amulet",
+        "Cloak"
+      ],
+      "slot6": [
+        "Ring"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Thief",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Voleur",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Ladrón",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Dieb",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Ladro",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Ladrão",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Вор",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Soyguncu",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "刀客",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "盜賊",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "シーフ",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "도둑",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Злодій",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_ninja_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Dagger",
+        "Bow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot5": [
+        "Gloves"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot6": [
+        "Amulet",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Ninja",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Ninja",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Ninja",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Ninja",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Ninja",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Ninja",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Ниндзя",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Ninja",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "忍者",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "忍者",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "忍者",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "닌자",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Ніндзя",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_musketeer_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Gun",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Gloves"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Meal"
+      ],
+      "slot6": [
+        "Amulet"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Musketeer",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Mousquetaire",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Mosquetero",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Musketier",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Moschettiere",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Mosqueteiro",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Мушкетер",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Silahşor",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "火枪手",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "火槍手",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "銃士",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "머스킷병",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Мушкетер",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_monk_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Clothes"
+      ],
+      "slot2": [
+        "Amulet",
+        "Cloak"
+      ],
+      "slot3": [
+        "Amulet",
+        "Dessert"
+      ],
+      "slot4": [
+        "Amulet"
+      ],
+      "slot5": [
+        "Ring"
+      ],
+      "slot6": [
+        "Ring"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Monk",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Moine",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Monje",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Mönch",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Monaco",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Monge",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Монах",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Keşiş",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "拳击手",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "僧侶",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "モンク",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "수도승",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Чернець",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_chieftain_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Axe",
+        "Mace",
+        "Spear"
+      ],
+      "slot2": [
+        "Helmet"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Dessert"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Shield",
+        "Cloak",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Chieftain",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Grand chef",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Cacique",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Häuptling",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Capotribù",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Chefe Tribal",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Вождь",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Şef",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "酋长",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "酋長",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "族長",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "족장",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Вождь",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_daimyo_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Spear",
+        "Bow"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Helmet"
+      ],
+      "slot5": [
+        "Heavy Footwear"
+      ],
+      "slot6": [
+        "Potion",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Daimyo",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Daimyo",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Daimio",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Daimyō",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Daimyo",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Daimiô",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Дайме",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Daimyo",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "大名",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "大名",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "ダイミョウ",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "다이묘",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Дайме",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_jarl_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Axe",
+        "Mace",
+        "Gun"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets",
+        "Helmet"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Shield",
+        "Cloak"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Potion",
+        "Dessert"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Jarl",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Jarl",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Jarl",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Jarl",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Jarl",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Jarl",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Ярл",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Kuzeyli Şef",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "头领",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "首領",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "ヤール",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "잘",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Ярл",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_lord_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Axe",
+        "Mace",
+        "Spear"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Helmet"
+      ],
+      "slot5": [
+        "Heavy Footwear"
+      ],
+      "slot6": [
+        "Shield"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Lord",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Seigneur",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Lord",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Herr",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Signore",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Lorde",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Лорд",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Lord",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "领主",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "霸主",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "ロード",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "군주",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Повелитель",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_mercenary_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Dagger",
+        "Mace",
+        "Spear"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Meal"
+      ],
+      "slot6": [
+        "Shield"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Mercenary",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Mercenaire",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Mercenario",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Söldner",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Mercenario",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Mercenário",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Наемник",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Paralı Asker",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "雇佣兵",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "傭兵",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "マーセナリー",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "용병",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Найманець",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_warden_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Bow",
+        "Gun",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Heavy Armor"
+      ],
+      "slot3": [
+        "Gauntlets"
+      ],
+      "slot4": [
+        "Heavy Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Meal"
+      ],
+      "slot6": [
+        "Ring",
+        "Cloak"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Warden",
+        "type": "Fighter"
+      },
+      "fr": {
+        "class": "Guetteur",
+        "type": "Combattant"
+      },
+      "es": {
+        "class": "Guarda",
+        "type": "Guerrero"
+      },
+      "de": {
+        "class": "Wächter",
+        "type": "Kämpfer"
+      },
+      "it": {
+        "class": "Guardiano",
+        "type": "Combattente"
+      },
+      "pt": {
+        "class": "Guardião",
+        "type": "Lutador"
+      },
+      "ru": {
+        "class": "Хранитель",
+        "type": "Воин"
+      },
+      "tk": {
+        "class": "Gardiyan",
+        "type": "Savaşçı"
+      },
+      "zh": {
+        "class": "守望者",
+        "type": "战士"
+      },
+      "zh_tr": {
+        "class": "守護者",
+        "type": "格鬥家"
+      },
+      "ja": {
+        "class": "ウォーデン",
+        "type": "ファイター"
+      },
+      "ko": {
+        "class": "관리인",
+        "type": "전사"
+      },
+      "uk": {
+        "class": "Наглядач",
+        "type": "Воїн"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_archdruid_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Bow",
+        "Wand",
+        "Staff"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Herbal Medicine",
+        "Meal"
+      ],
+      "slot4": [
+        "Herbal Medicine",
+        "Meal"
+      ],
+      "slot5": [
+        "Amulet",
+        "Ring"
+      ],
+      "slot6": [
+        "Spell"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Arch Druid",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Archidruide",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Archidruida",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Erzdruide",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Arcidruido",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Arquidruida",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Архидруид",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Baş Druid",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "大德鲁伊",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "大德魯伊",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "アーチドルイド",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "아치 드루이드",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Верховний друїд",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_warlock_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Dagger",
+        "Wand",
+        "Staff"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Gloves",
+        "Dessert"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Spell"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Warlock",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Malesort",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Espectro",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Hexenmeister",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Occultista",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Feiticeiro",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Чернокнижник",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Savaş Lordu",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "术士",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "術士",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "ウォーロック",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "워록",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Чорнокнижник",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_astramancer_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Mace",
+        "Wand",
+        "Staff"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Magician Hat"
+      ],
+      "slot4": [
+        "Gloves"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Shield",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Astramancer",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Astromancien",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Astromante",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Astromagier",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Astromante",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Astromante",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Астромант",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Müneccim",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "星术师",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "星卜師",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "アストラマンサー",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "아스트라맨서",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Астромант",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_archmage_128.png"
     },
     "equipment": {
-      "slot1": ["Wand", "Staff", "Crossbow"],
-      "slot2": ["Clothes"],
-      "slot3": ["Magician Hat"],
-      "slot4": ["Light Footwear"],
-      "slot5": ["Spell"],
-      "slot6": ["Ring", "Cloak"]
+      "slot1": [
+        "Wand",
+        "Staff",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Magician Hat"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Ring",
+        "Cloak"
+      ]
     },
-    "language":{
+    "language": {
       "en": {
-        "type": "Spellcaster",
-        "class": "Archmage"
+        "class": "Archmage",
+        "type": "Spellcaster"
       },
       "fr": {
-        "type": "Spellcaster (in French)",
-        "class": "Archmage (in French)"
+        "class": "Archimage",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Gran archinigromante",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Erzmagier",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Arcimago",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Arquimago",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Архимаг",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Baş Sihirbaz",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "大法师",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "大法師",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "アークメイジ",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "대마법사",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Архімаг",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_bishop_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Mace",
+        "Spear",
+        "Wand"
+      ],
+      "slot2": [
+        "Clothes"
+      ],
+      "slot3": [
+        "Magician Hat"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Spell"
+      ],
+      "slot6": [
+        "Shield",
+        "Ring",
+        "Cloak"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Bishop",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Évêque",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Obispo",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Bischof",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Prelato",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Bispo",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Епископ",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Piskopos",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "主教",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "主教",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "ビショップ",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "비숍",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Єпископ",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_spellknight_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Axe",
+        "Bow",
+        "Staff"
+      ],
+      "slot2": [
+        "Heavy Armor",
+        "Light Armor",
+        "Clothes"
+      ],
+      "slot3": [
+        "Helmet",
+        "Magician Hat",
+        "Gauntlets",
+        "Gloves"
+      ],
+      "slot4": [
+        "Heavy Footwear",
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Spell",
+        "Ring",
+        "Amulet"
+      ],
+      "slot6": [
+        "Herbal Medicine",
+        "Shield",
+        "Ring",
+        "Amulet"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Spellknight",
+        "type": "Spellcaster"
+      },
+      "fr": {
+        "class": "Sorceguerre",
+        "type": "Ensorceleur"
+      },
+      "es": {
+        "class": "Conjurador montado",
+        "type": "Encantador"
+      },
+      "de": {
+        "class": "Zauberritter",
+        "type": "Hexer"
+      },
+      "it": {
+        "class": "Magicavaliere",
+        "type": "Incantatore"
+      },
+      "pt": {
+        "class": "Cavaleiro Mago",
+        "type": "Conjurador"
+      },
+      "ru": {
+        "class": "Рыцарь чар",
+        "type": "Заклинатель"
+      },
+      "tk": {
+        "class": "Büyülü Şövalye",
+        "type": "Büyücü"
+      },
+      "zh": {
+        "class": "咒术骑士",
+        "type": "施法者"
+      },
+      "zh_tr": {
+        "class": "法術騎士",
+        "type": "施術者"
+      },
+      "ja": {
+        "class": "スペルナイト",
+        "type": "スペルキャスター"
+      },
+      "ko": {
+        "class": "스펠나이트",
+        "type": "주문술사"
+      },
+      "uk": {
+        "class": "Лицар-чарівник",
+        "type": "Заклинатель"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_acrobat_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Dagger",
+        "Bow",
+        "Wand",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot5": [
+        "Gloves"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot6": [
+        "Ring",
+        "Amulet"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Acrobat",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Acrobate",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Acróbata",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Akrobat",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Saltimbanco",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Acrobata",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Акробат",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Akrobat",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "杂耍家",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "雜耍演員",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "軽業師",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "곡예사",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Акробат",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_trickster_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Dagger",
+        "Bow",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot4": [
+        "Gloves",
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Amulet",
+        "Cloak"
+      ],
+      "slot6": [
+        "Ring"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Trickster",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Aigrefin",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Embaucador",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Streichespieler",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Imbroglione",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Trambiqueiro",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Ловкач",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Düzenbaz",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "骗术师",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "幻術師",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "トリックスター",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "사기꾼",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Спритник",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_mastermonk_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Clothes"
+      ],
+      "slot2": [
+        "Amulet",
+        "Cloak"
+      ],
+      "slot3": [
+        "Amulet",
+        "Dessert"
+      ],
+      "slot4": [
+        "Amulet"
+      ],
+      "slot5": [
+        "Ring"
+      ],
+      "slot6": [
+        "Ring"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Grandmaster",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Grand maître",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Gran maestro",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Großmeister",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Asceta",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Grão-mestre",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Великий магистр",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Büyük Usta",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "武僧",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "宗師",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "グランドマスター",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "그랜드 마스터",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Великий магістр",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_sensei_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Dagger",
+        "Bow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot5": [
+        "Gloves"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot6": [
+        "Amulet",
+        "Meal"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Sensei",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Sensei",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Senséi",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Sensei",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Sensei",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Sensei",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Сэнсэй",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Sensei",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "宗师",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "大師",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "センセイ",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "센세",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Сенсей",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_pathfinder_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Axe",
+        "Dagger",
+        "Gun"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Rogue Hat"
+      ],
+      "slot4": [
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Herbal Medicine",
+        "Cloak",
+        "Meal"
+      ],
+      "slot6": [
+        "Amulet",
+        "Dessert"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Pathfinder",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Guidepas",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Trotamundos",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Spurensucher",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Pioniere",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Andarilho",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Следопыт",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "Yol Bulucu",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "开拓者",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "尋路者",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "パスファインダー",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "길잡이",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Слідопит",
+        "type": "Шахрай"
+      }
+    }
+  },
+  {
+    "assets": {
+      "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_conquistador_128.png"
+    },
+    "equipment": {
+      "slot1": [
+        "Sword",
+        "Gun",
+        "Crossbow"
+      ],
+      "slot2": [
+        "Light Armor"
+      ],
+      "slot3": [
+        "Gloves"
+      ],
+      "slot4": [
+        "Heavy Footwear",
+        "Light Footwear"
+      ],
+      "slot5": [
+        "Potion",
+        "Meal"
+      ],
+      "slot6": [
+        "Amulet"
+      ]
+    },
+    "language": {
+      "en": {
+        "class": "Conquistador",
+        "type": "Rogue"
+      },
+      "fr": {
+        "class": "Conquistador",
+        "type": "Roublard"
+      },
+      "es": {
+        "class": "Conquistador",
+        "type": "Ladrón"
+      },
+      "de": {
+        "class": "Konquistador",
+        "type": "Schurke"
+      },
+      "it": {
+        "class": "Conquistador",
+        "type": "Furfante"
+      },
+      "pt": {
+        "class": "Conquistador",
+        "type": "Ladino"
+      },
+      "ru": {
+        "class": "Конкистадор",
+        "type": "Странник"
+      },
+      "tk": {
+        "class": "İstilacı",
+        "type": "Soyguncu"
+      },
+      "zh": {
+        "class": "征服者",
+        "type": "侠客"
+      },
+      "zh_tr": {
+        "class": "征服者",
+        "type": "俠客"
+      },
+      "ja": {
+        "class": "コンキスタドール",
+        "type": "ローグ"
+      },
+      "ko": {
+        "class": "정복자",
+        "type": "로그"
+      },
+      "uk": {
+        "class": "Конкістадор",
+        "type": "Шахрай"
       }
     }
   }

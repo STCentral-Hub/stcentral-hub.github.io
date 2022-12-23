@@ -1,0 +1,13 @@
+{{ $page := .Page }}
+{{ $lang := $page.Lang }}
+{{ $heroData := $page.Site.Data.heroes }}
+
+{{ $hero := .Get "type" }}
+{{ $scratch := newScratch }}
+
+{{ range where $heroData "language.en.type" "==" (.Get "type") }}
+{{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
+{{ $scratch.Set "type" $translations.type }}
+{{ end }}
+
+{{ $scratch.Get "type" }}
