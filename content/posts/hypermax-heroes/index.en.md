@@ -1,6 +1,7 @@
 ---
 date: 2022-12-16T23:06:22Z
 layout: ""
+outputs: ["html"]
 title: "Hypermax Heroes"
 summary: "Let's break all the rules!"
 categories: [Heroes]

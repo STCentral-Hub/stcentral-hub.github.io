@@ -15,6 +15,12 @@ taxonomies:
   category: categories
   tag: tags
 
+outputFormats:
+  embed:
+    name: embed
+    mediaType: text/html
+    isHTMHtml: true
+    path: embed
 
 languages:
   en:

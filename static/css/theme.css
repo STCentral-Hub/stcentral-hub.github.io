@@ -70,8 +70,7 @@ header {
 article {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: var(--color-stc-background-gray);
+    align-self: center;
     margin: 1rem 2rem 1rem 2rem;
 }
 
