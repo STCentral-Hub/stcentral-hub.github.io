@@ -2,10 +2,8 @@
 <main>
     {{- partial "layout/main-header.html" . -}}
     <article>
-        <h3>{{ .Summary }}</h3>
-        <div>
-            {{ .Content }}
-        </div>
+        <h3 class="content-summary">{{ .Summary }}</h3>
+        {{ .Content }}
     </article>
     <hr>
     {{- partial "layout/main-footer.html" . -}}
