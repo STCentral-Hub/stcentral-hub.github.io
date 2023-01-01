@@ -1,8 +1,145 @@
-.blueprint-root {
+.blueprint-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-stc-text-white);
+    background-color: var(--color-herocard-background);
+    border-color: var(--color-herocard-border);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem black;
+    max-width: 18rem;
+}
+
+.blueprint-spacer {
+    background-image:
+            linear-gradient(to right,
+            transparent,
+            var(--color-herocard-border) 20%,
+            var(--color-herocard-border) 80%,
+            transparent
+            );
+    height: 0.05rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.blueprint-label-header {
+    align-self: center;
+    color: var(--color-blueprintcard-alt-text);
+}
+
+.blueprint-banner {
+    display: flex;
+    translate: -0.5rem -0.6rem;
+}
+
+.blueprint-translation {
+    translate: 0 -0.6rem;
+}
+
+.blueprint-banner-tier {
+    display: flex;
+}
+
+.blueprint-banner-tier img:first-child {
+    z-index: 1;
+    height: 4rem;
+    width: 4rem;
+}
+
+.blueprint-banner-tier img:last-child {
+    position: absolute;
+    z-index: 2;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.75rem;
+}
+
+.blueprint-banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.25rem;
+}
+
+.blueprint-banner-info-name {
+    display: flex;
+    align-items: center;
+}
+
+.blueprint-banner-info-type {
+    color: var(--color-blueprintcard-alt-text);
+}
+
+.blueprint-type-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-right: 0.25rem;
+}
+
+.blueprint-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blueprint-asset {
+    display: flex;
+    height: 10.68rem;
+    width: 10rem;
+}
+
+.blueprint-asset img:first-child {
+    position: absolute;
+    z-index: 1;
+    height: 10.68rem;
+    width: 10rem;
+}
+.blueprint-asset img:last-child {
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.blueprint-stats-wrapper {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: 15.625rem;
-    height: 16.6875rem
+}
+.blueprint-stats {
+    display: flex;
+    justify-content: space-between;
 }
 
+.blueprint-stats img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.blueprint-stats p {
+    margin: 0;
+    padding-left: 0.25rem;
+    text-align: right;
+}
+
+.blueprint-heroes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blueprint-heroes img {
+    height: 1.75rem;
+    width: 1.75rem;
+    padding: 0.125rem;
+}

@@ -2,7 +2,7 @@
 date: 2022-12-24T00:06:22Z
 layout: ""
 outputs: ["html", "embed"]
-title: "STC_Hub Intro: Hero Embed"
+title: "STC Hub Intro: Hero Embed"
 summary: " "
 categories: ["Heroes", "Embedded"]
 tags: [Hypermax]

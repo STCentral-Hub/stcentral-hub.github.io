@@ -1,6 +1,125 @@
-{{ $data := .Site.Data.blueprints }}
-{{ $lang := .Page.Lang }}
-{{ range where $data "language.en.name" "==" (.Get "name") }}
+{{ $page := .Page }}
+{{ $lang := $page.Lang }}
+{{ $bpData := $page.Site.Data.blueprints }}
+{{ $heroData := $page.Site.Data.heroes }}
+{{ $miscData := $page.Site.Data.miscellaneous }}
+{{ $statData := $page.Site.Data.stats }}
+
+
+{{ $miscTranslations := partial "getDataTranslations.html" (dict "data" $miscData "lang" $lang) }}
+
+
+{{ range where $bpData "language.en.name" "==" (.Get "name") }}
+    {{ $assets := .assets }}
+    {{ $stats := .stats }}
     {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
-    {{ partial "blueprint/base.html" (dict "assets" .assets "strings" $translations "stats" .stats) }}
+    {{ $itemTypeString := replaceRE `\{0\}` ($stats.tier) $miscTranslations.item_tier_type_format }}
+    {{ $itemTypeString := replaceRE `\{1\}` ($translations.type) $itemTypeString }}
+
+    <div class="blueprint-wrapper">
+        <div class="blueprint-banner">
+            <div class="blueprint-banner-tier">
+                <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
+                <img src="/fankit{{ $assets.tier }}" alt="tier {{ $stats.tier }} item">
+            </div>
+            <div class="blueprint-banner-info">
+                <div class="blueprint-banner-info-name">
+                    <img class="blueprint-type-img" src="/fankit{{ $assets.typeLight }}" alt=""{{ $translations.type }}>
+                    <h3 class='no-margin'>{{- $translations.name -}}</h3>
+                </div>
+                <p class="blueprint-banner-info-type no-margin">{{ $itemTypeString }}</p>
+            </div>
+        </div>
+        <div class="blueprint-translation blueprint-meta">
+            <div class="blueprint-asset">
+                <img src="/fankit{{ $assets.background }}">
+                <img src="/fankit{{ $assets.image }}">
+            </div>
+            <div class="blueprint-stats-wrapper">
+                {{ with $stats.atk }}
+                <div class="blueprint-stats">
+                    <img src="/fankit{{ $statData.assets.atk }}">
+                    <p>{{ $stats.atk | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+                {{ with $stats.def }}
+                <div class="blueprint-stats">
+                    <img src="/fankit{{ $statData.assets.def }}">
+                    <p>{{ $stats.def | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+                {{ with $stats.hp }}
+                <div class="blueprint-stats">
+                    <img src="/fankit{{ $statData.assets.hp }}">
+                    <p>{{ $stats.hp | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+                {{ with $stats.eva }}
+                <div class="blueprint-stats">
+                    <img src="/fankit{{ $statData.assets.eva }}">
+                    <p>{{  (mul (float $stats.eva) 100) | lang.FormatPercent 0 }}</p>
+                </div>
+                {{ end }}
+                {{ with $stats.crit }}
+                <div class="blueprint-stats">
+                    <img src="/fankit{{ $statData.assets.critChance }}">
+                    <p>{{ (mul (float $stats.crit) 100) | lang.FormatPercent 0 }}</p>
+                </div>
+                {{ end }}
+
+                <span class="blueprint-spacer"></span>
+
+                {{ with $stats.value }}
+                <div class="blueprint-stats">
+                    <img src="/fankit/Currencies/icon_global_gold.png">
+                    <p>{{ $stats.value | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+
+                {{ with $stats.merchantXp }}
+                <div class="blueprint-stats">
+                    <img src="/fankit/Misc%20Icons/icon_worker_bonus_academy.png">
+                    <p>{{ $stats.merchantXp | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+
+                {{ with $stats.antiqueDate }}
+                <div class="blueprint-stats">
+                    {{ if (now | time) | gt (replace . "/" "-" | time) }}
+                    <img src="/fankit{{ $assets.notAntique }}" alt="{{ $translations.notInAntiqueShop }}">
+                    {{ else }}
+                    <img src="/fankit{{ $assets.antique }}"  alt="{{ $translations.inAntiqueShop }}">
+                    {{ end }}
+                    <p>{{ $stats.antiqueDate }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <span class="blueprint-spacer"></span>
+        <p class="blueprint-label-header no-margin">{{ $miscTranslations.character_type_adventurer }}</p>
+        <div class="blueprint-heroes">
+        {{ $itemType := $translations.type }}
+        {{ range $heroData }}
+            {{ $scratch := newScratch }}
+            {{ if $itemType | in .equipment.slot1 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
+            {{ else if $itemType | in .equipment.slot2 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
+            {{ else if $itemType | in .equipment.slot3 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
+            {{ else if $itemType | in .equipment.slot4 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
+            {{ else if $itemType | in .equipment.slot5 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
+            {{ else if $itemType | in .equipment.slot6 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
+            {{ end }}
+            {{ with $scratch.Get "hero"}}
+                <img src="/fankit/{{ .image }}" alt="{{ .class }}">
+            {{ end }}
+
+        {{ end }}
+        </div>
+        <span class="blueprint-spacer"></span>
+    </div>
 {{ end }}

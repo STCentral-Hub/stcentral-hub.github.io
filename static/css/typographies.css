@@ -46,3 +46,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.no-margin {
+    margin: 0;
+}
