@@ -35,56 +35,37 @@
                 <img src="/fankit{{ $assets.background }}">
                 <img src="/fankit{{ $assets.image }}">
             </div>
-            <div class="blueprint-stats-wrapper">
-                {{ with $stats.atk }}
-                <div class="blueprint-stats">
-                    <img src="/fankit{{ $statData.assets.atk }}">
-                    <p>{{ $stats.atk | lang.FormatNumber 0 }}</p>
-                </div>
-                {{ end }}
-                {{ with $stats.def }}
-                <div class="blueprint-stats">
-                    <img src="/fankit{{ $statData.assets.def }}">
-                    <p>{{ $stats.def | lang.FormatNumber 0 }}</p>
-                </div>
-                {{ end }}
-                {{ with $stats.hp }}
-                <div class="blueprint-stats">
-                    <img src="/fankit{{ $statData.assets.hp }}">
-                    <p>{{ $stats.hp | lang.FormatNumber 0 }}</p>
-                </div>
-                {{ end }}
-                {{ with $stats.eva }}
-                <div class="blueprint-stats">
-                    <img src="/fankit{{ $statData.assets.eva }}">
-                    <p>{{  (mul (float $stats.eva) 100) | lang.FormatPercent 0 }}</p>
-                </div>
-                {{ end }}
-                {{ with $stats.crit }}
-                <div class="blueprint-stats">
-                    <img src="/fankit{{ $statData.assets.critChance }}">
-                    <p>{{ (mul (float $stats.crit) 100) | lang.FormatPercent 0 }}</p>
-                </div>
-                {{ end }}
-
-                <span class="blueprint-spacer"></span>
-
+            <div class="blueprint-meta-stats-wrapper">
                 {{ with $stats.value }}
-                <div class="blueprint-stats">
-                    <img src="/fankit/Currencies/icon_global_gold.png">
-                    <p>{{ $stats.value | lang.FormatNumber 0 }}</p>
+                <div class="blueprint-meta-stat">
+                    <img src="/fankit{{ $statData.assets.value }}">
+                    <p>{{ $stats.roundedValue | lang.FormatNumber 0 }}</p>
                 </div>
                 {{ end }}
 
                 {{ with $stats.merchantXp }}
-                <div class="blueprint-stats">
-                    <img src="/fankit/Misc%20Icons/icon_worker_bonus_academy.png">
+                <div class="blueprint-meta-stat">
+                    <img src="/fankit{{ $statData.assets.merchantXp }}">
                     <p>{{ $stats.merchantXp | lang.FormatNumber 0 }}</p>
                 </div>
                 {{ end }}
 
+                {{ with $stats.favor }}
+                <div class="blueprint-meta-stat">
+                    <img src="/fankit{{ $statData.assets.favor }}">
+                    <p>{{ $stats.favor | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+
+                {{ with $stats.airshipPower }}
+                <div class="blueprint-meta-stat">
+                    <img src="/fankit{{ $statData.assets.airshipPower }}">
+                    <p>{{ $stats.airshipPower | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
+
                 {{ with $stats.antiqueDate }}
-                <div class="blueprint-stats">
+                <div class="blueprint-meta-stat">
                     {{ if (now | time) | gt (replace . "/" "-" | time) }}
                     <img src="/fankit{{ $assets.notAntique }}" alt="{{ $translations.notInAntiqueShop }}">
                     {{ else }}
@@ -94,6 +75,38 @@
                 </div>
                 {{ end }}
             </div>
+        </div>
+        <div class="blueprint-stats-wrapper">
+            {{ with $stats.atk }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $statData.assets.atk }}">
+                <p>{{ $stats.atk | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.def }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $statData.assets.def }}">
+                <p>{{ $stats.def | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.hp }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $statData.assets.hp }}">
+                <p>{{ $stats.hp | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.eva }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $statData.assets.eva }}">
+                <p>{{  (mul (float $stats.eva) 100) | lang.FormatPercent 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.crit }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $statData.assets.critChance }}">
+                <p>{{ (mul (float $stats.crit) 100) | lang.FormatPercent 0 }}</p>
+            </div>
+            {{ end }}
         </div>
         <span class="blueprint-spacer"></span>
         <p class="blueprint-label-header no-margin">{{ $miscTranslations.character_type_adventurer }}</p>
