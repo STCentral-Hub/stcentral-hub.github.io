@@ -13,7 +13,7 @@
     {{ $assets := .assets }}
     {{ $stats := .stats }}
     {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
-    {{ $itemTypeString := replaceRE `\{0\}` ($stats.tier) $miscTranslations.item_tier_type_format }}
+    {{ $itemTypeString := replaceRE `\{0\}` ($stats.tier) $miscTranslations.bpTierTypeFormat }}
     {{ $itemTypeString := replaceRE `\{1\}` ($translations.type) $itemTypeString }}
 
     <div class="blueprint-wrapper">
@@ -57,11 +57,13 @@
                 </div>
                 {{ end }}
 
-                {{ with $stats.airshipPower }}
-                <div class="blueprint-meta-stat">
-                    <img src="/fankit{{ $statData.assets.airshipPower }}">
-                    <p>{{ $stats.airshipPower | lang.FormatNumber 0 }}</p>
-                </div>
+                {{ if $translations.class | ne "Enchantments" }}
+                    {{ with $stats.airshipPower }}
+                    <div class="blueprint-meta-stat">
+                        <img src="/fankit{{ $statData.assets.airshipPower }}">
+                        <p>{{ $stats.airshipPower | lang.FormatNumber 0 }}</p>
+                    </div>
+                    {{ end }}
                 {{ end }}
 
                 {{ with $stats.antiqueDate }}
