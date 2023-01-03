@@ -12,6 +12,7 @@
 {{ range where $bpData "language.en.name" "==" (.Get "name") }}
     {{ $assets := .assets }}
     {{ $stats := .stats }}
+    {{ $en := .language.en }}
     {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
     {{ $itemTypeString := replaceRE `\{0\}` ($stats.tier) $miscTranslations.bpTierTypeFormat }}
     {{ $itemTypeString := replaceRE `\{1\}` ($translations.type) $itemTypeString }}
@@ -57,7 +58,7 @@
                 </div>
                 {{ end }}
 
-                {{ if $translations.class | ne "Enchantments" }}
+                {{ if $en.class | ne "Enchantments" }}
                     {{ with $stats.airshipPower }}
                     <div class="blueprint-meta-stat">
                         <img src="/fankit{{ $statData.assets.airshipPower }}">
@@ -111,7 +112,7 @@
             </div>
             {{ end }}
         </div>
-        {{ if $translations.class | ne "Enchantments" }}
+        {{ if (and ($en.class | ne "Enchantments") ($en.type | ne "Familiar")) }}
             <span class="blueprint-spacer"></span>
             <p class="blueprint-label-header no-margin">{{ $miscTranslations.heroes }}</p>
             <div class="blueprint-heroes">
