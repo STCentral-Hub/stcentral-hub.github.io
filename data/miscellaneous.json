@@ -1,0 +1,134 @@
+{
+  "language": {
+    "en": {
+      "levelFormat": "Level {0}",
+      "levelFormatShort": "Lv.{0}",
+      "bpTierTypeFormat": "Tier {0} {1}",
+      "inAntiqueStoreOn": "In Antique Store starting",
+      "stats": "Stats",
+      "heroes": "Heroes",
+      "resources": "Resources",
+      "workers": "Workers"
+    },
+    "fr": {
+      "levelFormat": "Niveau {0}",
+      "levelFormatShort": "Nv {0}",
+      "bpTierTypeFormat": "{1} palier {0}",
+      "inAntiqueStoreOn": "Dans la boutique d’antiquités dès le",
+      "stats": "Statistiques",
+      "heroes": "Héros",
+      "resources": "Ressources",
+      "workers": "Ouvriers"
+    },
+    "es": {
+      "levelFormat": "Nivel {0}",
+      "levelFormatShort": "Nv. {0}",
+      "bpTierTypeFormat": "Nivel {0} {1}",
+      "inAntiqueStoreOn": "En la tienda de antigüedades a partir del",
+      "stats": "Estadísticas",
+      "heroes": "Héroes",
+      "resources": "Recursos",
+      "workers": "Trabajadores"
+    },
+    "de": {
+      "levelFormat": "Stufe {0}",
+      "levelFormatShort": "St. {0}",
+      "bpTierTypeFormat": "{1} (Niveau {0})",
+      "inAntiqueStoreOn": "Im Antiquitätenladen ab",
+      "stats": "Statistik",
+      "heroes": "Helden",
+      "resources": "Ressourcen",
+      "workers": "Arbeiter"
+    },
+    "it": {
+      "levelFormat": "Livello {0}",
+      "levelFormatShort": "Liv. {0}",
+      "bpTierTypeFormat": "{1} di grado {0}",
+      "inAntiqueStoreOn": "Nel negozio di antichità da:",
+      "stats": "Statistiche",
+      "heroes": "Eroi",
+      "resources": "Risorse",
+      "workers": "Lavoratori"
+    },
+    "pt": {
+      "levelFormat": "Nível {0}",
+      "levelFormatShort": "Nv.{0}",
+      "bpTierTypeFormat": "{1} categoria {0}",
+      "inAntiqueStoreOn": "Na Loja de antiguidades a partir de",
+      "stats": "Atributos",
+      "heroes": "Heróis",
+      "resources": "Recursos",
+      "workers": "Trabalhadores"
+    },
+    "ru": {
+      "levelFormat": "Уровень {0}",
+      "levelFormatShort": "Ур. {0}",
+      "bpTierTypeFormat": "{1} {0}-го уровня",
+      "inAntiqueStoreOn": "В магазине древностей с",
+      "stats": "Статистика",
+      "heroes": "Герои",
+      "resources": "Ресурсы",
+      "workers": "Мастера"
+    },
+    "tk": {
+      "levelFormat": "{0}. Seviye",
+      "levelFormatShort": "{0}. Sv.",
+      "bpTierTypeFormat": "{0}. Kademe {1}",
+      "inAntiqueStoreOn": "Antika Mağazası'na geleceği tarih",
+      "stats": "İstatistikler",
+      "heroes": "Kahramanlar",
+      "resources": "Kaynaklar",
+      "workers": "İşçiler"
+    },
+    "zh": {
+      "levelFormat": "等级{0}",
+      "levelFormatShort": "{0}级",
+      "bpTierTypeFormat": "{0}阶{1}",
+      "inAntiqueStoreOn": "加入古董商店时间：",
+      "stats": "属性",
+      "heroes": "英雄",
+      "resources": "资源",
+      "workers": "工人"
+    },
+    "zh_tr": {
+      "levelFormat": "等級{0}",
+      "levelFormatShort": "第{0}級",
+      "bpTierTypeFormat": "層級{0} {1}",
+      "inAntiqueStoreOn": "古董商店進貨時間：",
+      "stats": "數值",
+      "heroes": "英雄",
+      "resources": "資源",
+      "workers": "工人"
+    },
+    "ja": {
+      "levelFormat": "レベル{0}",
+      "levelFormatShort": "Lv.{0}",
+      "bpTierTypeFormat": "ティア{0}の{1}",
+      "inAntiqueStoreOn": "アンティークストア開始日",
+      "stats": "統計",
+      "heroes": "ヒーロー",
+      "resources": "資源",
+      "workers": "職人"
+    },
+    "ko": {
+      "levelFormat": "레벨 {0}",
+      "levelFormatShort": "레벨 {0}",
+      "bpTierTypeFormat": "티어 {0} {1}",
+      "inAntiqueStoreOn": "골동품 상점 입고일:",
+      "stats": "통계",
+      "heroes": "영웅",
+      "resources": "자원",
+      "workers": "일꾼"
+    },
+    "uk": {
+      "levelFormat": "{0} рівень",
+      "levelFormatShort": "{0} рівень",
+      "bpTierTypeFormat": "{1} {0} рангу",
+      "inAntiqueStoreOn": "В антикварній лавці з",
+      "stats": "Статистика",
+      "heroes": "Герої",
+      "resources": "Ресурси",
+      "workers": "Майстри"
+    }
+  }
+}
