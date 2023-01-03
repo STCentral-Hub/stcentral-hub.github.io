@@ -78,6 +78,7 @@
                 {{ end }}
             </div>
         </div>
+        <p class="blueprint-label-header no-margin">{{ $miscTranslations.stats }}</p>
         <div class="blueprint-stats-wrapper">
             {{ with $stats.atk }}
             <div class="blueprint-meta-stat">
@@ -110,31 +111,41 @@
             </div>
             {{ end }}
         </div>
-        <span class="blueprint-spacer"></span>
-        <p class="blueprint-label-header no-margin">{{ $miscTranslations.character_type_adventurer }}</p>
-        <div class="blueprint-heroes">
-        {{ $itemType := $translations.type }}
-        {{ range $heroData }}
-            {{ $scratch := newScratch }}
-            {{ if $itemType | in .equipment.slot1 }}
-                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
-            {{ else if $itemType | in .equipment.slot2 }}
-                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
-            {{ else if $itemType | in .equipment.slot3 }}
-                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
-            {{ else if $itemType | in .equipment.slot4 }}
-                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
-            {{ else if $itemType | in .equipment.slot5 }}
-                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
-            {{ else if $itemType | in .equipment.slot6 }}
-                {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class) }}
-            {{ end }}
-            {{ with $scratch.Get "hero"}}
-                <img src="/fankit/{{ .image }}" alt="{{ .class }}">
-            {{ end }}
+        {{ if $translations.class | ne "Enchantments" }}
+            <span class="blueprint-spacer"></span>
+            <p class="blueprint-label-header no-margin">{{ $miscTranslations.heroes }}</p>
+            <div class="blueprint-heroes">
+            {{ $itemType := $translations.type }}
+            {{ $outerScratch := newScratch }}
+            {{ range sort $heroData "order" }}
+                {{ $hero := . }}
 
+                {{ $scratch := newScratch }}
+                {{ if $itemType | in .equipment.slot1 }}
+                    {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class "order" .order) }}
+                {{ else if $itemType | in .equipment.slot2 }}
+                    {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class "order" .order) }}
+                {{ else if $itemType | in .equipment.slot3 }}
+                    {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class "order" .order) }}
+                {{ else if $itemType | in .equipment.slot4 }}
+                    {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class "order" .order) }}
+                {{ else if $itemType | in .equipment.slot5 }}
+                    {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class "order" .order) }}
+                {{ else if $itemType | in .equipment.slot6 }}
+                    {{ $scratch.Set "hero" (dict "image" .assets.image "class" .language.en.class "order" .order) }}
+                {{ end }}
+                {{ with $scratch.Get "hero"}}
+                    {{ $outerScratch.SetInMap "heroes" (string .order) . }}
+                {{ end }}
+            {{ end }}
+            {{ range $outerScratch.Get "heroes" }}
+                {{ if ($outerScratch.Get "previous") | ne (sub .order 1) }}
+                    <img src="/fankit/{{ .image }}" alt="{{ .class }}">
+                {{ end }}
+                {{ $outerScratch.Set "previous" .order }}
+            {{ end }}
+            </div>
         {{ end }}
-        </div>
         <span class="blueprint-spacer"></span>
     </div>
 {{ end }}
