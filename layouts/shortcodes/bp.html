@@ -148,5 +148,60 @@
             </div>
         {{ end }}
         <span class="blueprint-spacer"></span>
+        <p class="blueprint-label-header no-margin">{{ $miscTranslations.resources }}</p>
+        <div class="blueprint-stats-wrapper">
+            {{ with $stats.resource1 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.resource1 }}" alt="{{ $translations.resource1 }}">
+                <p>{{ $stats.resource1 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.resource2 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.resource2 }}" alt="{{ $translations.resource2 }}">
+                <p>{{ $stats.resource2 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.resource3 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.resource3 }}" alt="{{ $translations.resource3 }}">
+                <p>{{ $stats.resource3 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.component1 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.component1 }}" alt="{{ $translations.component1 }}">
+                <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.component2 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.component2 }}" alt="{{ $translations.component2 }}">
+                <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+        </div>
+        <span class="blueprint-spacer"></span>
+        <p class="blueprint-label-header no-margin">{{ $miscTranslations.workers }}</p>
+        <div class="blueprint-stats-wrapper">
+            {{ with $stats.worker1 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.worker1 }}" alt="{{ $translations.worker1 }}">
+                <p>{{ $stats.worker1 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.worker2 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.worker2 }}" alt="{{ $translations.worker2 }}">
+                <p>{{ $stats.worker2 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+            {{ with $stats.worker3 }}
+            <div class="blueprint-meta-stat">
+                <img src="/fankit{{ $assets.worker3 }}" alt="{{ $translations.worker3 }}">
+                <p>{{ $stats.worker3 | lang.FormatNumber 0 }}</p>
+            </div>
+            {{ end }}
+        </div>
     </div>
 {{ end }}

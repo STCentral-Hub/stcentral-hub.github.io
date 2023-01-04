@@ -120,6 +120,7 @@
 
 .blueprint-meta-stat {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -130,7 +131,7 @@
 
 .blueprint-meta-stat p {
     margin: 0;
-    padding-left: 0.25rem;
+    padding-right: 0.5rem;
     text-align: right;
 }
 
