@@ -26,9 +26,9 @@
             <div class="blueprint-banner-info">
                 <div class="blueprint-banner-info-name">
                     <img class="blueprint-type-img" src="/fankit{{ $assets.typeLight }}" alt=""{{ $translations.type }}>
-                    <h3 class='no-margin'>{{- $translations.name -}}</h3>
+                    <h3 class='text-shadow no-margin'>{{- $translations.name -}}</h3>
                 </div>
-                <p class="blueprint-banner-info-type no-margin">{{ $itemTypeString }}</p>
+                <p class="blueprint-banner-info-type text-shadow no-margin">{{ $itemTypeString }}</p>
             </div>
         </div>
         <div class="blueprint-translation blueprint-meta">
@@ -149,55 +149,79 @@
         {{ end }}
         <span class="blueprint-spacer"></span>
         <p class="blueprint-label-header no-margin">{{ $miscTranslations.resources }}</p>
-        <div class="blueprint-stats-wrapper">
+        <div class="blueprint-resources-wrapper">
             {{ with $stats.resource1 }}
-            <div class="blueprint-meta-stat">
+            <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow">
                 <img src="/fankit{{ $assets.resource1 }}" alt="{{ $translations.resource1 }}">
                 <p>{{ $stats.resource1 | lang.FormatNumber 0 }}</p>
             </div>
             {{ end }}
             {{ with $stats.resource2 }}
-            <div class="blueprint-meta-stat">
+            <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow">
                 <img src="/fankit{{ $assets.resource2 }}" alt="{{ $translations.resource2 }}">
                 <p>{{ $stats.resource2 | lang.FormatNumber 0 }}</p>
             </div>
             {{ end }}
             {{ with $stats.resource3 }}
-            <div class="blueprint-meta-stat">
+            <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow">
                 <img src="/fankit{{ $assets.resource3 }}" alt="{{ $translations.resource3 }}">
                 <p>{{ $stats.resource3 | lang.FormatNumber 0 }}</p>
             </div>
             {{ end }}
             {{ with $stats.component1 }}
-            <div class="blueprint-meta-stat">
-                <img src="/fankit{{ $assets.component1 }}" alt="{{ $translations.component1 }}">
-                <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
-            </div>
+                {{ if $en.c1quality | eq "Normal" }}
+                <div class="blueprint-meta-stat blueprint-resources blueprint-normal-precraft paragraph-text-shadow">
+                    <img src="/fankit{{ $assets.component1 }}" alt="{{ $translations.component1 }}">
+                    <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ else if $en.c1quality | eq "Superior" }}
+                <div class="blueprint-meta-stat blueprint-resources blueprint-superior-precraft paragraph-text-shadow">
+                    <img src="/fankit{{ $assets.component1 }}" alt="{{ $translations.component1 }}">
+                    <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ else }}
+                <div class="blueprint-meta-stat blueprint-resources blueprint-components paragraph-text-shadow">
+                    <img src="/fankit{{ $assets.component1 }}" alt="{{ $translations.component1 }}">
+                    <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
             {{ end }}
             {{ with $stats.component2 }}
-            <div class="blueprint-meta-stat">
-                <img src="/fankit{{ $assets.component2 }}" alt="{{ $translations.component2 }}">
-                <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
-            </div>
+                {{ if $en.c2quality | eq "Normal" }}
+                <div class="blueprint-meta-stat blueprint-resources blueprint-normal-precraft paragraph-text-shadow">
+                    <img src="/fankit{{ $assets.component2 }}" alt="{{ $translations.component2 }}">
+                    <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ else if $en.c2quality | eq "Superior" }}
+                <div class="blueprint-meta-stat blueprint-resources blueprint-superior-precraft paragraph-text-shadow">
+                    <img src="/fankit{{ $assets.component2 }}" alt="{{ $translations.component2 }}">
+                    <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ else }}
+                <div class="blueprint-meta-stat blueprint-resources blueprint-components paragraph-text-shadow">
+                    <img src="/fankit{{ $assets.component2 }}" alt="{{ $translations.component2 }}">
+                    <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
+                </div>
+                {{ end }}
             {{ end }}
         </div>
         <span class="blueprint-spacer"></span>
         <p class="blueprint-label-header no-margin">{{ $miscTranslations.workers }}</p>
         <div class="blueprint-stats-wrapper">
             {{ with $stats.worker1 }}
-            <div class="blueprint-meta-stat">
+            <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow">
                 <img src="/fankit{{ $assets.worker1 }}" alt="{{ $translations.worker1 }}">
                 <p>{{ replaceRE `\{0\}` ($stats.worker1 | lang.FormatNumber 0) $miscTranslations.levelFormatShort }}</p>
             </div>
             {{ end }}
             {{ with $stats.worker2 }}
-            <div class="blueprint-meta-stat">
+            <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow">
                 <img src="/fankit{{ $assets.worker2 }}" alt="{{ $translations.worker2 }}">
                 <p>{{ replaceRE `\{0\}` ($stats.worker2 | lang.FormatNumber 0) $miscTranslations.levelFormatShort }}</p>
             </div>
             {{ end }}
             {{ with $stats.worker3 }}
-            <div class="blueprint-meta-stat">
+            <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow">
                 <img src="/fankit{{ $assets.worker3 }}" alt="{{ $translations.worker3 }}">
                 <p>{{ replaceRE `\{0\}` ($stats.worker3 | lang.FormatNumber 0) $miscTranslations.levelFormatShort }}</p>
             </div>

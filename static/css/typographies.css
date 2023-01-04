@@ -50,3 +50,15 @@ a:hover {
 .no-margin {
     margin: 0;
 }
+
+.text-shadow {
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+    -webkit-text-stroke-width: 0.01rem;
+    -webkit-text-stroke-color: black;
+}
+
+.paragraph-text-shadow p {
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+    -webkit-text-stroke-width: 0.01rem;
+    -webkit-text-stroke-color: black;
+}

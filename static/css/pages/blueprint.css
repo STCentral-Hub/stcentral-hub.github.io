@@ -15,6 +15,7 @@
     border-width: 0.2rem;
     border-radius: 1.5rem;
     box-shadow: 0.2rem 0.2rem 0.6rem black;
+    width: 18rem;
     max-width: 18rem;
 }
 
@@ -102,6 +103,7 @@
     height: 10.68rem;
     width: 10rem;
 }
+
 .blueprint-asset img:last-child {
     position: absolute;
     z-index: 2;
@@ -113,9 +115,9 @@
 .blueprint-meta-stats-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex-grow: 1;
-    padding: 1rem;
+    padding-left: 0.5rem;
 }
 
 .blueprint-meta-stat {
@@ -125,13 +127,12 @@
 }
 
 .blueprint-meta-stat img {
-    height: 1.5rem;
+    height: 2rem;
     justify-self: center;
 }
 
 .blueprint-meta-stat p {
-    margin: 0;
-    padding-right: 0.5rem;
+    margin: 0 0 0 0.25rem;
     text-align: right;
 }
 
@@ -150,7 +151,73 @@
 }
 
 .blueprint-heroes img {
-    height: 1.75rem;
-    width: 1.75rem;
+    height: 2.55rem;
+    width: 2.55rem;
     padding: 0.125rem;
+}
+
+.blueprint-resources-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.blueprint-resources {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.blueprint-resources img {
+    height: 2.5rem;
+}
+
+.blueprint-resources p {
+    position: absolute;
+    translate: 1rem 1rem;
+}
+
+.blueprint-components img {
+    border-radius: 50%;
+    background-color: var(--color-blueprintcard-compinent-background);
+}
+
+.blueprint-normal-precraft img {
+    height: 2rem;
+    border-style: solid;
+    border-width: 0.025rem;
+    border-radius: 50%;
+    border-color: var(--color-quality-normal-text);
+    background-image: radial-gradient(
+            circle,
+            var(--color-quality-normal-text) 10%,
+            transparent 90%);
+}
+
+.blueprint-superior-precraft img {
+    height: 2rem;
+    border-style: solid;
+    border-width: 0.025rem;
+    border-radius: 50%;
+    border-color: var(--color-quality-superior-text);
+    background-image: radial-gradient(
+            circle,
+            var(--color-quality-superior-text) 10%,
+            transparent 90%);
+}
+
+.blueprint-workers img {
+    height: 2.25rem;
+    justify-self: center;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 50%;
+    border-color: var(--color-blueprintcard-worker-border);
+    background-image: var(--gradient-blueprintcard-worker-background);
+    box-shadow: 0.1rem 0.1rem black;
+}
+
+.blueprint-workers p {
+    position: absolute;
+    translate: 1rem 1rem;
 }

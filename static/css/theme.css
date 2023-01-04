@@ -23,6 +23,9 @@
     --color-herocard-border: #A74C7D;
     --color-herocard-equipment-border: #6D3657;
     --color-blueprintcard-alt-text: #B8729B;
+    --color-blueprintcard-worker-border: #ea8d7c;
+    --color-blueprintcard-compinent-background: #D673A44D;
+    --gradient-blueprintcard-worker-background: linear-gradient(#832020, #cc2716);
 
     /* STC - Colors */
     --color-stc-background-gray: #AEABAB;
