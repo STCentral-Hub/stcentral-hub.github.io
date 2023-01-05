@@ -26,6 +26,11 @@
     --color-component-background: #D673A44D;
     --color-worker-border: #EA8D7C;
     --gradient-worker-background: linear-gradient(#832020, #CC2716);
+    --gradient-card-row-alt-background:
+            linear-gradient(
+                    to right,
+                    var(--color-card-background-dark) 50%,
+                    var(--color-card-background-dark-transparency));
     --filter-item-quality-superior:
             drop-shadow(-0.025rem -0.025rem 0 var(--color-quality-superior-text))
             drop-shadow(0.025rem 0.025rem 0 var(--color-quality-superior-text))

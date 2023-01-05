@@ -112,6 +112,10 @@
     width: 8rem;
 }
 
+.blueprint-row-background div:nth-child(even) {
+    background-image: var(--gradient-card-row-alt-background)
+}
+
 .blueprint-meta-stats-wrapper {
     display: flex;
     flex-direction: column;

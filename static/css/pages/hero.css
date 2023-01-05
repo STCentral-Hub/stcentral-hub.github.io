@@ -47,11 +47,7 @@
 }
 
 .hero-stats-table tr:nth-child(even) {
-    background-image: linear-gradient(
-            to right,
-            var(--color-card-background-dark),
-            var(--color-card-background-dark-transparency)
-    );
+    background-image: var(--gradient-card-row-alt-background)
 }
 
 .hero-stat {
