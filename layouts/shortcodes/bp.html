@@ -1,17 +1,6 @@
 {{ $page := .Page }}
-{{ $lang := $page.Lang }}
 {{ $bpData := $page.Site.Data.blueprints }}
-{{ $miscData := $page.Site.Data.miscellaneous }}
-
-{{ $miscTranslations := partial "getDataTranslations.html" (dict "data" $miscData "lang" $lang) }}
 
 {{ range where $bpData "language.en.name" "==" (.Get "name") }}
-    <div class="blueprint-wrapper">
-        {{ partial "blueprint/banner.html" (dict "page" $page "bp" . "bpTierTypeFormat" $miscTranslations.bpTierTypeFormat) }}
-        {{ partial "blueprint/meta.html" (dict "page" $page "bp" . "inAntiqueStoreOn" $miscTranslations.inAntiqueStoreOn) }}
-        {{ partial "blueprint/stats.html" (dict "page" $page "bp" . "statsHeader" $miscTranslations.stats) }}
-        {{ partial "blueprint/heroes.html" (dict "page" $page "bp" . "heroesHeader" $miscTranslations.heroes) }}
-        {{ partial "blueprint/resources.html" (dict "page" $page "bp" . "miscTranslations" $miscTranslations) }}
-        {{ partial "blueprint/workers.html" (dict "page" $page "bp" . "miscTranslations" $miscTranslations) }}
-    </div>
+    {{ partial "blueprint/card.html" (dict "page" $page "bp" .) }}
 {{ end }}
