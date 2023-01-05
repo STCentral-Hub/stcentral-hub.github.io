@@ -5,7 +5,7 @@
 <div class="blueprint-wrapper">
     {{ partial "blueprint/banner.html" (dict "page" .page "bp" .bp "bpTierTypeFormat" $miscTranslations.bpTierTypeFormat) }}
     {{ partial "blueprint/meta.html" (dict "page" .page "bp" .bp "inAntiqueStoreOn" $miscTranslations.inAntiqueStoreOn) }}
-    {{ partial "blueprint/stats.html" (dict "page" .page "bp" .bp "statsHeader" $miscTranslations.stats) }}
+    {{ partial "blueprint/stats.html" (dict "page" .page "bp" .bp "miscTranslations" $miscTranslations) }}
     {{ partial "blueprint/heroes.html" (dict "page" .page "bp" .bp "heroesHeader" $miscTranslations.heroes) }}
     {{ partial "blueprint/resources.html" (dict "page" .page "bp" .bp "miscTranslations" $miscTranslations) }}
     {{ partial "blueprint/workers.html" (dict "page" .page "bp" .bp "miscTranslations" $miscTranslations) }}

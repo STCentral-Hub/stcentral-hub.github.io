@@ -139,8 +139,16 @@
 .blueprint-stats-wrapper {
     display: flex;
     justify-content: space-evenly;
-    padding-left: 3rem;
-    padding-right: 3rem;
+}
+
+.blueprint-stats-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.blueprint-stat-margin {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 .blueprint-heroes {
@@ -161,11 +169,6 @@
     justify-content: center;
     padding: 0;
     margin-bottom: 0.5rem;
-}
-
-.blueprint-resources {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
 }
 
 .blueprint-resources img {
@@ -216,6 +219,16 @@
 
 .blueprint-superior-precraft img {
     filter: var(--filter-item-quality-superior)
+}
+
+.blueprint-worker-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.blueprint-workers {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .blueprint-workers img {

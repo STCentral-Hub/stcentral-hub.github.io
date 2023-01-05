@@ -1,39 +1,87 @@
 {{ $statData := .page.Site.Data.stats }}
 {{ $lang := .page.Lang }}
+{{ $assets := .bp.assets }}
 {{ $stats := .bp.stats }}
+{{ $statsHeader := .miscTranslations.stats }}
+{{ $affinityHeader := .miscTranslations.affinity }}
 
+{{ $bpTranslations := partial "getDataTranslations.html" (dict "data" .bp "lang" $lang) }}
 {{ $statTranslations := partial "getDataTranslations.html" (dict "data" $statData "lang" $lang) }}
-
-<p class="blueprint-label-header no-margin">{{ .statsHeader }}</p>
 <div class="blueprint-stats-wrapper">
-    {{ partial "blueprint/metaStat.html" (dict
-        "title" $statTranslations.attack
-        "asset" $statData.assets.atk
-        "value" ($stats.atk | lang.FormatNumber 0)
-        "type" "stat")
-    }}
-    {{ partial "blueprint/metaStat.html" (dict
-        "title" $statTranslations.defense
-        "asset" $statData.assets.def
-        "value" ($stats.def | lang.FormatNumber 0)
-        "type" "stat")
-    }}
-    {{ partial "blueprint/metaStat.html" (dict
-        "title" $statTranslations.health
-        "asset" $statData.assets.hp
-        "value" ($stats.hp | lang.FormatNumber 0)
-        "type" "stat")
-    }}
-    {{ partial "blueprint/metaStat.html" (dict
-        "title" $statTranslations.evasion
-        "asset" $statData.assets.eva
-        "value" (mul (float $stats.eva) 100 | lang.FormatPercent 0)
-        "type" "stat")
-    }}
-    {{ partial "blueprint/metaStat.html" (dict
-        "title" $statTranslations.critChance
-        "asset" $statData.assets.critChance
-        "value" (mul (float $stats.crit) 100 | lang.FormatPercent 0)
-        "type" "stat")
-    }}
+    <div class="blueprint-stats-section">
+        <p class="blueprint-label-header no-margin">{{ $statsHeader }}</p>
+        <div class="blueprint-stats-wrapper">
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" $statTranslations.attack
+                "asset" $statData.assets.atk
+                "value" ($stats.atk | lang.FormatNumber 0)
+                "type" "stat")
+            }}
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" $statTranslations.defense
+                "asset" $statData.assets.def
+                "value" ($stats.def | lang.FormatNumber 0)
+                "type" "stat")
+            }}
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" $statTranslations.health
+                "asset" $statData.assets.hp
+                "value" ($stats.hp | lang.FormatNumber 0)
+                "type" "stat")
+            }}
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" $statTranslations.evasion
+                "asset" $statData.assets.eva
+                "value" (mul (float $stats.eva) 100 | lang.FormatPercent 0)
+                "type" "stat")
+            }}
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" $statTranslations.critChance
+                "asset" $statData.assets.critChance
+                "value" (mul (float $stats.crit) 100 | lang.FormatPercent 0)
+                "type" "stat")
+            }}
+        </div>
+    </div>
+
+    {{ if or ($bpTranslations.innateElement) ($bpTranslations.innateSpirit) ($bpTranslations.element) ($bpTranslations.spirit) }}
+        <div class="blueprint-stats-section">
+            <p class="blueprint-label-header no-margin">{{ $affinityHeader }}</p>
+            <div class="blueprint-stats-wrapper">
+                {{ with $bpTranslations.innateElement }}
+                    {{ partial "blueprint/metaStat.html" (dict
+                        "title" $bpTranslations.innateElement
+                        "asset" $assets.innateElement
+                        "value" ""
+                        "type" "affinity")
+                    }}
+                {{ end }}
+                {{ with $bpTranslations.innateSpirit }}
+                    {{ partial "blueprint/metaStat.html" (dict
+                        "title" $bpTranslations.innateSpirit
+                        "asset" $assets.innateSpirit
+                        "value" ""
+                        "type" "affinity")
+                    }}
+                {{ end }}
+                {{ with $bpTranslations.element }}
+                    {{ partial "blueprint/metaStat.html" (dict
+                        "title" $bpTranslations.element
+                        "asset" $assets.affinityElement
+                        "value" ""
+                        "type" "affinity")
+                    }}
+                {{ end }}
+
+                {{ with $bpTranslations.spirit }}
+                    {{ partial "blueprint/metaStat.html" (dict
+                        "title" $bpTranslations.spirit
+                        "asset" $assets.affinitySpirit
+                        "value" ""
+                        "type" "affinity")
+                    }}
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
 </div>

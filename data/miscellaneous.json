@@ -7,6 +7,7 @@
       "qualityItemNameFormat": "{0} {1}",
       "inAntiqueStoreOn": "In Antique Store starting",
       "stats": "Stats",
+      "affinity": "Affinity",
       "heroes": "Heroes",
       "resources": "Resources",
       "workers": "Workers"
@@ -18,6 +19,7 @@
       "qualityItemNameFormat": "{1} {0}",
       "inAntiqueStoreOn": "Dans la boutique d’antiquités dès le",
       "stats": "Statistiques",
+      "affinity": "Affinité",
       "heroes": "Héros",
       "resources": "Ressources",
       "workers": "Ouvriers"
@@ -29,6 +31,7 @@
       "qualityItemNameFormat": "{1} {0}",
       "inAntiqueStoreOn": "En la tienda de antigüedades a partir del",
       "stats": "Estadísticas",
+      "affinity": "Afinidad",
       "heroes": "Héroes",
       "resources": "Recursos",
       "workers": "Trabajadores"
@@ -40,6 +43,7 @@
       "qualityItemNameFormat": "{1}, {0}",
       "inAntiqueStoreOn": "Im Antiquitätenladen ab",
       "stats": "Statistik",
+      "affinity": "Verbundenheit",
       "heroes": "Helden",
       "resources": "Ressourcen",
       "workers": "Arbeiter"
@@ -51,6 +55,7 @@
       "qualityItemNameFormat": "{1} {0}",
       "inAntiqueStoreOn": "Nel negozio di antichità da:",
       "stats": "Statistiche",
+      "affinity": "Affinità",
       "heroes": "Eroi",
       "resources": "Risorse",
       "workers": "Lavoratori"
@@ -62,6 +67,7 @@
       "qualityItemNameFormat": "{1} – {0}",
       "inAntiqueStoreOn": "Na Loja de antiguidades a partir de",
       "stats": "Atributos",
+      "affinity": "Afinidade",
       "heroes": "Heróis",
       "resources": "Recursos",
       "workers": "Trabalhadores"
@@ -73,6 +79,7 @@
       "qualityItemNameFormat": "{1} ({0})",
       "inAntiqueStoreOn": "В магазине древностей с",
       "stats": "Статистика",
+      "affinity": "Связь",
       "heroes": "Герои",
       "resources": "Ресурсы",
       "workers": "Мастера"
@@ -84,6 +91,7 @@
       "qualityItemNameFormat": "{0} {1}",
       "inAntiqueStoreOn": "Antika Mağazası'na geleceği tarih",
       "stats": "İstatistikler",
+      "affinity": "Yakınlık",
       "heroes": "Kahramanlar",
       "resources": "Kaynaklar",
       "workers": "İşçiler"
@@ -95,6 +103,7 @@
       "qualityItemNameFormat": "{0}{1}",
       "inAntiqueStoreOn": "加入古董商店时间：",
       "stats": "属性",
+      "affinity": "亲和度",
       "heroes": "英雄",
       "resources": "资源",
       "workers": "工人"
@@ -106,6 +115,7 @@
       "qualityItemNameFormat": "{0} {1}",
       "inAntiqueStoreOn": "古董商店進貨時間：",
       "stats": "數值",
+      "affinity": "吸引力",
       "heroes": "英雄",
       "resources": "資源",
       "workers": "工人"
@@ -117,6 +127,7 @@
       "qualityItemNameFormat": "{0} {1}",
       "inAntiqueStoreOn": "アンティークストア開始日",
       "stats": "統計",
+      "affinity": "親近感",
       "heroes": "ヒーロー",
       "resources": "資源",
       "workers": "職人"
@@ -128,6 +139,7 @@
       "qualityItemNameFormat": "{0} {1}",
       "inAntiqueStoreOn": "골동품 상점 입고일:",
       "stats": "통계",
+      "affinity": "친밀감",
       "heroes": "영웅",
       "resources": "자원",
       "workers": "일꾼"
@@ -139,6 +151,7 @@
       "qualityItemNameFormat": "{1} {0}",
       "inAntiqueStoreOn": "В антикварній лавці з",
       "stats": "Статистика",
+      "affinity": "Зв'язок",
       "heroes": "Герої",
       "resources": "Ресурси",
       "workers": "Майстри"
