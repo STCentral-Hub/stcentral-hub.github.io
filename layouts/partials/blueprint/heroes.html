@@ -1,0 +1,41 @@
+{{ $heroData := .page.Site.Data.heroes }}
+{{ $lang := .page.Lang }}
+{{ $en := .bp.language.en }}
+
+{{ if (and ($en.class | ne "Enchantments") ($en.type | ne "Familiar")) }}
+    <span class="blueprint-spacer"></span>
+    <p class="blueprint-label-header no-margin">{{ .heroesHeader }}</p>
+    <div class="blueprint-heroes">
+        {{ $itemType := $en.type }}
+        {{ $outerScratch := newScratch }}
+
+        {{ range sort $heroData "order" }}
+            {{ $heroTranslations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
+
+            {{ $scratch := newScratch }}
+            {{ if $itemType | in .equipment.slot1 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" $heroTranslations.class "order" .order) }}
+            {{ else if $itemType | in .equipment.slot2 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" $heroTranslations.class "order" .order) }}
+            {{ else if $itemType | in .equipment.slot3 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" $heroTranslations.class "order" .order) }}
+            {{ else if $itemType | in .equipment.slot4 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" $heroTranslations.class "order" .order) }}
+            {{ else if $itemType | in .equipment.slot5 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" $heroTranslations.class "order" .order) }}
+            {{ else if $itemType | in .equipment.slot6 }}
+                {{ $scratch.Set "hero" (dict "image" .assets.image "class" $heroTranslations.class "order" .order) }}
+            {{ end }}
+            {{ with $scratch.Get "hero"}}
+                {{ $outerScratch.SetInMap "heroes" (string .order) . }}
+            {{ end }}
+        {{ end }}
+
+        {{ range $outerScratch.Get "heroes" }}
+            {{ if ($outerScratch.Get "previous") | ne (sub .order 1) }}
+                <img src="/fankit{{ .image }}" alt="{{ .class }}" title="{{ .class }}">
+            {{ end }}
+            {{ $outerScratch.Set "previous" .order }}
+        {{ end }}
+    </div>
+{{ end }}
