@@ -6,34 +6,34 @@
 
 <p class="blueprint-label-header no-margin">{{ .statsHeader }}</p>
 <div class="blueprint-stats-wrapper">
-    {{ with $stats.atk }}
-        <div class="blueprint-meta-stat" title="{{ $statTranslations.attack }}">
-            <img src="/fankit{{ $statData.assets.atk }}" alt="{{ $statTranslations.attack }}">
-            <p>{{ $stats.atk | lang.FormatNumber 0 }}</p>
-        </div>
-    {{ end }}
-    {{ with $stats.def }}
-        <div class="blueprint-meta-stat" title="{{ $statTranslations.defense }}">
-            <img src="/fankit{{ $statData.assets.def }}" alt="{{ $statTranslations.defense }}">
-            <p>{{ $stats.def | lang.FormatNumber 0 }}</p>
-        </div>
-    {{ end }}
-    {{ with $stats.hp }}
-        <div class="blueprint-meta-stat" title="{{ $statTranslations.health }}">
-            <img src="/fankit{{ $statData.assets.hp }}" alt="{{ $statTranslations.health }}">
-            <p>{{ $stats.hp | lang.FormatNumber 0 }}</p>
-        </div>
-    {{ end }}
-    {{ with $stats.eva }}
-        <div class="blueprint-meta-stat" title="{{ $statTranslations.evasion }}">
-            <img src="/fankit{{ $statData.assets.eva }}" alt="{{ $statTranslations.evasion }}">
-            <p>{{  (mul (float $stats.eva) 100) | lang.FormatPercent 0 }}</p>
-        </div>
-    {{ end }}
-    {{ with $stats.crit }}
-        <div class="blueprint-meta-stat" title="{{ $statTranslations.critChance }}">
-            <img src="/fankit{{ $statData.assets.critChance }}" alt="{{ $statTranslations.critChance }}">
-            <p>{{ (mul (float $stats.crit) 100) | lang.FormatPercent 0 }}</p>
-        </div>
-    {{ end }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $statTranslations.attack
+        "asset" $statData.assets.atk
+        "value" ($stats.atk | lang.FormatNumber 0)
+        "type" "stat")
+    }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $statTranslations.defense
+        "asset" $statData.assets.def
+        "value" ($stats.def | lang.FormatNumber 0)
+        "type" "stat")
+    }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $statTranslations.health
+        "asset" $statData.assets.hp
+        "value" ($stats.hp | lang.FormatNumber 0)
+        "type" "stat")
+    }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $statTranslations.evasion
+        "asset" $statData.assets.eva
+        "value" (mul (float $stats.eva) 100 | lang.FormatPercent 0)
+        "type" "stat")
+    }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $statTranslations.critChance
+        "asset" $statData.assets.critChance
+        "value" (mul (float $stats.crit) 100 | lang.FormatPercent 0)
+        "type" "stat")
+    }}
 </div>

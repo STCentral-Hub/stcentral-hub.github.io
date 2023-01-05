@@ -1,0 +1,38 @@
+{{ $title := .title }}
+{{ $asset := .asset }}
+{{ $value := .value }}
+{{ $type := .type }}
+
+{{ if and ($value | ne "0") ($value | ne "0%") }}
+    {{ if $type | eq "stat" }}
+        <div class="blueprint-meta-stat paragraph-text-shadow" title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "rss" }}
+        <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow"  title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "component" }}
+        <div class="blueprint-meta-stat blueprint-resources blueprint-components paragraph-text-shadow" title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "normalPrecraft" }}
+        <div class="blueprint-meta-stat blueprint-resources blueprint-normal-precraft paragraph-text-shadow" title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "superiorPrecraft" }}
+        <div class="blueprint-meta-stat blueprint-resources blueprint-superior-precraft paragraph-text-shadow" title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "worker" }}
+        <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow"  title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ end }}
+{{ end }}

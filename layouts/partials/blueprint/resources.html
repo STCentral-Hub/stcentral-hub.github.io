@@ -6,70 +6,61 @@
 {{ $qualityItemNameFormat := .miscTranslations.qualityItemNameFormat }}
 
 {{ $bpTranslations := partial "getDataTranslations.html" (dict "data" .bp "lang" $lang) }}
+{{ $scratch := newScratch }}
 
 <span class="blueprint-spacer"></span>
 <p class="blueprint-label-header no-margin">{{ $resourcesHeader }}</p>
 <div class="blueprint-resources-wrapper">
-    {{ with $stats.resource1 }}
-        <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow" title="{{ $bpTranslations.resource1 }}">
-            <img src="/fankit{{ $assets.resource1 }}" alt="{{ $bpTranslations.resource1 }}">
-            <p>{{ $stats.resource1 | lang.FormatNumber 0 }}</p>
-        </div>
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $bpTranslations.resource1
+        "asset" $assets.resource1
+        "value" ($stats.resource1 | lang.FormatNumber 0)
+        "type" "rss")
+    }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $bpTranslations.resource2
+        "asset" $assets.resource2
+        "value" ($stats.resource2 | lang.FormatNumber 0)
+        "type" "rss")
+    }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" $bpTranslations.resource3
+        "asset" $assets.resource3
+        "value" ($stats.resource3 | lang.FormatNumber 0)
+        "type" "rss")
+    }}
+
+    {{ if $en.c1quality | eq "Normal" }}
+        {{ $scratch.Set "type" "normalPrecraft" }}
+        {{ $scratch.Set "title" (replaceRE `\{0\}` ($bpTranslations.c1quality) (replaceRE `\{1\}` ($bpTranslations.component1) $qualityItemNameFormat)) }}
+    {{ else if $en.c1quality | eq "Superior" }}
+        {{ $scratch.Set "type" "superiorPrecraft" }}
+        {{ $scratch.Set "title" (replaceRE `\{0\}` ($bpTranslations.c1quality) (replaceRE `\{1\}` ($bpTranslations.component1) $qualityItemNameFormat)) }}
+    {{ else }}
+        {{ $scratch.Set "type" "component  " }}
+        {{ $scratch.Set "title" $bpTranslations.component1 }}
     {{ end }}
-    {{ with $stats.resource2 }}
-        <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow" title="{{ $bpTranslations.resource2 }}">
-            <img src="/fankit{{ $assets.resource2 }}" alt="{{ $bpTranslations.resource2 }}">
-            <p>{{ $stats.resource2 | lang.FormatNumber 0 }}</p>
-        </div>
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" ($scratch.Get "title")
+        "asset" $assets.component1
+        "value" ($stats.component1 | lang.FormatNumber 0)
+        "type" ($scratch.Get "type"))
+    }}
+
+    {{ if $en.c2quality | eq "Normal" }}
+        {{ $scratch.Set "type" "normalPrecraft" }}
+        {{ $scratch.Set "title" (replaceRE `\{0\}` ($bpTranslations.c2quality) (replaceRE `\{1\}` ($bpTranslations.component2) $qualityItemNameFormat)) }}
+    {{ else if $en.c2quality | eq "Superior" }}
+        {{ $scratch.Set "type" "superiorPrecraft" }}
+        {{ $scratch.Set "title" (replaceRE `\{0\}` ($bpTranslations.c2quality) (replaceRE `\{1\}` ($bpTranslations.component2) $qualityItemNameFormat)) }}
+    {{ else }}
+        {{ $scratch.Set "type" "component" }}
+        {{ $scratch.Set "title" $bpTranslations.component2 }}
     {{ end }}
-    {{ with $stats.resource3 }}
-        <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow" title="{{ $bpTranslations.resource3 }}">
-            <img src="/fankit{{ $assets.resource3 }}" alt="{{ $bpTranslations.resource3 }}">
-            <p>{{ $stats.resource3 | lang.FormatNumber 0 }}</p>
-        </div>
-    {{ end }}
-    {{ with $stats.component1 }}
-        {{ if $en.c1quality | eq "Normal" }}
-            {{ $precraftQualityString := replaceRE `\{0\}` ($bpTranslations.c1quality) $qualityItemNameFormat }}
-            {{ $precraftQualityString := replaceRE `\{1\}` ($bpTranslations.component1) $precraftQualityString }}
-            <div class="blueprint-meta-stat blueprint-resources blueprint-normal-precraft paragraph-text-shadow" title="{{ $precraftQualityString }}">
-                <img src="/fankit{{ $assets.component1 }}" alt="{{ $precraftQualityString }}">
-                <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ else if $en.c1quality | eq "Superior" }}
-            {{ $precraftQualityString := replaceRE `\{0\}` ($bpTranslations.c1quality) $qualityItemNameFormat }}
-            {{ $precraftQualityString := replaceRE `\{1\}` ($bpTranslations.component1) $precraftQualityString }}
-            <div class="blueprint-meta-stat blueprint-resources blueprint-superior-precraft paragraph-text-shadow" title="{{ $precraftQualityString }}">
-                <img src="/fankit{{ $assets.component1 }}" alt="{{ $precraftQualityString }}">
-                <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ else }}
-            <div class="blueprint-meta-stat blueprint-resources blueprint-components paragraph-text-shadow" title="{{ $bpTranslations.component1 }}">
-                <img src="/fankit{{ $assets.component1 }}" alt="{{ $bpTranslations.component1 }}">
-                <p>{{ $stats.component1 | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ end }}
-    {{ end }}
-    {{ with $stats.component2 }}
-        {{ if $en.c2quality | eq "Normal" }}
-            {{ $precraftQualityString := replaceRE `\{0\}` ($bpTranslations.c2quality) $qualityItemNameFormat }}
-            {{ $precraftQualityString := replaceRE `\{1\}` ($bpTranslations.component2) $precraftQualityString }}
-            <div class="blueprint-meta-stat blueprint-resources blueprint-normal-precraft paragraph-text-shadow" title="{{ $precraftQualityString }}">
-                <img src="/fankit{{ $assets.component2 }}" alt="{{ $precraftQualityString }}">
-                <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ else if $en.c2quality | eq "Superior" }}
-            {{ $precraftQualityString := replaceRE `\{0\}` ($bpTranslations.c2quality) $qualityItemNameFormat }}
-            {{ $precraftQualityString := replaceRE `\{1\}` ($bpTranslations.component2) $precraftQualityString }}
-            <div class="blueprint-meta-stat blueprint-resources blueprint-superior-precraft paragraph-text-shadow" title="{{ $precraftQualityString }}">
-                <img src="/fankit{{ $assets.component2 }}" alt="{{ $precraftQualityString }}">
-                <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ else }}
-            <div class="blueprint-meta-stat blueprint-resources blueprint-components paragraph-text-shadow" title="{{ $bpTranslations.component2 }}">
-                <img src="/fankit{{ $assets.component2 }}" alt="{{ $bpTranslations.component2 }}">
-                <p>{{ $stats.component2 | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ end }}
-    {{ end }}
+    {{ partial "blueprint/metaStat.html" (dict
+        "title" ($scratch.Get "title")
+        "asset" $assets.component2
+        "value" ($stats.component2 | lang.FormatNumber 0)
+        "type" ($scratch.Get "type"))
+    }}
 </div>

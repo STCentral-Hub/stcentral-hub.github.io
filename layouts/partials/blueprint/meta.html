@@ -14,48 +14,52 @@
         <img src="/fankit{{ $assets.image }}" alt="">
     </div>
     <div class="blueprint-meta-stats-wrapper">
-        {{ with $stats.value }}
-            <div class="blueprint-meta-stat" title="{{ $statTranslations.value }}">
-                <img src="/fankit{{ $statData.assets.value }}" alt="{{ $statTranslations.value }}">
-                <p>{{ $stats.roundedValue | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ end }}
-        {{ with $stats.merchantXp }}
-            <div class="blueprint-meta-stat" title="{{ $statTranslations.merchantXp }}">
-                <img src="/fankit{{ $statData.assets.merchantXp }}" alt="{{ $statTranslations.merchantXp }}">
-                <p>{{ $stats.merchantXp | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ end }}
-        {{ with $stats.favor }}
-            <div class="blueprint-meta-stat" title="{{ $statTranslations.favor }}">
-                <img src="/fankit{{ $statData.assets.favor }}"  alt="{{ $statTranslations.favor }}">
-                <p>{{ $stats.favor | lang.FormatNumber 0 }}</p>
-            </div>
-        {{ end }}
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $statTranslations.value
+            "asset" $statData.assets.value
+            "value" ($stats.roundedValue | lang.FormatNumber 0)
+            "type" "stat")
+        }}
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $statTranslations.merchantXp
+            "asset" $statData.assets.merchantXp
+            "value" ($stats.merchantXp | lang.FormatNumber 0)
+            "type" "stat")
+        }}
+
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $statTranslations.favor
+            "asset" $statData.assets.favor
+            "value" ($stats.favor | lang.FormatNumber 0)
+            "type" "stat")
+        }}
         {{ if $bpClass | ne "Enchantments" }}
-            {{ with $stats.airshipPower }}
-                <div class="blueprint-meta-stat" title="{{ $statTranslations.airshipPower }}">
-                    <img src="/fankit{{ $statData.assets.airshipPower }}" alt="{{ $statTranslations.airshipPower }}">
-                    <p>{{ $stats.airshipPower | lang.FormatNumber 0 }}</p>
-                </div>
-            {{ end }}
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" $statTranslations.airshipPower
+                "asset" $statData.assets.airshipPower
+                "value" ($stats.airshipPower | lang.FormatNumber 0)
+                "type" "stat")
+            }}
         {{ end }}
-        {{ with $stats.antiqueDate }}
-            {{ $scratch := newScratch }}
-            {{ if $lang | eq "en" }}
-                {{ $scratch.Set "date" (time.Format "2006/01/02" (replaceRE `/` "-" $stats.antiqueDate)) }}
-            {{ else }}
-                {{ $scratch.Set "date" (time.Format ":date_short" (replaceRE `/` "-" $stats.antiqueDate)) }}
-            {{ end }}
-            {{ $antiqueDate := $scratch.Get "date" }}
-            <div class="blueprint-meta-stat" title="{{- $inAntiqueStoreOn -}}&nbsp;{{- $antiqueDate -}}">
-                {{ if (now | time) | gt (replace . "/" "-" | time) }}
-                    <img src="/fankit{{ $assets.notAntique }}" alt="{{ $bpTranslations.notInAntiqueShop }}">
-                {{ else }}
-                    <img src="/fankit{{ $assets.antique }}"  alt="{{ $bpTranslations.inAntiqueShop }}">
-                {{ end }}
-                <p>{{ $antiqueDate }}</p>
-            </div>
+
+        {{ $scratch := newScratch }}
+        {{ $antiqueDateString := replaceRE `/` "-" $stats.antiqueDate }}
+        {{ if (now | time) | gt ($antiqueDateString | time) }}
+            {{ $scratch.Set "asset" $assets.notAntique }}
+        {{ else }}
+            {{ $scratch.Set "asset" $assets.antique }}
         {{ end }}
+        {{ if $lang | eq "en" }}
+            {{ $scratch.Set "date" (time.Format "2006/01/02" $antiqueDateString) }}
+        {{ else }}
+            {{ $scratch.Set "date" (time.Format ":date_short" $antiqueDateString) }}
+        {{ end }}
+
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" (delimit (slice $inAntiqueStoreOn ($scratch.Get "date")) "&nbsp;")
+            "asset" ($scratch.Get "asset")
+            "value" ($scratch.Get "date")
+            "type" "stat")
+        }}
     </div>
 </div>

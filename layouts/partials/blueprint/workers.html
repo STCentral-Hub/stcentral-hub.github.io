@@ -10,21 +10,27 @@
 <p class="blueprint-label-header no-margin">{{ $workersHeader }}</p>
 <div class="blueprint-stats-wrapper">
     {{ with $stats.worker1 }}
-        <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow" title="{{ $bpTranslations.worker1 }}">
-            <img src="/fankit{{ $assets.worker1 }}" alt="{{ $bpTranslations.worker1 }}">
-            <p>{{ replaceRE `\{0\}` ($stats.worker1 | lang.FormatNumber 0) $workerLevelFormat }}</p>
-        </div>
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $bpTranslations.worker1
+            "asset" $assets.worker1
+            "value" (replaceRE `\{0\}` ($stats.worker1 | lang.FormatNumber 0) $workerLevelFormat)
+            "type" "worker")
+        }}
     {{ end }}
     {{ with $stats.worker2 }}
-        <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow" title="{{ $bpTranslations.worker2 }}">
-            <img src="/fankit{{ $assets.worker2 }}" alt="{{ $bpTranslations.worker2 }}">
-            <p>{{ replaceRE `\{0\}` ($stats.worker2 | lang.FormatNumber 0) $workerLevelFormat }}</p>
-        </div>
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $bpTranslations.worker2
+            "asset" $assets.worker2
+            "value" (replaceRE `\{0\}` ($stats.worker2 | lang.FormatNumber 0) $workerLevelFormat)
+            "type" "worker")
+        }}
     {{ end }}
     {{ with $stats.worker3 }}
-        <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow" title="{{ $bpTranslations.worker3 }}">
-            <img src="/fankit{{ $assets.worker3 }}" alt="{{ $bpTranslations.worker3 }}">
-            <p>{{ replaceRE `\{0\}` ($stats.worker3 | lang.FormatNumber 0) $workerLevelFormat }}</p>
-        </div>
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $bpTranslations.worker3
+            "asset" $assets.worker3
+            "value" (replaceRE `\{0\}` ($stats.worker3 | lang.FormatNumber 0) $workerLevelFormat)
+            "type" "worker")
+        }}
     {{ end }}
 </div>
