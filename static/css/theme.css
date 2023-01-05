@@ -26,6 +26,26 @@
     --color-blueprintcard-worker-border: #ea8d7c;
     --color-blueprintcard-compinent-background: #D673A44D;
     --gradient-blueprintcard-worker-background: linear-gradient(#832020, #cc2716);
+    --filter-item-quality-superior:
+            drop-shadow(-0.025rem -0.025rem 0 var(--color-quality-superior-text))
+            drop-shadow(0.025rem 0.025rem 0 var(--color-quality-superior-text))
+            drop-shadow(0.025rem -0.025rem 0 var(--color-quality-superior-text))
+            drop-shadow(-0.025rem 0.025rem 0 var(--color-quality-superior-text));
+    --filter-item-quality-flawless:
+            drop-shadow(-0.025rem -0.025rem 0 var(--color-quality-flawless-text))
+            drop-shadow(0.025rem 0.025rem 0 var(--color-quality-flawless-text))
+            drop-shadow(0.025rem -0.025rem 0 var(--color-quality-flawless-text))
+            drop-shadow(-0.025rem 0.025rem 0 var(--color-quality-flawless-text));
+    --filter-item-quality-epic:
+            drop-shadow(-0.025rem -0.025rem 0 var(--color-quality-epic-text))
+            drop-shadow(0.025rem 0.025rem 0 var(--color-quality-epic-text))
+            drop-shadow(0.025rem -0.025rem 0 var(--color-quality-epic-text))
+            drop-shadow(-0.025rem 0.025rem 0 var(--color-quality-epic-text));
+    --filter-item-quality-legendary:
+            drop-shadow(-0.025rem -0.025rem 0 var(--color-quality-legendary-text))
+            drop-shadow(0.025rem 0.025rem 0 var(--color-quality-legendary-text))
+            drop-shadow(0.025rem -0.025rem 0 var(--color-quality-legendary-text))
+            drop-shadow(-0.025rem 0.025rem 0 var(--color-quality-legendary-text));
 
     /* STC - Colors */
     --color-stc-background-gray: #AEABAB;

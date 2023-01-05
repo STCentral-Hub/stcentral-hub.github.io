@@ -20,13 +20,17 @@
             <p>{{ $value }}</p>
         </div>
     {{ else if $type | eq "normalPrecraft" }}
-        <div class="blueprint-meta-stat blueprint-resources blueprint-normal-precraft paragraph-text-shadow" title="{{ $title }}">
-            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+        <div class="blueprint-meta-stat blueprint-resources paragraph-text-shadow" title="{{ $title }}">
+            <div class="blueprint-precraft-wrapper blueprint-normal-precraft">
+                <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            </div>
             <p>{{ $value }}</p>
         </div>
     {{ else if $type | eq "superiorPrecraft" }}
-        <div class="blueprint-meta-stat blueprint-resources blueprint-superior-precraft paragraph-text-shadow" title="{{ $title }}">
-            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+        <div class="blueprint-meta-stat blueprint-resources  paragraph-text-shadow" title="{{ $title }}">
+            <div class="blueprint-precraft-wrapper blueprint-superior-precraft">
+                <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            </div>
             <p>{{ $value }}</p>
         </div>
     {{ else if $type | eq "worker" }}

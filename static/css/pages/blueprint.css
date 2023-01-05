@@ -182,11 +182,23 @@
     background-color: var(--color-blueprintcard-compinent-background);
 }
 
-.blueprint-normal-precraft img {
+.blueprint-precraft-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 2rem;
+    width: 2rem;
     border-style: solid;
     border-width: 0.025rem;
     border-radius: 50%;
+}
+
+.blueprint-precraft-wrapper img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.blueprint-normal-precraft {
     border-color: var(--color-quality-normal-text);
     background-image: radial-gradient(
             circle,
@@ -194,16 +206,16 @@
             transparent 90%);
 }
 
-.blueprint-superior-precraft img {
-    height: 2rem;
-    border-style: solid;
-    border-width: 0.025rem;
-    border-radius: 50%;
+.blueprint-superior-precraft {
     border-color: var(--color-quality-superior-text);
     background-image: radial-gradient(
             circle,
             var(--color-quality-superior-text) 10%,
             transparent 90%);
+}
+
+.blueprint-superior-precraft img {
+    filter: var(--filter-item-quality-superior)
 }
 
 .blueprint-workers img {
