@@ -42,24 +42,26 @@
             }}
         {{ end }}
 
-        {{ $scratch := newScratch }}
-        {{ $antiqueDateString := replaceRE `/` "-" $stats.antiqueDate }}
-        {{ if (now | time) | gt ($antiqueDateString | time) }}
-            {{ $scratch.Set "asset" $assets.notAntique }}
-        {{ else }}
-            {{ $scratch.Set "asset" $assets.antique }}
-        {{ end }}
-        {{ if $lang | eq "en" }}
-            {{ $scratch.Set "date" (time.Format "2006/01/02" $antiqueDateString) }}
-        {{ else }}
-            {{ $scratch.Set "date" (time.Format ":date_short" $antiqueDateString) }}
-        {{ end }}
+        {{ with $stats.antiqueDate }}
+            {{ $scratch := newScratch }}
+            {{ $antiqueDateString := replaceRE `/` "-" $stats.antiqueDate }}
+            {{ if (now | time) | gt ($antiqueDateString | time) }}
+                {{ $scratch.Set "asset" $assets.notAntique }}
+            {{ else }}
+                {{ $scratch.Set "asset" $assets.antique }}
+            {{ end }}
+            {{ if $lang | eq "en" }}
+                {{ $scratch.Set "date" (time.Format "2006/01/02" $antiqueDateString) }}
+            {{ else }}
+                {{ $scratch.Set "date" (time.Format ":date_short" $antiqueDateString) }}
+            {{ end }}
 
-        {{ partial "blueprint/metaStat.html" (dict
-            "title" (delimit (slice $inAntiqueStoreOn ($scratch.Get "date")) "&nbsp;")
-            "asset" ($scratch.Get "asset")
-            "value" ($scratch.Get "date")
-            "type" "stat")
-        }}
+            {{ partial "blueprint/metaStat.html" (dict
+                "title" (delimit (slice $inAntiqueStoreOn ($scratch.Get "date")) "&nbsp;")
+                "asset" ($scratch.Get "asset")
+                "value" ($scratch.Get "date")
+                "type" "stat")
+            }}
+        {{ end }}
     </div>
 </div>
