@@ -17,15 +17,15 @@
     --color-quality-flawless-text: #00DFFF;
     --color-quality-epic-text: #ED95F9;
     --color-quality-legendary-text: #FFD936;
-    --color-herocard-background: #5C2F46;
-    --color-herocard-background-dark: #442337FF;
-    --color-herocard-background-dark-transparency: #44233744;
-    --color-herocard-border: #A74C7D;
-    --color-herocard-equipment-border: #6D3657;
-    --color-blueprintcard-alt-text: #B8729B;
-    --color-blueprintcard-worker-border: #ea8d7c;
-    --color-blueprintcard-compinent-background: #D673A44D;
-    --gradient-blueprintcard-worker-background: linear-gradient(#832020, #cc2716);
+    --color-card-alt-text: #B8729B;
+    --color-card-background: #5C2F46;
+    --color-card-background-dark: #442337FF;
+    --color-card-background-dark-transparency: #44233744;
+    --color-card-border: #A74C7D;
+    --color-card-equipment-border: #6D3657;
+    --color-component-background: #D673A44D;
+    --color-worker-border: #EA8D7C;
+    --gradient-worker-background: linear-gradient(#832020, #CC2716);
     --filter-item-quality-superior:
             drop-shadow(-0.025rem -0.025rem 0 var(--color-quality-superior-text))
             drop-shadow(0.025rem 0.025rem 0 var(--color-quality-superior-text))

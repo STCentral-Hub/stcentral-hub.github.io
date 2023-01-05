@@ -9,8 +9,8 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     color: var(--color-stc-text-white);
-    background-color: var(--color-herocard-background);
-    border-color: var(--color-herocard-border);
+    background-color: var(--color-card-background);
+    border-color: var(--color-card-border);
     border-style: solid;
     border-width: 0.2rem;
     border-radius: 1.5rem;
@@ -23,8 +23,8 @@
     background-image:
             linear-gradient(to right,
             transparent,
-            var(--color-herocard-border) 20%,
-            var(--color-herocard-border) 80%,
+            var(--color-card-border) 20%,
+            var(--color-card-border) 80%,
             transparent
             );
     height: 0.075rem;
@@ -34,7 +34,7 @@
 
 .blueprint-label-header {
     align-self: center;
-    color: var(--color-blueprintcard-alt-text);
+    color: var(--color-card-alt-text);
 }
 
 .blueprint-banner {
@@ -77,7 +77,7 @@
 }
 
 .blueprint-banner-info-type {
-    color: var(--color-blueprintcard-alt-text);
+    color: var(--color-card-alt-text);
 }
 
 .blueprint-type-img {
@@ -182,7 +182,7 @@
 
 .blueprint-components img {
     border-radius: 50%;
-    background-color: var(--color-blueprintcard-compinent-background);
+    background-color: var(--color-component-background);
 }
 
 .blueprint-precraft-wrapper {
@@ -237,8 +237,8 @@
     border-style: solid;
     border-width: 0.1rem;
     border-radius: 50%;
-    border-color: var(--color-blueprintcard-worker-border);
-    background-image: var(--gradient-blueprintcard-worker-background);
+    border-color: var(--color-worker-border);
+    background-image: var(--gradient-worker-background);
     box-shadow: 0.1rem 0.1rem black;
 }
 

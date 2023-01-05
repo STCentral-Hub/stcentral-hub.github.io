@@ -5,8 +5,8 @@
     padding: 1rem;
     margin: 1rem;
     color: var(--color-stc-text-white);
-    background-color: var(--color-herocard-background);
-    border-color: var(--color-herocard-border);
+    background-color: var(--color-card-background);
+    border-color: var(--color-card-border);
     border-style: solid;
     border-width: 0.2rem;
     border-radius: 1.5rem;
@@ -49,8 +49,8 @@
 .hero-stats-table tr:nth-child(even) {
     background-image: linear-gradient(
             to right,
-            var(--color-herocard-background-dark),
-            var(--color-herocard-background-dark-transparency)
+            var(--color-card-background-dark),
+            var(--color-card-background-dark-transparency)
     );
 }
 
@@ -163,8 +163,8 @@
     border-style: solid;
     border-width: 0.1875rem;
     border-radius: 1rem;
-    border-color: var(--color-herocard-equipment-border);
-    background-color: var(--color-herocard-background-dark);
+    border-color: var(--color-card-equipment-border);
+    background-color: var(--color-card-background-dark);
 }
 
 .hero-equipment-slot-icon {
@@ -236,8 +236,8 @@
     border-style: solid;
     border-width: 0.1875rem;
     border-radius: 1rem;
-    border-color: var(--color-herocard-equipment-border);
-    background-color: var(--color-herocard-background-dark);
+    border-color: var(--color-card-equipment-border);
+    background-color: var(--color-card-background-dark);
     padding: 0.25rem 0.5rem;
     margin: 0;
 }
