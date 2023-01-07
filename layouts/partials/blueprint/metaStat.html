@@ -1,0 +1,46 @@
+{{ $title := .title }}
+{{ $asset := .asset }}
+{{ $value := .value }}
+{{ $type := .type }}
+
+{{ if $value | ne "0" }}
+    {{ if $type | eq "stat" }}
+        <div class="blueprint-meta-stat blueprint-stat-margin paragraph-text-shadow" title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "affinity" }}
+        <div class="blueprint-meta-stat blueprint-stat-margin paragraph-text-shadow"  title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+        </div>
+    {{ else if $type | eq "rss" }}
+        <div class="blueprint-meta-stat blueprint-stat-margin blueprint-resources paragraph-text-shadow"  title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "component" }}
+        <div class="blueprint-meta-stat blueprint-stat-margin blueprint-resources blueprint-components paragraph-text-shadow" title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "normalPrecraft" }}
+        <div class="blueprint-meta-stat blueprint-stat-margin blueprint-resources paragraph-text-shadow" title="{{ $title }}">
+            <div class="blueprint-precraft-wrapper blueprint-normal-precraft">
+                <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            </div>
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "superiorPrecraft" }}
+        <div class="blueprint-meta-stat blueprint-stat-margin blueprint-resources paragraph-text-shadow" title="{{ $title }}">
+            <div class="blueprint-precraft-wrapper blueprint-superior-precraft">
+                <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            </div>
+            <p>{{ $value }}</p>
+        </div>
+    {{ else if $type | eq "worker" }}
+        <div class="blueprint-meta-stat blueprint-workers paragraph-text-shadow"  title="{{ $title }}">
+            <img src="/fankit{{ $asset }}" alt="{{ $title }}">
+            <p>{{ $value }}</p>
+        </div>
+    {{ end }}
+{{ end }}

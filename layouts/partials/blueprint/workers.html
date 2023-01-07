@@ -1,0 +1,36 @@
+{{ $lang := .page.Lang }}
+{{ $assets := .bp.assets }}
+{{ $stats := .bp.stats }}
+{{ $workersHeader := .miscTranslations.workers }}
+{{ $workerLevelFormat := .miscTranslations.levelFormatShort }}
+
+{{ $bpTranslations := partial "getDataTranslations.html" (dict "data" .bp "lang" $lang) }}
+
+<span class="blueprint-spacer"></span>
+<p class="blueprint-label-header no-margin">{{ $workersHeader }}</p>
+<div class="blueprint-stats-wrapper">
+    {{ with $stats.worker1 }}
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $bpTranslations.worker1
+            "asset" $assets.worker1
+            "value" (replaceRE `\{0\}` ($stats.worker1 | lang.FormatNumber 0) $workerLevelFormat)
+            "type" "worker")
+        }}
+    {{ end }}
+    {{ with $stats.worker2 }}
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $bpTranslations.worker2
+            "asset" $assets.worker2
+            "value" (replaceRE `\{0\}` ($stats.worker2 | lang.FormatNumber 0) $workerLevelFormat)
+            "type" "worker")
+        }}
+    {{ end }}
+    {{ with $stats.worker3 }}
+        {{ partial "blueprint/metaStat.html" (dict
+            "title" $bpTranslations.worker3
+            "asset" $assets.worker3
+            "value" (replaceRE `\{0\}` ($stats.worker3 | lang.FormatNumber 0) $workerLevelFormat)
+            "type" "worker")
+        }}
+    {{ end }}
+</div>

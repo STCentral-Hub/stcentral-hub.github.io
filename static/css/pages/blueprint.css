@@ -1,8 +1,247 @@
-.blueprint-root {
+.blueprint-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    width: 15.625rem;
-    height: 16.6875rem
+    align-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-stc-text-white);
+    background-color: var(--color-card-background);
+    border-color: var(--color-card-border);
+    border-style: solid;
+    border-width: 0.2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem black;
+    width: 18rem;
+    max-width: 18rem;
 }
 
+.blueprint-spacer {
+    background-image:
+            linear-gradient(to right,
+            transparent,
+            var(--color-card-border) 20%,
+            var(--color-card-border) 80%,
+            transparent
+            );
+    height: 0.075rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.blueprint-label-header {
+    align-self: center;
+    color: var(--color-card-alt-text);
+}
+
+.blueprint-banner {
+    display: flex;
+    translate: -0.5rem -0.6rem;
+}
+
+.blueprint-translation {
+    translate: 0 -0.6rem;
+}
+
+.blueprint-banner-tier {
+    display: flex;
+}
+
+.blueprint-banner-tier img:first-child {
+    z-index: 1;
+    height: 4rem;
+    width: 4rem;
+}
+
+.blueprint-banner-tier img:last-child {
+    position: absolute;
+    z-index: 2;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.75rem;
+}
+
+.blueprint-banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0.25rem;
+}
+
+.blueprint-banner-info-name {
+    display: flex;
+    align-items: center;
+}
+
+.blueprint-banner-info-type {
+    color: var(--color-card-alt-text);
+}
+
+.blueprint-type-img {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-right: 0.25rem;
+}
+
+.blueprint-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blueprint-asset {
+    display: flex;
+    height: 10.68rem;
+    width: 10rem;
+}
+
+.blueprint-asset img:first-child {
+    position: absolute;
+    z-index: 1;
+    height: 10.68rem;
+    width: 10rem;
+}
+
+.blueprint-asset img:last-child {
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+.blueprint-row-background div:nth-child(even) {
+    background-image: var(--gradient-card-row-alt-background)
+}
+
+.blueprint-meta-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding-left: 0.5rem;
+}
+
+.blueprint-meta-stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blueprint-meta-stat img {
+    height: 2rem;
+    justify-self: center;
+}
+
+.blueprint-meta-stat p {
+    margin: 0 0 0 0.25rem;
+    text-align: right;
+}
+
+.blueprint-stats-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blueprint-stats-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.blueprint-stat-margin {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.blueprint-heroes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blueprint-heroes img {
+    height: 2.55rem;
+    width: 2.55rem;
+    padding: 0.125rem;
+}
+
+.blueprint-resources-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+
+.blueprint-resources img {
+    height: 2.5rem;
+}
+
+.blueprint-resources p {
+    position: absolute;
+    translate: 1rem 1rem;
+}
+
+.blueprint-components img {
+    border-radius: 50%;
+    background-color: var(--color-component-background);
+}
+
+.blueprint-precraft-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-style: solid;
+    border-width: 0.025rem;
+    border-radius: 50%;
+}
+
+.blueprint-precraft-wrapper img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.blueprint-normal-precraft {
+    border-color: var(--color-quality-normal-text);
+    background-image: radial-gradient(
+            circle,
+            var(--color-quality-normal-text) 10%,
+            transparent 90%);
+}
+
+.blueprint-superior-precraft {
+    border-color: var(--color-quality-superior-text);
+    background-image: radial-gradient(
+            circle,
+            var(--color-quality-superior-text) 10%,
+            transparent 90%);
+}
+
+.blueprint-superior-precraft img {
+    filter: var(--filter-item-quality-superior)
+}
+
+.blueprint-workers {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.blueprint-workers img {
+    height: 2.25rem;
+    justify-self: center;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 50%;
+    border-color: var(--color-worker-border);
+    background-image: var(--gradient-worker-background);
+    box-shadow: 0.1rem 0.1rem black;
+}
+
+.blueprint-workers p {
+    position: absolute;
+    translate: 1rem 1rem;
+}

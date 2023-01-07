@@ -2,7 +2,9 @@
 <main>
     {{- partial "layout/main-header.html" . -}}
     <article>
-        <h3 class="content-summary">{{ .Summary }}</h3>
+        {{ with .Summary }}
+            <h3 class="content-summary">{{ . }}</h3>
+        {{ end }}
         {{ .Content }}
     </article>
     <hr>

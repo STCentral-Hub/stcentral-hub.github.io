@@ -1,6 +1,6 @@
-{{ $data := .Site.Data.blueprints }}
-{{ $lang := .Page.Lang }}
-{{ range where $data "language.en.name" "==" (.Get "name") }}
-    {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
-    {{ partial "blueprint/base.html" (dict "assets" .assets "strings" $translations "stats" .stats) }}
+{{ $page := .Page }}
+{{ $bpData := $page.Site.Data.blueprints }}
+
+{{ range where $bpData "language.en.name" "==" (.Get "name") }}
+    {{ partial "blueprint/card.html" (dict "page" $page "bp" .) }}
 {{ end }}

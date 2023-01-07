@@ -3,6 +3,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_swordmaster_128.png"
     },
+    "order": 1051,
     "equipment": {
       "slot1": [
         "Sword",
@@ -85,6 +86,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_barbarian_128.png"
     },
+    "order": 1021,
     "equipment": {
       "slot1": [
         "Sword",
@@ -170,6 +172,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_ranger_128.png"
     },
+    "order": 1041,
     "equipment": {
       "slot1": [
         "Bow",
@@ -253,6 +256,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_knight_128.png"
     },
+    "order": 1031,
     "equipment": {
       "slot1": [
         "Axe",
@@ -333,6 +337,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_berserker_128.png"
     },
+    "order": 1061,
     "equipment": {
       "slot1": [
         "Axe",
@@ -417,6 +422,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Fighters/icon_global_class_soldier_128.png"
     },
+    "order": 1011,
     "equipment": {
       "slot1": [
         "Sword",
@@ -499,6 +505,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_sorcerer_128.png"
     },
+    "order": 3041,
     "equipment": {
       "slot1": [
         "Dagger",
@@ -581,6 +588,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_druid_128.png"
     },
+    "order": 3031,
     "equipment": {
       "slot1": [
         "Bow",
@@ -664,6 +672,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_cleric_128.png"
     },
+    "order": 3021,
     "equipment": {
       "slot1": [
         "Mace",
@@ -746,6 +755,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_geomancer_128.png"
     },
+    "order": 3061,
     "equipment": {
       "slot1": [
         "Mace",
@@ -829,6 +839,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_redmage_128.png"
     },
+    "order": 3051,
     "equipment": {
       "slot1": [
         "Sword",
@@ -923,6 +934,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Spellcasters/icon_global_class_mage_128.png"
     },
+    "order": 3011,
     "equipment": {
       "slot1": [
         "Wand",
@@ -1005,6 +1017,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_wanderer_128.png"
     },
+    "order": 2041,
     "equipment": {
       "slot1": [
         "Axe",
@@ -1089,6 +1102,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_dancer_128.png"
     },
+    "order": 2061,
     "equipment": {
       "slot1": [
         "Dagger",
@@ -1172,6 +1186,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_thief_128.png"
     },
+    "order": 2011,
     "equipment": {
       "slot1": [
         "Dagger",
@@ -1254,6 +1269,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_ninja_128.png"
     },
+    "order": 2051,
     "equipment": {
       "slot1": [
         "Sword",
@@ -1336,6 +1352,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_musketeer_128.png"
     },
+    "order": 2031,
     "equipment": {
       "slot1": [
         "Sword",
@@ -1418,6 +1435,7 @@
     "assets": {
       "image": "/Hero Classes/Standard Classes/Rogues/icon_global_class_monk_128.png"
     },
+    "order": 2021,
     "equipment": {
       "slot1": [
         "Clothes"
@@ -1499,6 +1517,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_chieftain_128.png"
     },
+    "order": 1022,
     "equipment": {
       "slot1": [
         "Sword",
@@ -1585,6 +1604,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_daimyo_128.png"
     },
+    "order": 1052,
     "equipment": {
       "slot1": [
         "Sword",
@@ -1667,6 +1687,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_jarl_128.png"
     },
+    "order": 1062,
     "equipment": {
       "slot1": [
         "Axe",
@@ -1752,6 +1773,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_lord_128.png"
     },
+    "order": 1032,
     "equipment": {
       "slot1": [
         "Sword",
@@ -1834,6 +1856,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_mercenary_128.png"
     },
+    "order": 1012,
     "equipment": {
       "slot1": [
         "Sword",
@@ -1917,6 +1940,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Fighters/icon_global_class_warden_128.png"
     },
+    "order": 1042,
     "equipment": {
       "slot1": [
         "Bow",
@@ -2000,6 +2024,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_archdruid_128.png"
     },
+    "order": 3032,
     "equipment": {
       "slot1": [
         "Bow",
@@ -2084,6 +2109,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_warlock_128.png"
     },
+    "order": 3042,
     "equipment": {
       "slot1": [
         "Dagger",
@@ -2166,6 +2192,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_astramancer_128.png"
     },
+    "order": 3062,
     "equipment": {
       "slot1": [
         "Mace",
@@ -2249,6 +2276,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_archmage_128.png"
     },
+    "order": 3012,
     "equipment": {
       "slot1": [
         "Wand",
@@ -2331,6 +2359,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_bishop_128.png"
     },
+    "order": 3022,
     "equipment": {
       "slot1": [
         "Mace",
@@ -2414,6 +2443,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Spellcasters/icon_global_class_spellknight_128.png"
     },
+    "order": 3052,
     "equipment": {
       "slot1": [
         "Sword",
@@ -2508,6 +2538,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_acrobat_128.png"
     },
+    "order": 2062,
     "equipment": {
       "slot1": [
         "Dagger",
@@ -2591,6 +2622,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_trickster_128.png"
     },
+    "order": 2012,
     "equipment": {
       "slot1": [
         "Dagger",
@@ -2674,6 +2706,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_mastermonk_128.png"
     },
+    "order": 2022,
     "equipment": {
       "slot1": [
         "Clothes"
@@ -2755,6 +2788,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_sensei_128.png"
     },
+    "order": 2052,
     "equipment": {
       "slot1": [
         "Sword",
@@ -2837,6 +2871,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_pathfinder_128.png"
     },
+    "order": 2042,
     "equipment": {
       "slot1": [
         "Axe",
@@ -2921,6 +2956,7 @@
     "assets": {
       "image": "/Hero Classes/Titan Classes/Rogues/icon_global_class_conquistador_128.png"
     },
+    "order": 2032,
     "equipment": {
       "slot1": [
         "Sword",
