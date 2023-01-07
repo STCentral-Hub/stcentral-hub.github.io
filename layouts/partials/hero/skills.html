@@ -2,7 +2,7 @@
 {{ $skillData := .page.Site.Data.skills }}
 {{ $skills := .skills }}
 
-{{ with $skills }}
+{{ if (or $skills.skill0 $skills.skill1 $skills.skill2 $skills.skill3 $skills.skill4) }}
     {{ $scratch := newScratch }}
 
     {{ range where $skillData "language.en.tier1" "==" $skills.skill0 }}
@@ -37,10 +37,30 @@
     {{ $skill4 := dict "assets" ($scratch.Get "skill4Assets") "translations" ($scratch.Get "skill4Translations") }}
 
     <div class="hero-skill-wrapper">
-        <img class="hero-skill-icon" src="/fankit{{ ($skill0.assets).tier1 }}" alt="{{ ($skill0.translations).tier1 }}">
-        <img class="hero-skill-icon" src="/fankit{{ ($skill1.assets).tier1 }}" alt="{{ ($skill1.translations).tier1 }}">
-        <img class="hero-skill-icon" src="/fankit{{ ($skill2.assets).tier1 }}" alt="{{ ($skill2.translations).tier1 }}">
-        <img class="hero-skill-icon" src="/fankit{{ ($skill3.assets).tier1 }}" alt="{{ ($skill3.translations).tier1 }}">
-        <img class="hero-skill-icon" src="/fankit{{ ($skill4.assets).tier1 }}" alt="{{ ($skill4.translations).tier1 }}">
+        <img class="hero-skill-icon"
+             src="/fankit{{ ($skill0.assets).tier1 }}"
+             alt="{{ ($skill0.translations).tier1 }}"
+             title="{{ ($skill0.translations).tier1 }}"
+        >
+        <img class="hero-skill-icon"
+             src="/fankit{{ ($skill1.assets).tier1 }}"
+             alt="{{ ($skill1.translations).tier1 }}"
+             title="{{ ($skill1.translations).tier1 }}"
+        >
+        <img class="hero-skill-icon"
+             src="/fankit{{ ($skill2.assets).tier1 }}"
+             alt="{{ ($skill2.translations).tier1 }}"
+             title="{{ ($skill2.translations).tier1 }}"
+        >
+        <img class="hero-skill-icon"
+             src="/fankit{{ ($skill3.assets).tier1 }}"
+             alt="{{ ($skill3.translations).tier1 }}"
+             title="{{ ($skill3.translations).tier1 }}"
+        >
+        <img class="hero-skill-icon"
+             src="/fankit{{ ($skill4.assets).tier1 }}"
+             alt="{{ ($skill4.translations).tier1 }}"
+             title="{{ ($skill4.translations).tier1 }}"
+        >
     </div>
 {{ end }}

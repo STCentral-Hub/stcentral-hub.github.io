@@ -1,88 +1,115 @@
-{{ $lang := .page.Lang }}
-{{ $blueprintData := .page.Site.Data.blueprints }}
-{{ $statData := .page.Site.Data.stats }}
+{{ $page := .page }}
+{{ $lang := $page.Lang }}
+{{ $blueprintData := $page.Site.Data.blueprints }}
+{{ $miscData := .page.Site.Data.miscellaneous }}
+{{ $statData := $page.Site.Data.stats }}
 {{ $slot := .slot }}
+
+{{ $miscTranslations := partial "getDataTranslations.html" (dict "data" $miscData "lang" $lang) }}
 
 {{ $scratch := newScratch }}
 
 {{ range where $blueprintData "language.en.name" "==" $slot.item }}
-{{ $scratch.Set "item" (dict
-    "assets" .assets
-    "stats" .stats
-        "lang" (merge (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
-                      (partial "getDataTranslations.html" (dict "data" $statData "lang" $lang))
-               )
-    )
-}}
+    {{ $scratch.Set "item" (dict
+        "assets" .assets
+        "stats" .stats
+            "lang" (merge (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+                          (partial "getDataTranslations.html" (dict "data" $statData "lang" $lang))
+                   )
+        )
+    }}
 {{ end }}
 
 {{ range where $blueprintData "language.en.name" "==" $slot.element }}
-{{ $scratch.Set "element" (dict
-    "assets" .assets
-    "stats" .stats
-    "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
-    )
-}}
+    {{ $scratch.Set "element" (dict
+        "assets" .assets
+        "stats" .stats
+        "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+        )
+    }}
 {{ end }}
 
 {{ range where $blueprintData "language.en.name" "==" $slot.spirit }}
-{{ $scratch.Set "spirit" (dict
-    "assets" .assets
-    "stats" .stats
-    "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
-    )
-}}
+    {{ $scratch.Set "spirit" (dict
+        "assets" .assets
+        "stats" .stats
+        "lang" (partial "getDataTranslations.html" (dict "data" . "lang" $lang))
+        )
+    }}
 {{ end }}
 
 {{ $item := $scratch.Get "item" }}
 {{ $element := $scratch.Get "element" }}
 {{ $spirit := $scratch.Get "spirit" }}
 
-<div class="hero-equipment-slot">
+{{ with $item.stats.atk }}
+    {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.attack ($item.stats.atk | lang.FormatNumber 0)) ": ")) }}
+{{ end }}
+{{ with $item.stats.def }}
+    {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.defense ($item.stats.def | lang.FormatNumber 0)) ": ")) }}
+{{ end }}
+{{ with $item.stats.hp }}
+    {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.health ($item.stats.hp | lang.FormatNumber 0)) ": ")) }}
+{{ end }}
+{{ with $item.stats.eva }}
+    {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.evasion ((float $item.stats.eva | mul 100) | lang.FormatPercent 0)) ": ")) }}
+{{ end }}
+{{ with $item.stats.crit }}
+    {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.critChance ((float $item.stats.crit | mul 100) | lang.FormatPercent 0)) ": ")) }}
+{{ end }}
+
+{{ with $item.stats.antiqueDate}}
+    {{ $antique := partial "getAntiqueInfo.html" (dict "page" $page "date" $item.stats.antiqueDate "assets" $item.assets) }}
+    {{ $scratch.Set "antiqueSummary" (delimit (slice $antique.isInShopMsg $antique.inShopOnMsg) "&#010;") }}
+    {{ $scratch.Set "antiqueAsset" $antique.asset }}
+{{ else }}
+    {{ $scratch.Set "antiqueSummary" "" }}
+{{ end }}
+
+{{ $itemSummary := replaceRE `\{0\}` $item.stats.tier (replaceRE `\{1\}` $item.lang.name $miscTranslations.bpTierTypeFormat) }}
+{{ $statSummary := delimit ($scratch.Get "stats") "&#010;" }}
+{{ $elementSummary := replaceRE `\{0\}\{1\}` $element.lang.name $miscTranslations.enchantedWithFormat}}
+{{ $spiritSummary := replaceRE `\{0\}\{1\}` $spirit.lang.name $miscTranslations.enchantedWithFormat}}
+{{ $antiqueSummary := $scratch.Get "antiqueSummary" }}
+
+
+{{ $slotTitle := delimit (slice $itemSummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
+
+<div class="hero-equipment-slot" title="{{ $slotTitle }}">
     <div class="hero-equipment-slot-tier">
-        <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="item tier background">
-        <img src="/fankit{{ $item.assets.tier }}" alt="tier {{ $item.stats.tier }} item">
+        <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="">
+        <img src="/fankit{{ $item.assets.tier }}" alt="">
     </div>
     <div class="hero-equipment-slot-stats">
         {{ with $item.stats.atk }}
-        <img src="/fankit{{ $statData.assets.atk }}"
-             alt="{{ $item.lang.atk }}: {{ $item.stats.atk | lang.FormatNumber 0 }}">
+            <img src="/fankit{{ $statData.assets.atk }}" alt="">
         {{ end }}
         {{ with $item.stats.def }}
-        <img src="/fankit{{ $statData.assets.def }}"
-             alt="{{ $item.lang.def }}: {{ $item.stats.def | lang.FormatNumber 0 }}">
+            <img src="/fankit{{ $statData.assets.def }}" alt="">
         {{ end }}
         {{ with $item.stats.hp }}
-        <img src="/fankit{{ $statData.assets.hp }}"
-             alt="{{ $item.lang.hp }}: {{ $item.stats.hp | lang.FormatNumber 0 }}">
+            <img src="/fankit{{ $statData.assets.hp }}" alt="">
         {{ end }}
         {{ with $item.stats.eva }}
-        <img src="/fankit{{ $statData.assets.eva }}"
-             alt="{{ $item.lang.eva }}: {{ (float $item.stats.eva | mul 100) | lang.FormatPercent 0 }}">
+            <img src="/fankit{{ $statData.assets.eva }}" alt="">
         {{ end }}
         {{ with $item.stats.crit }}
-        <img src="/fankit{{ $statData.assets.critChance }}"
-             alt="{{ $item.lang.critChance }}: {{ (float $item.stats.crit | mul 100) | lang.FormatPercent 0 }}">
+            <img src="/fankit{{ $statData.assets.critChance }}" alt="">
         {{ end }}
     </div>
     {{ with $item.stats.antiqueDate }}
-    <div class="hero-equipment-slot-antique">
-        {{ if (now | time) | gt (replace . "/" "-" | time) }}
-        <img src="/fankit{{ $item.assets.notAntique }}" alt="{{ $item.lang.notInAntiqueShop }}">
-        {{ else }}
-        <img src="/fankit{{ $item.assets.antique }}"  alt="{{ $item.lang.inAntiqueShop }}">
-        {{ end }}
-    </div>
+        {{ $antiqueAsset := $scratch.Get "antiqueAsset" }}
+        <div class="hero-equipment-slot-antique">
+            <img src="/fankit{{ $antiqueAsset }}" alt="">
+        </div>
     {{ end }}
     <div class="hero-equipment-slot-enchant">
         {{ with $element }}
-        <img src="/fankit{{ $element.assets.image }}"
-             alt="{{ $element.lang.name }}">
+            <img src="/fankit{{ $element.assets.image }}" alt="">
         {{ end }}
         {{ with $spirit }}
-        <img src="/fankit{{ $spirit.assets.affinitySpirit }}"
-             alt="{{ $spirit.lang.name }}">
+            <img src="/fankit{{ $spirit.assets.affinitySpirit }}" alt="">
         {{ end }}
     </div>
-    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="{{ $item.lang.name }}">
+    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="">
 </div>

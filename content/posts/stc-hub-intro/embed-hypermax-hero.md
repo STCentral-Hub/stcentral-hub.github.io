@@ -2,7 +2,7 @@
 date: 2022-12-24T00:06:22Z
 layout: ""
 outputs: ["embed", ]
-title: "STC Hub Intro: Embed Hero"
+title: "STC Hub Intro: Embed Hypermax Hero"
 summary: "Warlock"
 categories: ["Heroes", "Embedded", ]
 tags: ["Hypermax", ]
