@@ -1,5 +1,6 @@
-{{ $statData := .page.Site.Data.stats }}
-{{ $lang := .page.Lang }}
+{{ $page := .page }}
+{{ $statData := $page.Site.Data.stats }}
+{{ $lang := $page.Lang }}
 {{ $assets := .bp.assets }}
 {{ $stats := .bp.stats }}
 {{ $bpClass := .bp.language.en.class }}
@@ -43,23 +44,12 @@
         {{ end }}
 
         {{ with $stats.antiqueDate }}
-            {{ $scratch := newScratch }}
-            {{ $antiqueDateString := replaceRE `/` "-" $stats.antiqueDate }}
-            {{ if (now | time) | gt ($antiqueDateString | time) }}
-                {{ $scratch.Set "asset" $assets.notAntique }}
-            {{ else }}
-                {{ $scratch.Set "asset" $assets.antique }}
-            {{ end }}
-            {{ if $lang | eq "en" }}
-                {{ $scratch.Set "date" (time.Format "2006/01/02" $antiqueDateString) }}
-            {{ else }}
-                {{ $scratch.Set "date" (time.Format ":date_short" $antiqueDateString) }}
-            {{ end }}
+            {{ $antique := partial "getAntiqueInfo.html" (dict "page" $page "date" $stats.antiqueDate "assets" $assets) }}
 
             {{ partial "blueprint/metaStat.html" (dict
-                "title" (delimit (slice $inAntiqueStoreOn ($scratch.Get "date")) "&nbsp;")
-                "asset" ($scratch.Get "asset")
-                "value" ($scratch.Get "date")
+                "title" $antique.inShopOnMsg
+                "asset" $antique.asset
+                "value" $antique.date
                 "type" "stat")
             }}
         {{ end }}

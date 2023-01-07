@@ -1,0 +1,37 @@
+{{ $lang := .page.Lang }}
+{{ $miscData := .page.Site.Data.miscellaneous }}
+{{ $statData := .page.Site.Data.stats }}
+{{ $date := .date }}
+{{ $isAntiqueAsset := .assets.antique }}
+{{ $isNotAntiqueAsset := .assets.notAntique }}
+
+{{ $scratch := newScratch }}
+{{ $antiqueDateString := replaceRE `/` "-" $date }}
+{{ $miscTranslations := partial "getDataTranslations.html" (dict "data" $miscData "lang" $lang) }}
+{{ $statTranslations := partial "getDataTranslations.html" (dict "data" $statData "lang" $lang) }}
+
+<p>hello {{ $miscTranslations }}</p>
+
+
+{{ if (now | time) | gt ($antiqueDateString | time) }}
+    {{ $scratch.Set "asset" $isNotAntiqueAsset }}
+    {{ $scratch.Set "isInShopMsg" $statTranslations.notInAntiqueShop }}
+{{ else }}
+    {{ $scratch.Set "asset" $isAntiqueAsset }}
+    {{ $scratch.Set "isInShopMsg" $statTranslations.inAntiqueShop }}
+{{ end }}
+
+{{ if $lang | eq "en" }}
+    {{ $scratch.Set "date" (time.Format "2006/01/02" $antiqueDateString) }}
+{{ else }}
+    {{ $scratch.Set "date" (time.Format ":date_short" $antiqueDateString) }}
+{{ end }}
+
+{{ $scratch.Set "inShopOnMsg" (delimit (slice $miscTranslations.inAntiqueStoreOn ($scratch.Get "date")) "&nbsp;") }}
+
+{{ return dict
+    "date" ($scratch.Get "date")
+    "asset" ($scratch.Get "asset")
+    "isInShopMsg" ($scratch.Get "isInShopMsg")
+    "inShopOnMsg" ($scratch.Get "inShopOnMsg")
+}}
