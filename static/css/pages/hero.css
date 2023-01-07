@@ -43,7 +43,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
-    padding-right: 0.5rem
+    padding-right: 0.25rem
 }
 
 .hero-stats-table tr:nth-child(even) {
@@ -71,7 +71,7 @@
 }
 
 .hero-stat-power {
-    font-size: 3rem;
+    font-size: 2.75rem;
     text-shadow: 0.3rem 0.3rem 0.6rem black;
     -webkit-text-stroke-width: 0.09rem;
     -webkit-text-stroke-color: black;
@@ -80,8 +80,8 @@
 .hero-stat-icon {
     height: 2rem;
     width: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .hero-stat-icon-power {
@@ -183,7 +183,7 @@
     position: absolute;
     z-index: 2;
     width: 1.25rem;
-    padding: 0.25rem;
+    margin: 0.25rem;
 }
 
 .hero-equipment-slot-stats {

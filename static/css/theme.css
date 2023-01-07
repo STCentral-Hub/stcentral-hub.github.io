@@ -65,6 +65,10 @@
     --color-stc-text-submenu-gray: #666666;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     min-height: 100%;
     display: flex;
