@@ -29,18 +29,22 @@
                 "value" ($stats.hp | lang.FormatNumber 0)
                 "type" "stat")
             }}
-            {{ partial "blueprint/metaStat.html" (dict
-                "title" $statTranslations.evasion
-                "asset" $statData.assets.eva
-                "value" (mul (float $stats.eva) 100 | lang.FormatPercent 0)
-                "type" "stat")
-            }}
-            {{ partial "blueprint/metaStat.html" (dict
-                "title" $statTranslations.critChance
-                "asset" $statData.assets.critChance
-                "value" (mul (float $stats.crit) 100 | lang.FormatPercent 0)
-                "type" "stat")
-            }}
+            {{ with $stats.eva }}
+                {{ partial "blueprint/metaStat.html" (dict
+                    "title" $statTranslations.evasion
+                    "asset" $statData.assets.eva
+                    "value" (mul (float $stats.eva) 100 | lang.FormatPercent 0)
+                    "type" "stat")
+                }}
+            {{ end }}
+            {{ with $stats.crit }}
+                {{ partial "blueprint/metaStat.html" (dict
+                    "title" $statTranslations.critChance
+                    "asset" $statData.assets.critChance
+                    "value" (mul (float $stats.crit) 100 | lang.FormatPercent 0)
+                    "type" "stat")
+                }}
+            {{ end }}
         </div>
     </div>
 

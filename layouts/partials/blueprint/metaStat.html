@@ -3,7 +3,7 @@
 {{ $value := .value }}
 {{ $type := .type }}
 
-{{ if and ($value | ne "0") ($value | ne "0%") }}
+{{ if $value | ne "0" }}
     {{ if $type | eq "stat" }}
         <div class="blueprint-meta-stat blueprint-stat-margin paragraph-text-shadow" title="{{ $title }}">
             <img src="/fankit{{ $asset }}" alt="{{ $title }}">

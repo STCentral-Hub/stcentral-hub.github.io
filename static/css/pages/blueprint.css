@@ -225,11 +225,6 @@
     filter: var(--filter-item-quality-superior)
 }
 
-.blueprint-worker-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .blueprint-workers {
     margin-left: 0.75rem;
     margin-right: 0.75rem;

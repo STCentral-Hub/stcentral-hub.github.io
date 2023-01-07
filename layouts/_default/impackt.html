@@ -5,7 +5,9 @@
         {{ with .Summary }}
             <h3 class="content-summary">{{ . }}</h3>
         {{ end }}
-        {{ .Content }}
+        <div class="row-layout">
+            {{ .Content }}
+        </div>
     </article>
     <hr>
     {{- partial "layout/main-footer.html" . -}}
