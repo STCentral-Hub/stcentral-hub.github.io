@@ -63,26 +63,25 @@
 {{ $sim := $hero.Get "sim" }}
 
 {{ range where $heroData "language.en.class" "==" (.Get "class") }}
-{{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
+    {{ $translations := partial "getDataTranslations.html" (dict "data" . "lang" $lang) }}
 
-<div class="hero-wrapper">
-    <div class="hero-class-banner">
-        <img class="hero-class-icon" src="/fankit{{ .assets.image }}" alt="{{ $translations.class }}">
-        <p class="hero-class-name">{{ $translations.class }}</p>
-    </div>
-    <div class="hero-data-wrapper">
-        {{ partial "hero/stats.html" (dict "page" $page "stats" $stats) }}
-        <div class="hero-info-wrapper">
-            {{ partial "hero/skills.html" (dict "page" $page "skills" $skills) }}
-            {{ partial "hero/equipment.html" (dict "page" $page "equipment" $equipment) }}
-            {{ with $sim }}
-            <div class="hero-sim-wrapper">
-                <p class="hero-sim-title">Hero Sim</p>
-                <p class="hero-sim-string">{{ $hero.Get "sim" }}</p>
+    <div class="hero-wrapper">
+        <div class="hero-class-banner">
+            <img class="hero-class-icon" src="/fankit{{ .assets.image }}" alt="{{ $translations.class }}">
+            <p class="hero-class-name">{{ $translations.class }}</p>
+        </div>
+        <div class="hero-data-wrapper">
+            {{ partial "hero/stats.html" (dict "page" $page "stats" $stats) }}
+            <div class="hero-info-wrapper">
+                {{ partial "hero/skills.html" (dict "page" $page "skills" $skills) }}
+                {{ partial "hero/equipment.html" (dict "page" $page "equipment" $equipment) }}
+                {{ with $sim }}
+                    <div class="hero-sim-wrapper">
+                        <p class="hero-sim-title">Hero Sim</p>
+                        <p class="hero-sim-string">{{ $hero.Get "sim" }}</p>
+                    </div>
+                {{ end }}
             </div>
-            {{ end }}
         </div>
     </div>
-</div>
-
 {{ end }}
