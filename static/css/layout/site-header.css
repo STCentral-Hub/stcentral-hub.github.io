@@ -95,7 +95,7 @@
     align-content: stretch;
     justify-content: stretch;
     transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in;
-    transform: translate(0, 3rem);
+    transform: translate(0, 2.5rem);
     opacity: 1;
     visibility: visible;
     box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.3);

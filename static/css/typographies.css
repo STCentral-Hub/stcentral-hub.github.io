@@ -1,41 +1,41 @@
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 1rem 0 1rem 0;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 1rem 0 1rem 0;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
-    margin: 1rem 0 1rem 0;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
 h4 {
     font-size: 1rem;
     font-weight: bold;
-    margin: 1rem 0 1rem 0;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
 h5 {
-    font-size: 0.83rem;
+    font-size: 0.75rem;
     font-weight: bold;
     margin: 0.5rem 0 0.5rem 0;
 }
 
 h6 {
-    font-size: 0.67rem;
+    font-size: 0.5rem;
     font-weight: bold;
     margin: 0.5rem 0 0.5rem 0;
 }
 
 p {
-    margin: 1rem 0 1rem 0;
+    margin: 0.75rem 0 0.75rem 0;
 }
 
 a {
@@ -61,4 +61,40 @@ a:hover {
     text-shadow: 0.1rem 0.1rem 0.2rem black;
     -webkit-text-stroke-width: 0.01rem;
     -webkit-text-stroke-color: black;
+}
+
+@media only screen and (min-width: 50rem) {
+    h1 {
+        font-size: 3rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    h4 {
+        font-size: 1rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    h5 {
+        font-size: 0.83rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    h6 {
+        font-size: 0.67rem;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+
+    p {
+        margin: 1rem 0 1rem 0;
+    }
 }
