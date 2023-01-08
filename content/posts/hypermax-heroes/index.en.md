@@ -14,14 +14,14 @@ draft: false
 # {{< translate/heroType type="Fighter" >}}
 
 {{< hero class="Mercenary"
-    starPower=164809
-    hp=2256
-    atk=6675
-    def=58109
+    starPower=142266
+    hp=1120
+    atk=37155
+    def=10002
 	threat=90
     eva=0
-    critChance=5
-    critDmg=2.0
+    critChance=47
+    critDmg=7.1
 	slot1="Thorn of Scorn"
 		element1="Primeval Element"
 		spirit1="Chimera Spirit"
@@ -37,22 +37,22 @@ draft: false
 	slot5="Supreme Sunscreen"
 		element5="Primeval Element"
 		spirit5="Chimera Spirit"
-	slot6="Titan Shield"
+	slot6="Bastion of Dawn"
 		element6="Primeval Element"
 		spirit6="Chimera Spirit"
 	skill0="Bodyguard"
-	skill1="Shield Master"
-	skill2="Thick Skin"
-	skill3="Extended Warranty"
-	skill4="Extra Plating"
-	sim="Yes|Red Type|Mercenary|Sword|Heavy Armor|Gauntlets|Heavy Footwear|Potion|Shield|Thorn of Scorn (ATK/DEF) - T12|Oni Ronin Armor (ATK/DEF) - T12|Goon's Facesmackers (ATK/DEF) - T12|Santa's Guard Boots (ATK/DEF) - T11|Supreme Sunscreen (ATK/HP) - T12|Crystalice Targe (ATK/DEF) - T11|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Warlord|All Natural (+30% Crit Chance & +100% Crit Damage)|Death Dealer (+350% Crit Damage)|Whirlwind Attack (+140% ATK & +12% Crit Chance)|40|80|80|80|Earth|Earth|Earth|Earth|Earth|Earth|"
+	skill1="Warlord"
+	skill2="Whirlwind Attack"
+	skill3="Death Dealer"
+	skill4="All Natural"
+	sim="Yes|Red Type|Mercenary|Sword|Heavy Armor|Gauntlets|Heavy Footwear|Potion|Shield|Thorn of Scorn (ATK/DEF) - T12|Oni Rōnin Armor (ATK/DEF) - T12|Goon's Facesmackers (ATK/DEF) - T12|Santa's Guard Boots (ATK/DEF) - T11|Supreme Sunscreen (ATK/HP) - T12|Bastion of Dawn (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Warlord|All Natural (+30% Crit Chance & +100% Crit Damage)|Death Dealer (+350% Crit Damage)|Whirlwind Attack (+140% ATK & +12% Crit Chance)|40|80|80|80|Earth|Earth|Earth|Earth|Earth|Earth|"
 >}}
 
 {{< hero class="Chieftain"
-    starPower=204725
-    hp=3207
-    atk=8367
-    def=57541
+    starPower=204850
+    hp=2913
+    atk=9530
+    def=55298
 	threat=90
     eva=0
     critChance=5
@@ -72,7 +72,7 @@ draft: false
 	slot5="Coconut Cream Cake"
 		element5="Inferno Element"
 		spirit5="Mammoth Spirit"
-	slot6="Titan Shield"
+	slot6="Bastion of Dawn"
 		element6="Inferno Element"
 		spirit6="Mammoth Spirit"
 	skill0="Call of the Tribe"
@@ -80,16 +80,16 @@ draft: false
 	skill2="Thick Skin"
 	skill3="Extended Warranty"
 	skill4="Extra Plating"
-	sim="Yes|Red Type|Chieftain|Sword|Helmet|Gauntlets|Heavy Footwear|Dessert|Shield|Thorn of Scorn (ATK/DEF) - T12|Thorn Baron Helm (DEF/HP) - T12|Vermilion Guard Might (DEF) - T12|Vermilion Guard Greaves (DEF) - T12|Coconut Cream Cake (DEF/HP) - T12|Titan Shield (DEF/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Extra Plating (+150% DEF & +40% HP)|Thick Skin (+120% DEF & +30% HP)|Extended Warranty (+40% bonus stats from EQ & -60% Break Chance)|Shield Master (+250% Defense with Shield)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
+	sim="Yes|Red Type|Chieftain|Sword|Helmet|Gauntlets|Heavy Footwear|Dessert|Shield|Thorn of Scorn (ATK/DEF) - T12|Thorn Baron Helm (DEF/HP) - T12|Vermilion Guard Might (DEF) - T12|Vermilion Guard Greaves (DEF) - T12|Coconut Cream Cake (DEF/HP) - T12|Bastion of Dawn (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Extra Plating (+150% DEF & +40% HP)|Thick Skin (+120% DEF & +30% HP)|Extended Warranty (+40% bonus stats from EQ & -60% Break Chance)|Shield Master (+250% Defense with Shield)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
 >}}
 
 ## True Hypermax
 
 {{< hero class="Lord"
-    starPower=229886
-    hp=1663
-    atk=4120
-    def=83788
+    starPower=231101
+    hp=1482
+    atk=4568
+    def=84781
 	threat=90
     eva=0
     critChance=5
@@ -109,7 +109,7 @@ draft: false
 	slot5="Fruity Booties"
 		element5="Divine Element"
 		spirit5="Mammoth Spirit"
-	slot6="Titan Shield"
+	slot6="Bastion of Dawn"
 		element6="Divine Element"
 		spirit6="Mammoth Spirit"
 	skill0="Bodyguard"
@@ -117,44 +117,44 @@ draft: false
 	skill2="Thick Skin"
 	skill3="On Guard"
 	skill4="Extra Plating"
-	sim="Yes|Red Type|Lord|Sword|Heavy Armor|Gauntlets|Helmet|Heavy Footwear|Shield|Titan Sword (ATK/DEF) - T12|Oni Rōnin Armor (ATK/DEF) - T12|Goon's Facesmackers (ATK/DEF) - T12|Thorn Baron Helm (DEF/HP) - T12|Fruity Booties (DEF/HP) - T12|Titan Shield (DEF/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Shield Master (+250% Defense with Shield)|Thick Skin (+120% DEF & +30% HP)|On Guard (+90% DEF & +100% chance to survive one fatal blow)|Extra Plating (+150% DEF & +40% HP)|40|80|80|80|Light|Light|Light|Light|Light|Light|"
+	sim="Yes|Red Type|Lord|Mace|Heavy Armor|Gauntlets|Helmet|Heavy Footwear|Shield|Merry Christmace (ATK/DEF) - T12|Oni Rōnin Armor (ATK/DEF) - T12|Goon's Facesmackers (ATK/DEF) - T12|Thorn Baron Helm (DEF/HP) - T12|Fruity Booties (DEF/HP) - T12|Bastion of Dawn (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Shield Master (+250% Defense with Shield)|Thick Skin (+120% DEF & +30% HP)|On Guard (+90% DEF & +100% chance to survive one fatal blow)|Extra Plating (+150% DEF & +40% HP)|40|80|80|80|Light|Light|Light|Light|Light|Light|"
 >}}
 
 ## Balanced Hypermax
 
 {{< hero class="Lord"
-    starPower=147746
-    hp=4233
-    atk=4297
-    def=55513
+    starPower=151988
+    hp=4718
+    atk=4365
+    def=55756
 	threat=90
     eva=0
     critChance=5
     critDmg=2.0
-	slot1="Titan Sword"
+	slot1="Merry Christmace"
 		element1="Divine Element"
-		spirit1="Phoenix Spirit"
+		spirit1="Christmas Spirit"
 	slot2="Fire Nation Armor"
 		element2="Divine Element"
-		spirit2="Phoenix Spirit"
+		spirit2="Christmas Spirit"
 	slot3="Huscarl Gauntlets"
 		element3="Divine Element"
-		spirit3="Phoenix Spirit"
+		spirit3="Christmas Spirit"
 	slot4="Thorn Baron Helm"
 		element4="Divine Element"
-		spirit4="Phoenix Spirit"
+		spirit4="Christmas Spirit"
 	slot5="Fruity Booties"
 		element5="Divine Element"
-		spirit5="Phoenix Spirit"
+		spirit5="Christmas Spirit"
 	slot6="Titan Shield"
 		element6="Divine Element"
-		spirit6="Phoenix Spirit"
+		spirit6="Christmas Spirit"
 	skill0="Bodyguard"
 	skill1="Impervious"
 	skill2="Thick Skin"
 	skill3="Extended Warranty"
 	skill4="Extra Plating"
-	sim="Yes|Red Type|Lord|Sword|Heavy Armor|Gauntlets|Helmet|Heavy Footwear|Shield|Titan Sword (ATK/DEF) - T12|Fire Nation Armor (DEF/HP) - T11|Huscarl Gauntlets (DEF/HP) - T11|Thorn Baron Helm (DEF/HP) - T12|Fruity Booties (DEF/HP) - T12|Titan Shield (DEF/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Phoenix Spirit (+4% HP, +3HP Regen per turn)|Phoenix Spirit (+4% HP, +3HP Regen per turn)|Phoenix Spirit (+4% HP, +3HP Regen per turn)|Phoenix Spirit (+4% HP, +3HP Regen per turn)|Phoenix Spirit (+4% HP, +3HP Regen per turn)|Phoenix Spirit (+4% HP, +3HP Regen per turn)|Impervious (+80% HP & +150 HP)|Thick Skin (+120% DEF & +30% HP)|Extended Warranty (+40% bonus stats from EQ & -60% Break Chance)|Extra Plating (+150% DEF & +40% HP)|40|80|80|80|Light|Light|Light|Light|Light|Light|"
+	sim="Yes|Red Type|Lord|Mace|Heavy Armor|Gauntlets|Helmet|Heavy Footwear|Shield|Merry Christmace (ATK/DEF) - T12|Fire Nation Armor (DEF/HP) - T11|Huscarl Gauntlets (DEF/HP) - T11|Thorn Baron Helm (DEF/HP) - T12|Fruity Booties (DEF/HP) - T12|Titan Shield (DEF/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Christmas Spirit (+20 HP, +4% HP)|Christmas Spirit (+20 HP, +4% HP)|Christmas Spirit (+20 HP, +4% HP)|Christmas Spirit (+20 HP, +4% HP)|Christmas Spirit (+20 HP, +4% HP)|Christmas Spirit (+20 HP, +4% HP)|Impervious (+80% HP & +150 HP)|Thick Skin (+120% DEF & +30% HP)|Extended Warranty (+40% bonus stats from EQ & -60% Break Chance)|Extra Plating (+150% DEF & +40% HP)|40|80|80|80|Light|Light|Light|Light|Light|Light|"
 >}}
 
 {{< hero class="Warden"
@@ -228,38 +228,38 @@ draft: false
 >}}
 
 {{< hero class="Jarl"
-    starPower=172429
-    hp=2808
-    atk=5263
-    def=56223
+    starPower=197589
+    hp=942
+    atk=41622
+    def=5950
 	threat=90
-    eva=0
-    critChance=5
-    critDmg=2.0
-	slot1="Hotshot Carbine"
+    eva=8
+    critChance=52
+    critDmg=7.1
+	slot1="Gift Wrap Rifle"
 		element1="Inferno Element"
-		spirit1="Mammoth Spirit"
-	slot2="Vermilion Guard Plate"
+		spirit1="Chimera Spirit"
+	slot2="Fire Nation Armor"
 		element2="Inferno Element"
-		spirit2="Mammoth Spirit"
-	slot3="Thorn Baron Helm"
+		spirit2="Chimera Spirit"
+	slot3="Onyx King Helm"
 		element3="Inferno Element"
-		spirit3="Mammoth Spirit"
-	slot4="Fruity Booties"
+		spirit3="Chimera Spirit"
+	slot4="Vermilion Guard Greaves"
 		element4="Inferno Element"
-		spirit4="Mammoth Spirit"
-	slot5="Titan Shield"
+		spirit4="Chimera Spirit"
+	slot5="Bastion of Dawn"
 		element5="Inferno Element"
-		spirit5="Mammoth Spirit"
-	slot6="Coconut Cream Cake"
+		spirit5="Chimera Spirit"
+	slot6="Premium Brand Jam"
 		element6="Inferno Element"
-		spirit6="Mammoth Spirit"
+		spirit6="Chimera Spirit"
 	skill0="Berserk Rage"
-	skill1="Shield Master"
-	skill2="Thick Skin"
-	skill3="Extended Warranty"
-	skill4="Extra Plating"
-	sim="Yes|Red Type|Jarl|Gun|Heavy Armor|Helmet|Heavy Footwear|Shield|Dessert|Hotshot Carbine (ATK/DEF) - T12|Vermilion Guard Plate (DEF) - T12|Thorn Baron Helm (DEF/HP) - T12|Fruity Booties (DEF/HP) - T12|Titan Shield (DEF/HP) - T12|Coconut Cream Cake (DEF/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Mammoth Spirit (+10%DEF +10 Threat)|Extra Plating (+150% DEF & +40% HP)|Shield Master (+250% Defense with Shield)|Thick Skin (+120% DEF & +30% HP)|Extended Warranty (+40% bonus stats from EQ & -60% Break Chance)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
+	skill1="Marksman"
+	skill2="Whirlwind Attack"
+	skill3="Death Dealer"
+	skill4="All Natural"
+	sim="Yes|Red Type|Jarl|Gun|Heavy Armor|Helmet|Heavy Footwear|Shield|Herbal Medicine|Gift Wrap Rifle (ATK/CRIT) - T12|Fire Nation Armor (DEF/HP) - T11|Onyx King Helm (ATK/DEF) - T12|Vermilion Guard Greaves (DEF) - T12|Bastion of Dawn (ATK/DEF) - T12|Premium Brand Jam (ATK/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|Marksman|Whirlwind Attack (+140% ATK & +12% Crit Chance)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
 >}}
 
 ---
@@ -302,10 +302,10 @@ draft: false
 >}}
 
 {{< hero class="Grandmaster"
-    starPower=318719
-    hp=400
-    atk=53990
-    def=6387
+    starPower=323748
+    hp=802
+    atk=54583
+    def=5219
 	threat=40
     eva=30
     critChance=75
@@ -316,7 +316,7 @@ draft: false
 	slot2="Fellgrove Talisman"
 		element2="Torrent Element"
 		spirit2="Chimera Spirit"
-	slot3="Fellgrove Talisman"
+	slot3="Glazed Mirror Cake"
 		element3="Torrent Element"
 		spirit3="Chimera Spirit"
 	slot4="Fellgrove Talisman"
@@ -333,19 +333,19 @@ draft: false
 	skill2="Whirlwind Attack"
 	skill3="Finesse"
 	skill4="All Natural"
-	sim="Yes|Green Type|Grandmaster|Clothes|Amulet|Amulet|Amulet|Ring|Ring|Soulbinder Regalia (ATK/DEF) - T12|Fellgrove Talisman (ATK/DEF) - T11|Fellgrove Talisman (ATK/DEF) - T11|Fellgrove Talisman (ATK/DEF) - T11|Crystalice Loop (ATK/DEF) - T12|Crystalice Loop (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Whirlwind Attack (+140% ATK & +12% Crit Chance)|All Natural (+30% Crit Chance & +100% Crit Damage)|Finesse (+120% ATK & +13% Crit Chance)|Destructive Strikes (+150% ATK & +300% Crit Damage)|40|80|80|80|Water|Water|Water|Water|Water|Water|"
+	sim="Yes|Green Type|Grandmaster|Clothes|Amulet|Dessert|Amulet|Ring|Ring|Soulbinder Regalia (ATK/DEF) - T12|Fellgrove Talisman (ATK/DEF) - T11|Glazed Mirror Cake (ATK/HP) - T12|Fellgrove Talisman (ATK/DEF) - T11|Crystalice Loop (ATK/DEF) - T12|Crystalice Loop (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Whirlwind Attack (+140% ATK & +12% Crit Chance)|All Natural (+30% Crit Chance & +100% Crit Damage)|Finesse (+120% ATK & +13% Crit Chance)|Destructive Strikes (+150% ATK & +300% Crit Damage)|40|80|80|80|Water|Water|Water|Water|Water|Water|"
 >}}
 
 {{< hero class="Conquistador"
-    starPower=306493
-    hp=758
-    atk=59505
-    def=6232
+    starPower=319202
+    hp=860
+    atk=58501
+    def=5475
 	threat=40
     eva=38
-    critChance=67
+    critChance=72
     critDmg=7.6
-	slot1="Hotshot Carbine"
+	slot1="Gift Wrap Rifle"
 		element1="Inferno Element"
 		spirit1="Chimera Spirit"
 	slot2="Desperado Outfit"
@@ -354,7 +354,7 @@ draft: false
 	slot3="Gloves of Rhythm"
 		element3="Inferno Element"
 		spirit3="Chimera Spirit"
-	slot4="Santa's Guard Boots"
+	slot4="Desperado Spurs"
 		element4="Inferno Element"
 		spirit4="Chimera Spirit"
 	slot5="Supreme Sunscreen"
@@ -368,19 +368,19 @@ draft: false
 	skill2="Whirlwind Attack"
 	skill3="Death Dealer"
 	skill4="Finesse"
-	sim="Yes|Green Type|Conquistador|Gun|Light Armor|Gloves|Heavy Footwear|Potion|Amulet|Hotshot Carbine (ATK/DEF) - T12|Desperado Outfit (ATK/DEF) - T12|Gloves of Rhythm (ATK/DEF) - T12|Santa's Guard Boots (ATK/DEF) - T11|Supreme Sunscreen (ATK/HP) - T12|Fellgrove Talisman (ATK/DEF) - T11|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Whirlwind Attack (+140% ATK & +12% Crit Chance)|Finesse (+120% ATK & +13% Crit Chance)|Marksman|Death Dealer (+350% Crit Damage)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
+	sim="Yes|Green Type|Conquistador|Gun|Light Armor|Gloves|Light Footwear|Potion|Amulet|Gift Wrap Rifle (ATK/CRIT) - T12|Desperado Outfit (ATK/DEF) - T12|Gloves of Rhythm (ATK/DEF) - T12|Desperado Spurs (DEF/HP) - T12|Supreme Sunscreen (ATK/HP) - T12|Fellgrove Talisman (ATK/DEF) - T11|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Whirlwind Attack (+140% ATK & +12% Crit Chance)|Finesse (+120% ATK & +13% Crit Chance)|Marksman|Death Dealer (+350% Crit Damage)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
 >}}
 
 {{< hero class="Pathfinder"
-    starPower=181098
+    starPower=194028
     hp=598
-    atk=42411
-    def=6022
+    atk=43356
+    def=5190
 	threat=40
     eva=63
-    critChance=62
+    critChance=67
     critDmg=7.1
-	slot1="Hotshot Carbine"
+	slot1="Gift Wrap Rifle"
 		element1="Primeval Element"
 		spirit1="Chimera Spirit"
 	slot2="Barkback's Armor"
@@ -403,7 +403,7 @@ draft: false
 	skill2="Whirlwind Attack"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Green Type|Pathfinder|Gun|Light Armor|Rogue Hat|Light Footwear|Herbal Medicine|Amulet|Hotshot Carbine (ATK/DEF) - T12|Barkback's Armor (ATK/DEF) - T11|Kitsune Spirit Mask (ATK/DEF) - T12|Raptor Talons (ATK/DEF) - T11|Premium Brand Jam (ATK/HP) - T12|Forlorn Acorn (ATK/DEF) - T11|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Marksman|Whirlwind Attack (+140% ATK & +12% Crit Chance)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Earth|Earth|Earth|Earth|Earth|Earth|"
+	sim="Yes|Green Type|Pathfinder|Gun|Light Armor|Rogue Hat|Light Footwear|Herbal Medicine|Amulet|Gift Wrap Rifle (ATK/CRIT) - T12|Barkback's Armor (ATK/DEF) - T11|Kitsune Spirit Mask (ATK/DEF) - T12|Raptor Talons (ATK/DEF) - T11|Premium Brand Jam (ATK/HP) - T12|Forlorn Acorn (ATK/DEF) - T11|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Marksman|Whirlwind Attack (+140% ATK & +12% Crit Chance)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Earth|Earth|Earth|Earth|Earth|Earth|"
 >}}
 
 {{< hero class="Sensei"
@@ -481,10 +481,10 @@ draft: false
 # {{< translate/heroType type="Spellcaster" >}}
 
 {{< hero class="Archmage"
-    starPower=247748
-    hp=709
-    atk=86494
-    def=4683
+    starPower=249699
+    hp=562
+    atk=87082
+    def=5545
 	threat=10
     eva=0
     critChance=40
@@ -501,7 +501,7 @@ draft: false
 	slot4="Desperado Spurs"
 		element4="Inferno Element"
 		spirit4="Chimera Spirit"
-	slot5="Pharaoh's Pact"
+	slot5="Lost Star Chart"
 		element5="Inferno Element"
 		spirit5="Chimera Spirit"
 	slot6="Crystalice Loop"
@@ -512,14 +512,14 @@ draft: false
 	skill2="Double Cast"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Blue Type|Archmage|Staff|Clothes|Magician Hat|Light Footwear|Spell|Ring|Soulbinder Staff (ATK/CRIT) - T12|Soulbinder Regalia (ATK/DEF) - T12|Phoenix Crest (DEF) - T12|Desperado Spurs (DEF/HP) - T12|Pharaoh's Pact (ATK/HP) - T12|Crystalice Loop (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
+	sim="Yes|Blue Type|Archmage|Staff|Clothes|Magician Hat|Light Footwear|Spell|Ring|Soulbinder Staff (ATK/CRIT) - T12|Soulbinder Regalia (ATK/DEF) - T12|Phoenix Crest (DEF) - T12|Desperado Spurs (DEF/HP) - T12|Lost Star Chart (ATK/DEF) - T12|Crystalice Loop (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Fire|Fire|Fire|Fire|Fire|Fire|"
 >}}
 
 {{< hero class="Bishop"
-    starPower=191407
-    hp=752
-    atk=68836
-    def=5338
+    starPower=192845
+    hp=576
+    atk=69316
+    def=6200
 	threat=10
     eva=0
     critChance=38
@@ -536,7 +536,7 @@ draft: false
 	slot4="Raptor Talons"
 		element4="Divine Element"
 		spirit4="Eagle Spirit"
-	slot5="Pharaoh's Pact"
+	slot5="Lost Star Chart"
 		element5="Divine Element"
 		spirit5="Chimera Spirit"
 	slot6="Crystalice Loop"
@@ -547,34 +547,34 @@ draft: false
 	skill2="Double Cast"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Blue Type|Bishop|Wand|Clothes|Magician Hat|Light Footwear|Spell|Ring|Ivory Queen Rod (ATK/DEF) - T12|Soulbinder Regalia (ATK/DEF) - T12|Exarch Mitre (DEF) - T12|Raptor Talons (ATK/DEF) - T11|Pharaoh's Pact (ATK/HP) - T12|Crystalice Loop (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Eagle Spirit (+2% Crit Chance)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Light|Light|Light|Light|Light|Light|"
+	sim="Yes|Blue Type|Bishop|Wand|Clothes|Magician Hat|Light Footwear|Spell|Ring|Ivory Queen Rod (ATK/DEF) - T12|Soulbinder Regalia (ATK/DEF) - T12|Exarch Mitre (DEF) - T12|Raptor Talons (ATK/DEF) - T11|Lost Star Chart (ATK/DEF) - T12|Crystalice Loop (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Eagle Spirit (+2% Crit Chance)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Light|Light|Light|Light|Light|Light|"
 >}}
 
 {{< hero class="Arch Druid"
-    starPower=215886
-    hp=1249
-    atk=74066
-    def=4296
+    starPower=217573
+    hp=1102
+    atk=74558
+    def=5158
 	threat=10
     eva=0
     critChance=40
     critDmg=7.1
-	slot1="Ivory Queen Rod"
+	slot1="Soulbinder Staff"
 		element1="Primeval Element"
 		spirit1="Chimera Spirit"
-	slot2="Soulbinder Regalia"
+	slot2="Garb of the Primordial"
 		element2="Primeval Element"
 		spirit2="Chimera Spirit"
-	slot3="Phoenix Crest"
+	slot3="Premium Brand Jam"
 		element3="Primeval Element"
 		spirit3="Chimera Spirit"
-	slot4="Desperado Spurs"
+	slot4="Premium Brand Jam"
 		element4="Primeval Element"
 		spirit4="Chimera Spirit"
-	slot5="Pharaoh's Pact"
+	slot5="Forlorn Acorn"
 		element5="Primeval Element"
 		spirit5="Chimera Spirit"
-	slot6="Crystalice Loop"
+	slot6="Lost Star Chart"
 		element6="Primeval Element"
 		spirit6="Chimera Spirit"
 	skill0="Primal Magic"
@@ -582,14 +582,14 @@ draft: false
 	skill2="Double Cast"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Blue Type|Arch Druid|Staff|Clothes|Herbal Medicine|Herbal Medicine|Amulet|Spell|Soulbinder Staff (ATK/CRIT) - T12|Garb of the Primordial (DEF) - T12|Premium Brand Jam (ATK/HP) - T12|Premium Brand Jam (ATK/HP) - T12|Forlorn Acorn (ATK/DEF) - T11|Pharaoh's Pact (ATK/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Earth|Earth|Earth|Earth|Earth|Earth|"
+	sim="Yes|Blue Type|Arch Druid|Staff|Clothes|Herbal Medicine|Herbal Medicine|Amulet|Spell|Soulbinder Staff (ATK/CRIT) - T12|Garb of the Primordial (DEF) - T12|Premium Brand Jam (ATK/HP) - T12|Premium Brand Jam (ATK/HP) - T12|Forlorn Acorn (ATK/DEF) - T11|Lost Star Chart (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Earth|Earth|Earth|Earth|Earth|Earth|"
 >}}
 
 {{< hero class="Warlock"
-    starPower=315856
-    hp=709
-    atk=97254
-    def=3699
+    starPower=337434
+    hp=742
+    atk=103662
+    def=4599
 	threat=10
     eva=2
     critChance=50
@@ -600,16 +600,16 @@ draft: false
 	slot2="Soulbinder Regalia"
 		element2="Abyssal Element"
 		spirit2="Chimera Spirit"
-	slot3="Nightwing Vambraces"
+	slot3="Glazed Mirror Cake"
 		element3="Abyssal Element"
 		spirit3="Carbuncle Spirit"
 	slot4="Raptor Talons"
 		element4="Abyssal Element"
 		spirit4="Eagle Spirit"
-	slot5="Pharaoh's Pact"
+	slot5="Lost Star Chart"
 		element5="Abyssal Element"
 		spirit5="Chimera Spirit"
-	slot6="Pharaoh's Pact"
+	slot6="Lost Star Chart"
 		element6="Abyssal Element"
 		spirit6="Chimera Spirit"
 	skill0="Dark Pact"
@@ -617,7 +617,7 @@ draft: false
 	skill2="Double Cast"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Blue Type|Warlock|Dagger|Clothes|Gloves|Light Footwear|Spell|Spell|Wiccan Dagger (ATK/CRIT) - T11|Soulbinder Regalia (ATK/DEF) - T12|Nightwing Vambraces (DEF/HP) - T11|Raptor Talons (ATK/DEF) - T11|Pharaoh's Pact (ATK/HP) - T12|Pharaoh's Pact (ATK/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Carbuncle Spirit (+2% EVA, +2% Crit Chance)|Eagle Spirit (+2% Crit Chance)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Poison Cloud (+240% ATK)|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Dark|Dark|Dark|Dark|Dark|Dark|"
+	sim="Yes|Blue Type|Warlock|Dagger|Clothes|Dessert|Light Footwear|Spell|Spell|Wiccan Dagger (ATK/CRIT) - T11|Soulbinder Regalia (ATK/DEF) - T12|Glazed Mirror Cake (ATK/HP) - T12|Raptor Talons (ATK/DEF) - T11|Lost Star Chart (ATK/DEF) - T12|Lost Star Chart (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Carbuncle Spirit (+2% EVA, +2% Crit Chance)|Eagle Spirit (+2% Crit Chance)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Poison Cloud (+240% ATK)|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Dark|Dark|Dark|Dark|Dark|Dark|"
 >}}
 
 {{< hero class="Spellknight"
@@ -656,13 +656,13 @@ draft: false
 >}}
 
 {{< hero class="Astramancer"
-    starPower=300929
-    hp=704
-    atk=72370
-    def=4791
+    starPower=303288
+    hp=557
+    atk=72874
+    def=5653
 	threat=10
     eva=0
-    critChance=58
+    critChance=53
     critDmg=8.6
 	slot1="Ivory Queen Rod"
 		element1="Torrent Element"
@@ -676,7 +676,7 @@ draft: false
 	slot4="Gloves of Rhythm"
 		element4="Torrent Element"
 		spirit4="Chimera Spirit"
-	slot5="Pharaoh's Pact"
+	slot5="Lost Star Chart"
 		element5="Torrent Element"
 		spirit5="Chimera Spirit"
 	slot6="Premium Brand Jam"
@@ -687,5 +687,5 @@ draft: false
 	skill2="Telling Blows"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Blue Type|Astramancer|Wand|Clothes|Magician Hat|Gloves|Spell|Herbal Medicine|Ivory Queen Rod (ATK/DEF) - T12|Soulbinder Regalia (ATK/DEF) - T12|Ice Queen's Summer Hat (ATK/DEF) - T11|Gloves of Rhythm (ATK/DEF) - T12|Pharaoh's Pact (ATK/HP) - T12|Premium Brand Jam (ATK/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Telling Blows (+18% Crit Chance & +150% Crit Damage)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Water|Water|Water|Water|Water|Water|"
+	sim="Yes|Blue Type|Astramancer|Wand|Clothes|Magician Hat|Gloves|Spell|Herbal Medicine|Ivory Queen Rod (ATK/DEF) - T12|Soulbinder Regalia (ATK/DEF) - T12|Ice Queen's Summer Hat (ATK/DEF) - T11|Gloves of Rhythm (ATK/DEF) - T12|Lost Star Chart (ATK/DEF) - T12|Premium Brand Jam (ATK/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Adept|Telling Blows (+18% Crit Chance & +150% Crit Damage)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Water|Water|Water|Water|Water|Water|"
 >}}
