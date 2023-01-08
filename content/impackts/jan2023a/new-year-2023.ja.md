@@ -1,7 +1,7 @@
 ---
 date: 2023-01-01T00:00:00Z
 layout: "impackt"
-outputs: ["html", "embed", ]
+outputs: ["html", ]
 title: "Impackt: New Year 2023"
 summary: " "
 categories: [Impackt]
