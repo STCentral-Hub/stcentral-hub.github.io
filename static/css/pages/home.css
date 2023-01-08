@@ -1,11 +1,17 @@
 .home-logo {
     align-self: center;
     padding-top: 1rem;
-    width: 30rem;
+    width: 20rem;
 }
 
 .home-about {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     text-align: center;
+}
+
+@media only screen and (min-width: 50rem) {
+    .home-logo {
+        width: 30rem;
+    }
 }
