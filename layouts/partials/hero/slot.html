@@ -44,6 +44,21 @@
 {{ $element := $scratch.Get "element" }}
 {{ $spirit := $scratch.Get "spirit" }}
 
+{{ if $quality | eq "Normal" }}
+    {{ $scratch.Set "quality" $miscTranslations.normal }}
+{{ else if $quality | eq "Superior" }}
+    {{ $scratch.Set "quality" $miscTranslations.superior }}
+{{ else if $quality | eq "Flawless" }}
+    {{ $scratch.Set "quality" $miscTranslations.flawless }}
+{{ else if $quality | eq "Epic" }}
+    {{ $scratch.Set "quality" $miscTranslations.epic }}
+{{ else if $quality | eq "Legendary" }}
+    {{ $scratch.Set "quality" $miscTranslations.legendary }}
+{{ else }}
+    {{ $scratch.Set "quality" "" }}
+{{ end }}
+
+
 {{ with $item.stats.atk }}
     {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.attack ($item.stats.atk | lang.FormatNumber 0)) ": ")) }}
 {{ end }}
@@ -69,13 +84,14 @@
 {{ end }}
 
 {{ $itemSummary := replaceRE `\{0\}` $item.stats.tier (replaceRE `\{1\}` $item.lang.name $miscTranslations.bpTierTypeFormat) }}
+{{ $itemQualitySummary := delimit (slice ($scratch.Get "quality") $itemSummary) " " }}
 {{ $statSummary := delimit ($scratch.Get "stats") "&#010;" }}
 {{ $elementSummary := replaceRE `\{0\}\{1\}` $element.lang.name $miscTranslations.enchantedWithFormat}}
 {{ $spiritSummary := replaceRE `\{0\}\{1\}` $spirit.lang.name $miscTranslations.enchantedWithFormat}}
 {{ $antiqueSummary := $scratch.Get "antiqueSummary" }}
 
 
-{{ $slotTitle := delimit (slice $itemSummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
+{{ $slotTitle := delimit (slice $itemQualitySummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
 
 <div class="hero-equipment-slot" title="{{ $slotTitle }}">
     {{ if $quality | eq "Superior" }}
