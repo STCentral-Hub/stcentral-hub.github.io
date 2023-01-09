@@ -223,6 +223,16 @@
     translate: 3rem -2rem
 }
 
+.hero-equipment-slot-antique-filler {
+    min-height: 1.75rem;
+    min-width: 1.75rem;
+    visibility: hidden;
+}
+
+.hero-equipment-slot-spirit-padding {
+    padding: 0.0625rem;
+}
+
 .hero-sim-wrapper {
     flex-grow: 1;
     border-style: solid;

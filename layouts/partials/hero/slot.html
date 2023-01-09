@@ -117,12 +117,15 @@
         {{ with $item.stats.antiqueDate }}
             {{ $antiqueAsset := $scratch.Get "antiqueAsset" }}
             <img src="/fankit{{ $antiqueAsset }}" alt="">
+        {{ else }}
+            <span class="hero-equipment-slot-antique-filler"></span>
         {{ end }}
         {{ with $element }}
-            <img src="/fankit{{ $element.assets.image }}" alt="">
+            <img src="/fankit{{ $element.assets.enchantElement }}" alt="">
         {{ end }}
         {{ with $spirit }}
-            <img src="/fankit{{ $spirit.assets.affinitySpirit }}" alt="">
+            <img class="hero-equipment-slot-spirit-padding"
+                 src="/fankit{{ $spirit.assets.affinitySpirit }}" alt="">
         {{ end }}
     </div>
 </div>
