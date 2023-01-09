@@ -173,6 +173,22 @@
     margin: 0.5rem 0.25rem;
 }
 
+.hero-equipment-slot-superior {
+    filter: var(--filter-item-quality-superior)
+}
+
+.hero-equipment-slot-flawless {
+    filter: var(--filter-item-quality-flawless)
+}
+
+.hero-equipment-slot-epic {
+    filter: var(--filter-item-quality-epic)
+}
+
+.hero-equipment-slot-legendary {
+    filter: var(--filter-item-quality-legendary)
+}
+
 .hero-equipment-slot-meta {
     display: flex;
     flex-direction: column;

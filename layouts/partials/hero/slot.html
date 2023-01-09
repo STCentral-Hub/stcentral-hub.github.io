@@ -4,6 +4,8 @@
 {{ $miscData := .page.Site.Data.miscellaneous }}
 {{ $statData := $page.Site.Data.stats }}
 {{ $slot := .slot }}
+{{ $quality := $slot.quality }}
+
 
 {{ $miscTranslations := partial "getDataTranslations.html" (dict "data" $miscData "lang" $lang) }}
 
@@ -76,7 +78,22 @@
 {{ $slotTitle := delimit (slice $itemSummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
 
 <div class="hero-equipment-slot" title="{{ $slotTitle }}">
-    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="">
+    {{ if $quality | eq "Superior" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-superior"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else if $quality | eq "Flawless" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-flawless"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else if $quality | eq "Epic" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-epic"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else if $quality | eq "Legendary" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-legendary"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else }}
+        <img class="hero-equipment-slot-icon"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ end }}
     <div class="hero-equipment-slot-meta hero-equipment-slot-meta-left">
         <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="">
         <img class="hero-equipment-slot-tier" src="/fankit{{ $item.assets.tier }}" alt="">
