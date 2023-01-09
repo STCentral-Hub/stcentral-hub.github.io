@@ -4,6 +4,8 @@
 {{ $miscData := .page.Site.Data.miscellaneous }}
 {{ $statData := $page.Site.Data.stats }}
 {{ $slot := .slot }}
+{{ $quality := $slot.quality }}
+
 
 {{ $miscTranslations := partial "getDataTranslations.html" (dict "data" $miscData "lang" $lang) }}
 
@@ -42,6 +44,21 @@
 {{ $element := $scratch.Get "element" }}
 {{ $spirit := $scratch.Get "spirit" }}
 
+{{ if $quality | eq "Normal" }}
+    {{ $scratch.Set "quality" $miscTranslations.normal }}
+{{ else if $quality | eq "Superior" }}
+    {{ $scratch.Set "quality" $miscTranslations.superior }}
+{{ else if $quality | eq "Flawless" }}
+    {{ $scratch.Set "quality" $miscTranslations.flawless }}
+{{ else if $quality | eq "Epic" }}
+    {{ $scratch.Set "quality" $miscTranslations.epic }}
+{{ else if $quality | eq "Legendary" }}
+    {{ $scratch.Set "quality" $miscTranslations.legendary }}
+{{ else }}
+    {{ $scratch.Set "quality" "" }}
+{{ end }}
+
+
 {{ with $item.stats.atk }}
     {{ $scratch.Add "stats" (slice (delimit (slice $item.lang.attack ($item.stats.atk | lang.FormatNumber 0)) ": ")) }}
 {{ end }}
@@ -67,20 +84,35 @@
 {{ end }}
 
 {{ $itemSummary := replaceRE `\{0\}` $item.stats.tier (replaceRE `\{1\}` $item.lang.name $miscTranslations.bpTierTypeFormat) }}
+{{ $itemQualitySummary := delimit (slice ($scratch.Get "quality") $itemSummary) " " }}
 {{ $statSummary := delimit ($scratch.Get "stats") "&#010;" }}
 {{ $elementSummary := replaceRE `\{0\}\{1\}` $element.lang.name $miscTranslations.enchantedWithFormat}}
 {{ $spiritSummary := replaceRE `\{0\}\{1\}` $spirit.lang.name $miscTranslations.enchantedWithFormat}}
 {{ $antiqueSummary := $scratch.Get "antiqueSummary" }}
 
 
-{{ $slotTitle := delimit (slice $itemSummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
+{{ $slotTitle := delimit (slice $itemQualitySummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
 
 <div class="hero-equipment-slot" title="{{ $slotTitle }}">
-    <div class="hero-equipment-slot-tier">
+    {{ if $quality | eq "Superior" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-superior"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else if $quality | eq "Flawless" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-flawless"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else if $quality | eq "Epic" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-epic"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else if $quality | eq "Legendary" }}
+        <img class="hero-equipment-slot-icon hero-equipment-slot-legendary"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ else }}
+        <img class="hero-equipment-slot-icon"
+             src="/fankit{{ $item.assets.image }}" alt="">
+    {{ end }}
+    <div class="hero-equipment-slot-meta hero-equipment-slot-meta-left">
         <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="">
-        <img src="/fankit{{ $item.assets.tier }}" alt="">
-    </div>
-    <div class="hero-equipment-slot-stats">
+        <img class="hero-equipment-slot-tier" src="/fankit{{ $item.assets.tier }}" alt="">
         {{ with $item.stats.atk }}
             <img src="/fankit{{ $statData.assets.atk }}" alt="">
         {{ end }}
@@ -97,19 +129,19 @@
             <img src="/fankit{{ $statData.assets.critChance }}" alt="">
         {{ end }}
     </div>
-    {{ with $item.stats.antiqueDate }}
-        {{ $antiqueAsset := $scratch.Get "antiqueAsset" }}
-        <div class="hero-equipment-slot-antique">
+    <div class="hero-equipment-slot-meta hero-equipment-slot-meta-right">
+        {{ with $item.stats.antiqueDate }}
+            {{ $antiqueAsset := $scratch.Get "antiqueAsset" }}
             <img src="/fankit{{ $antiqueAsset }}" alt="">
-        </div>
-    {{ end }}
-    <div class="hero-equipment-slot-enchant">
+        {{ else }}
+            <span class="hero-equipment-slot-antique-filler"></span>
+        {{ end }}
         {{ with $element }}
-            <img src="/fankit{{ $element.assets.image }}" alt="">
+            <img src="/fankit{{ $element.assets.enchantElement }}" alt="">
         {{ end }}
         {{ with $spirit }}
-            <img src="/fankit{{ $spirit.assets.affinitySpirit }}" alt="">
+            <img class="hero-equipment-slot-spirit-padding"
+                 src="/fankit{{ $spirit.assets.affinitySpirit }}" alt="">
         {{ end }}
     </div>
-    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="">
 </div>
