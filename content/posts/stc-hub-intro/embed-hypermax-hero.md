@@ -15,10 +15,10 @@ _build:
 ---
 
 {{< hero class="Warlock"
-    starPower=315856
-    hp=709
-    atk=97254
-    def=3699
+    starPower=337434
+    hp=742
+    atk=103662
+    def=4599
 	threat=10
     eva=2
     critChance=50
@@ -29,16 +29,16 @@ _build:
 	slot2="Soulbinder Regalia"
 		element2="Abyssal Element"
 		spirit2="Chimera Spirit"
-	slot3="Nightwing Vambraces"
+	slot3="Glazed Mirror Cake"
 		element3="Abyssal Element"
 		spirit3="Carbuncle Spirit"
 	slot4="Raptor Talons"
 		element4="Abyssal Element"
 		spirit4="Eagle Spirit"
-	slot5="Pharaoh's Pact"
+	slot5="Lost Star Chart"
 		element5="Abyssal Element"
 		spirit5="Chimera Spirit"
-	slot6="Pharaoh's Pact"
+	slot6="Lost Star Chart"
 		element6="Abyssal Element"
 		spirit6="Chimera Spirit"
 	skill0="Dark Pact"
@@ -46,5 +46,5 @@ _build:
 	skill2="Double Cast"
 	skill3="Death Dealer"
 	skill4="All Natural"
-	sim="Yes|Blue Type|Warlock|Dagger|Clothes|Gloves|Light Footwear|Spell|Spell|Wiccan Dagger (ATK/CRIT) - T11|Soulbinder Regalia (ATK/DEF) - T12|Nightwing Vambraces (DEF/HP) - T11|Raptor Talons (ATK/DEF) - T11|Pharaoh's Pact (ATK/HP) - T12|Pharaoh's Pact (ATK/HP) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Carbuncle Spirit (+2% EVA, +2% Crit Chance)|Eagle Spirit (+2% Crit Chance)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Poison Cloud (+240% ATK)|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Dark|Dark|Dark|Dark|Dark|Dark|"
+	sim="Yes|Blue Type|Warlock|Dagger|Clothes|Dessert|Light Footwear|Spell|Spell|Wiccan Dagger (ATK/CRIT) - T11|Soulbinder Regalia (ATK/DEF) - T12|Glazed Mirror Cake (ATK/HP) - T12|Raptor Talons (ATK/DEF) - T11|Lost Star Chart (ATK/DEF) - T12|Lost Star Chart (ATK/DEF) - T12|Legendary|Legendary|Legendary|Legendary|Legendary|Legendary|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|25 / Tier 12|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Carbuncle Spirit (+2% EVA, +2% Crit Chance)|Eagle Spirit (+2% Crit Chance)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Chimera Spirit (+10% ATK, +10% Crit Damage)|Poison Cloud (+240% ATK)|Double Cast (+220% ATK)|Death Dealer (+350% Crit Damage)|All Natural (+30% Crit Chance & +100% Crit Damage)|40|80|80|80|Dark|Dark|Dark|Dark|Dark|Dark|"
 >}}
