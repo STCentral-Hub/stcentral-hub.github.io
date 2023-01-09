@@ -76,11 +76,10 @@
 {{ $slotTitle := delimit (slice $itemSummary $statSummary $elementSummary $spiritSummary $antiqueSummary) "&#010;" }}
 
 <div class="hero-equipment-slot" title="{{ $slotTitle }}">
-    <div class="hero-equipment-slot-tier">
+    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="">
+    <div class="hero-equipment-slot-meta hero-equipment-slot-meta-left">
         <img src="/fankit/Misc Icons/icon_global_level_item_s_r.png" alt="">
-        <img src="/fankit{{ $item.assets.tier }}" alt="">
-    </div>
-    <div class="hero-equipment-slot-stats">
+        <img class="hero-equipment-slot-tier" src="/fankit{{ $item.assets.tier }}" alt="">
         {{ with $item.stats.atk }}
             <img src="/fankit{{ $statData.assets.atk }}" alt="">
         {{ end }}
@@ -97,13 +96,11 @@
             <img src="/fankit{{ $statData.assets.critChance }}" alt="">
         {{ end }}
     </div>
-    {{ with $item.stats.antiqueDate }}
-        {{ $antiqueAsset := $scratch.Get "antiqueAsset" }}
-        <div class="hero-equipment-slot-antique">
+    <div class="hero-equipment-slot-meta hero-equipment-slot-meta-right">
+        {{ with $item.stats.antiqueDate }}
+            {{ $antiqueAsset := $scratch.Get "antiqueAsset" }}
             <img src="/fankit{{ $antiqueAsset }}" alt="">
-        </div>
-    {{ end }}
-    <div class="hero-equipment-slot-enchant">
+        {{ end }}
         {{ with $element }}
             <img src="/fankit{{ $element.assets.image }}" alt="">
         {{ end }}
@@ -111,5 +108,4 @@
             <img src="/fankit{{ $spirit.assets.affinitySpirit }}" alt="">
         {{ end }}
     </div>
-    <img class="hero-equipment-slot-icon" src="/fankit{{ $item.assets.image }}" alt="">
 </div>
