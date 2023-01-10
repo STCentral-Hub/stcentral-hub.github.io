@@ -37,7 +37,7 @@
         {{ $scratch.Set "type" "superiorPrecraft" }}
         {{ $scratch.Set "title" (replaceRE `\{0\}` ($bpTranslations.c1quality) (replaceRE `\{1\}` ($bpTranslations.component1) $qualityItemNameFormat)) }}
     {{ else }}
-        {{ $scratch.Set "type" "component  " }}
+        {{ $scratch.Set "type" "component" }}
         {{ $scratch.Set "title" $bpTranslations.component1 }}
     {{ end }}
     {{ partial "blueprint/metaStat.html" (dict
