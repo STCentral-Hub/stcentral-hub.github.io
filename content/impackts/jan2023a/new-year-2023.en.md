@@ -4,7 +4,7 @@ layout: "impackt"
 outputs: ["html", ]
 title: "Impackt: New Year 2023"
 summary: "Reining in the New Year ~~with~~ for Warlocks"
-categories: [Impackt]
+categories: ["Impackt", ]
 tags: [ ]
 
 authors: ["Nerilea", ]
