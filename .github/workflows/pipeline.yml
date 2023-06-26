@@ -1,0 +1,117 @@
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy STCentral-Hub to Pages
+
+on:
+  push:
+    branches:
+      - main
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+  # ChatOps Jobs
+  notify-success:
+    runs-on: ubuntu-latest
+    needs: [build, deploy]
+    if: success()
+    steps:
+      - name: Send Success Notification
+        run: |
+          curl --location ${{ secrets.NOTIFICATION_URL }} \
+               --header 'Content-Type: application/json' \
+               --data-raw "
+                 {
+                   \"content\": \"<@${{ secrets.NOTIFICATION_USER_ID }}>\",
+                   \"allowed_mentions\": {
+                     \"parse\": [\"users\"]
+                   },
+                   \"embeds\": [
+                     {
+                       \"color\": 11162547,
+                       \"title\": \"Workflow Success\",
+                       \"url\": \"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\",
+                       \"description\": \"Successfully deployed\n- ${{ github.event.head_commit.message }}\nto [STC-Hub](https://stcentral-hub.github.io/ 'STCentral-Hub')\",
+                       \"thumbnail\": {
+                         \"url\": \"https://raw.githubusercontent.com/STCentral-Hub/stcentral-hub.github.io/main/public/workflow_success.png\"
+                       },
+                       \"author\": {
+                         \"name\": \"STCentral-Hub\",
+                         \"url\": \"https://github.com/STCentral-Hub/stcentral-hub.github.io\",
+                         \"icon_url\": \"https://avatars.githubusercontent.com/u/120429077?v=4\"
+                       }
+                     }
+                   ]
+                 }"
+
+  notify-failure:
+    runs-on: ubuntu-latest
+    needs: [build, deploy]
+    if: failure()
+    steps:
+      - name: Send Failure Notification
+        run: |
+          curl --location ${{ secrets.NOTIFICATION_URL }} \
+               --header 'Content-Type: application/json' \
+               --data-raw "
+                 {
+                   \"content\": \"<@${{ secrets.NOTIFICATION_USER_ID }}>\",
+                   \"allowed_mentions\": {
+                     \"parse\": [\"users\"]
+                   },
+                   \"embeds\": [
+                     {
+                       \"color\": 11162547,
+                       \"title\": \"Workflow Failure\",
+                       \"url\": \"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\",
+                       \"description\": \"Failed to deploy\n- ${{ github.event.head_commit.message }}\nto [STC-Hub](https://stcentral-hub.github.io/ 'STCentral-Hub'). The site may be offline!\",
+                       \"thumbnail\": {
+                         \"url\": \"https://raw.githubusercontent.com/STCentral-Hub/stcentral-hub.github.io/main/public/workflow_failure.png\"
+                       },
+                       \"author\": {
+                         \"name\": \"STCentral-Hub\",
+                         \"url\": \"https://github.com/STCentral-Hub/stcentral-hub.github.io\",
+                         \"icon_url\": \"https://avatars.githubusercontent.com/u/120429077?v=4\"
+                       }
+                     }
+                   ]
+                 }"

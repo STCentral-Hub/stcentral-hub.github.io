@@ -1,0 +1,9 @@
+### Ignore everything ###
+/*
+
+### Except ###
+!/public
+!/.github
+!.gitignore
+!LICENSE.md
+!README.md
