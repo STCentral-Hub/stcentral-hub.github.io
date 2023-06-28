@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# June 19th, 2123
+  * Added assets for Racks (in "Furniture").
+
 # June 13th, 2023
   * Added assets for Shop Titans 2023 Mega and Superior Packs.
 
