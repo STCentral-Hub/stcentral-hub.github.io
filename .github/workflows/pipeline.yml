@@ -61,7 +61,7 @@ jobs:
                --header 'Content-Type: application/json' \
                --data-raw "
                  {
-                   \"content\": \"<@${{ secrets.NOTIFICATION_USER_ID }}>\",
+                   \"content\": \"<@${{ secrets.NERI_USER_ID }}> & <@${{ secrets.REI_USER_ID }}>\",
                    \"allowed_mentions\": {
                      \"parse\": [\"users\"]
                    },
@@ -94,7 +94,7 @@ jobs:
                --header 'Content-Type: application/json' \
                --data-raw "
                  {
-                   \"content\": \"<@${{ secrets.NOTIFICATION_USER_ID }}>\",
+                   \"content\": \"<@${{ secrets.NERI_USER_ID }}> & <@${{ secrets.REI_USER_ID }}>\",
                    \"allowed_mentions\": {
                      \"parse\": [\"users\"]
                    },
