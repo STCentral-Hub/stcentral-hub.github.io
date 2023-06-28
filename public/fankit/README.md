@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# June 28th, 2023
+  * Added assets for Beach Day Mega and Superior Packs.
+  * Added asset for Sheperd's Pie (patechinois).
+
 # June 19th, 2123
   * Added assets for Racks (in "Furniture").
 
