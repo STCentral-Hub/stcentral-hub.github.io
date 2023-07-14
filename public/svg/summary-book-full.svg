@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bookCap">
+    <rect
+            fill="#black"
+            fill-opacity="1"
+            x="1058"
+            y="75"
+            width="30"
+            height="495"
+    />
+    <rect
+            fill="#A74C7D"
+            fill-opacity="1"
+            x="1053"
+            y="80"
+            width="30"
+            height="490"
+    />
+    <rect
+            fill="#5C2F46"
+            fill-opacity="1"
+            x="1048"
+            y="85"
+            width="30"
+            height="485"
+    />
+    <use href="#pageTop" y="70" transform="scale(1.067, 1)"/>
+    <use href="#pageTop" y="69" transform="scale(1.066, 1)"/>
+    <use href="#pageTop" y="66" transform="scale(1.065, 1)"/>
+    <use href="#pageTop" y="63" transform="scale(1.064, 1)"/>
+    <use href="#pageTop" y="60" transform="scale(1.062, 1)"/>
+    <use href="#pageTop" y="55" transform="scale(1.06, 1)"/>
+    <use href="#pageTop" y="50" transform="scale(1.05, 1)"/>
+    <use href="#pageTop" y="40" transform="scale(1.04, 1)"/>
+    <use href="#pageTop" y="30" transform="scale(1.03, 1)"/>
+    <use href="#pageTop" y="20" transform="scale(1.02, 1)"/>
+    <use href="#pageTop" y="10" transform="scale(1.01, 1)"/>
+    <path
+            id="pageTop"
+            stroke="#E4D5BC"
+            stroke-width="2"
+            fill="#F6EEDD"
+            fill-opacity="1"
+            d="
+                    m 0 500
+                    v -480
+                    q 50 -25 100 -10
+                    q 130 30 700 20
+                    q 150 -5 200 -20
+                    v 490"
+    />
+  </symbol>
+  <symbol id="bookCore">
+    <rect
+            fill="#black"
+            fill-opacity="1"
+            x="1058"
+            y="0"
+            width="30"
+            height="550"
+    />
+    <rect
+            fill="#A74C7D"
+            fill-opacity="1"
+            x="1053"
+            y="0"
+            width="30"
+            height="550"
+    />
+    <rect
+            fill="#5C2F46"
+            fill-opacity="1"
+            x="1048"
+            y="0"
+            width="30"
+            height="550"
+    />
+    <rect
+            fill="#F6EEDD"
+            fill-opacity="1"
+            stroke-opacity="0"
+            x="0"
+            y="0"
+            width="1000"
+            height="550"
+    />
+    <use href="#pageCore" transform="scale(1.067, 1)"/>
+    <use href="#pageCore" transform="scale(1.066, 1)"/>
+    <use href="#pageCore" transform="scale(1.065, 1)"/>
+    <use href="#pageCore" transform="scale(1.064, 1)"/>
+    <use href="#pageCore" transform="scale(1.062, 1)"/>
+    <use href="#pageCore" transform="scale(1.06, 1)"/>
+    <use href="#pageCore" transform="scale(1.05, 1)"/>
+    <use href="#pageCore" transform="scale(1.04, 1)"/>
+    <use href="#pageCore" transform="scale(1.03, 1)"/>
+    <use href="#pageCore" transform="scale(1.02, 1)"/>
+    <use href="#pageCore" transform="scale(1.01, 1)"/>
+    <path
+            id="pageCore"
+            fill="#F6EEDD"
+            fill-opacity="1"
+            stroke="#E4D5BC"
+            stroke-width="2"
+            d="
+                    m 0 0
+                    v 550
+                    l 1000 0
+                    v -550
+                "
+    />
+  </symbol>
+  <symbol id="bookFoot">
+    <rect
+            fill="#black"
+            fill-opacity="1"
+            x="0"
+            y="72"
+            width="1088"
+            height="587"
+    />
+    <rect
+            fill="#A74C7D"
+            fill-opacity="1"
+            x="0"
+            y="72"
+            width="1083"
+            height="582"
+    />
+    <rect
+            fill="#5C2F46"
+            fill-opacity="1"
+            x="0"
+            y="72"
+            width="1078"
+            height="577"
+    />
+    <rect
+            fill="#B19A74"
+            fill-opacity="1"
+            x="0"
+            y="70"
+            width="1069"
+            height="570"
+    />
+    <rect
+            fill="#E4D5BC"
+            fill-opacity="1"
+            x="0"
+            y="70"
+            width="700"
+            height="570"
+    />
+    <use href="#pageBottom" y="80" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="79" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="78" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="77" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="76" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="75" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="74" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="73" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="72" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="71" transform="scale(1.067, 1)"/>
+    <use href="#pageBottom" y="69" transform="scale(1.066, 1)"/>
+    <use href="#pageBottom" y="66" transform="scale(1.065, 1)"/>
+    <use href="#pageBottom" y="63" transform="scale(1.064, 1)"/>
+    <use href="#pageBottom" y="60" transform="scale(1.062, 1)"/>
+    <use href="#pageBottom" y="55" transform="scale(1.06, 1)"/>
+    <use href="#pageBottom" y="50" transform="scale(1.05, 1)"/>
+    <use href="#pageBottom" y="40" transform="scale(1.04, 1)"/>
+    <use href="#pageBottom" y="30" transform="scale(1.03, 1)"/>
+    <use href="#pageBottom" y="20" transform="scale(1.02, 1)"/>
+    <use href="#pageBottom" y="10" transform="scale(1.01, 1)"/>
+    <path
+            id="pageBottom"
+            stroke="#E4D5BC"
+            stroke-width="2"
+            fill="#F6EEDD"
+            fill-opacity="1"
+            d="
+                    m 0 0
+                    v 550
+                    q 50 -25 100 -10
+                    q 130 30 700 20
+                    q 150 -5 200 -20
+                    v -540"
+    />
+    <path
+            stroke-opacity="0"
+            fill="#5C2F46"
+            fill-opacity="1"
+            d="
+                    m -5 640
+                    v -35
+                    q 80 0 80 37
+                    q 0 37 -80 37"
+    />
+    <path
+            stroke="#907D68"
+            stroke-width="12"
+            stroke-linecap="round"
+            fill-opacity="0"
+            d="
+                    m 0 610
+                    q 79 0 79 25"
+    />
+    <path
+            stroke="#A74C7D"
+            stroke-width="6"
+            stroke-linecap="square"
+            fill-opacity="0"
+            d="
+                    m 71 652
+                    q 0 25 -71 25"
+    />
+    <path
+            stroke="black"
+            stroke-width="5"
+            stroke-linecap="square"
+            fill-opacity="0"
+            d="
+                    m 73 657
+                    q 0 24 -73 24"
+    />
+  </symbol>
+
+  <svg viewBox="0 0 2200 800" preserveAspectRatio="xMidYMin">
+    <use href="#bookCap" transform="scale(-1, 1) translate(-1100 0)"/>
+    <use href="#bookCap" x="1100"/>
+  </svg>
+  <svg viewBox="0 0 2200 800" preserveAspectRatio="xMidYMid">
+    <use href="#bookCore" y="100" transform="scale(-1, 1) translate(-1100 0)"/>
+    <use href="#bookCore" x="1100" y="100"/>
+  </svg>
+  <svg viewBox="0 0 2200 800" preserveAspectRatio="xMidYMax">
+    <use href="#bookFoot" y="100" transform="scale(-1, 1) translate(-1100 0)"/>
+    <use href="#bookFoot" x="1100" y="100"/>
+  </svg>
+</svg>

@@ -4,6 +4,27 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# July 11th, 2023
+  * Added assets for Sweet Dreams Mega and Superior Packs.
+  * Added asset for Talent Tree (in "Misc Icons").
+  * Added asset for Talent Point (in "Currencies").
+  * Added assets for Talent Tree Talents (in "Talent Tree").
+  * Added assets for Talent Tree Refund Tokens (in "Special Items").
+  * Added asset for Champion (in "Misc Icons").
+  * Added asset for Small Talk (in "Misc Icons").
+  * Updated asset for Antique Token currency icon.
+  * Updated asset for Spin Token currency icon.
+  * Updated asset for Limited Edition! currency icon.
+  * Updated asset for On the House! currency icon.
+  * Updated assets for Standard and Titan Fighter classes.
+  * Updated assets for Standard and Titan Rogue classes.
+  * Updated assets for Standard and Titan Spellcaster classes.
+  * Updated asset for Hero Power stat icon.
+  * Updated asset for Ranger innate skill icon.
+
+# July 10th, 2023
+  * Added asset for Platinum Helm (platinumhelm).
+
 # June 28th, 2023
   * Added assets for Beach Day Mega and Superior Packs.
   * Added asset for Sheperd's Pie (patechinois).
