@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# July 27th, 2023
+  * Added assets for Cinderlake Mega and Superior Packs.
+
 # July 11th, 2023
   * Added assets for Sweet Dreams Mega and Superior Packs.
   * Added asset for Talent Tree (in "Misc Icons").
