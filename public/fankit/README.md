@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# August 4th, 2023
+  * Added asset for Platinum Insignia.
+
 # July 27th, 2023
   * Added assets for Cinderlake Mega and Superior Packs.
 
