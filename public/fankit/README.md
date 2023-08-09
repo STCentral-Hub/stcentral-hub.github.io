@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# August 8th, 2023
+  * Added asset for 14.1 splash screen background.
+  * Added asset for Bjorn Champion Coin.
+  * Added assets for Bjorn leader skill icons.
+  * Added assets for Bjorn Content Pass.
+  * Added assets for Wayfinder Mega and Superior Packs.
+
 # August 4th, 2023
   * Added asset for Platinum Insignia.
 
