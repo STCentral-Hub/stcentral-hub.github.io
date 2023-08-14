@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; justify-content: center;">
-  <a title="License: CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">
-    <img alt="License: CC BY-NC-SA 4.0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png">
+  <a title="License: CC BY-NC-ND 4.0" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">
+    <img alt="License: CC BY-NC-ND 4.0" src="https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png">
   </a>
   &nbsp;
   <a title="stcentral-hub.github.io" href="https://github.com/STCentral-Hub/stcentral-hub.github.io/actions/workflows/pipeline.yml">
