@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# August 22nd, 2023
+  * Added assets for Camping Mega and Superior Packs.
+
 # August 8th, 2023
   * Added asset for 14.1 splash screen background.
   * Added asset for Bjorn Champion Coin.
