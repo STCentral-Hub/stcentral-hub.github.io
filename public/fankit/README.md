@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# September 5th, 2023
+  * Added assets for buildings (in "Buildings").
+  * Added asset for Platinum Shoes.
+  * Added assets for Office Mega and Superior Packs.
+  * Updated assets for Player Titles.
+  * Added assets for Talent Tree nodes (in "Talent Tree").
+
 # August 22nd, 2023
   * Added assets for Camping Mega and Superior Packs.
 
