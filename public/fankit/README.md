@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# September 19th, 2023
+  * Added assets for Mid-Autumn Mega and Superior Packs.
+
 # September 5th, 2023
   * Added assets for buildings (in "Buildings").
   * Added asset for Platinum Shoes.
