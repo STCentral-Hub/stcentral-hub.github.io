@@ -4,6 +4,15 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# October 3rd, 2023
+  * Added assets for Bleakspire Mega and Superior Packs.
+  * Added assets for Tier 7 hero classes (Standard and Titan).
+  * Added assets for Tier 7 hero innate skills.
+  * Added assets for Vampire Content Pass.
+  * Added assets for Vampire Content Pass blueprints.
+  * Added asset for Spells Vol III.
+  * Added assets for Platinum Secret Map.
+
 # September 19th, 2023
   * Added assets for Mid-Autumn Mega and Superior Packs.
 
