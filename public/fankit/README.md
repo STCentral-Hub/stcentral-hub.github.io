@@ -4,6 +4,12 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# October 18th, 2023
+  * Added data for Gothita Mega and Superior Packs.
+
+# October 12th, 2023
+  * Removed concept art.
+
 # October 3rd, 2023
   * Added assets for Bleakspire Mega and Superior Packs.
   * Added assets for Tier 7 hero classes (Standard and Titan).
