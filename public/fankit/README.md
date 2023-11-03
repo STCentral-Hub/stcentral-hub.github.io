@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# October 31st, 2023
+  * Added asset for Platinum War Axe.
+  * Added assets for Self Care Mega and Superior Packs.
+
 # October 18th, 2023
   * Added data for Gothita Mega and Superior Packs.
 
