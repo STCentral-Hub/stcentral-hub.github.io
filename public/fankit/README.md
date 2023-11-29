@@ -4,6 +4,23 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# November 28th, 2023
+  * Added assets for Instruments and Aurasongs.
+  * Added assets for Instrument and Aurasong item types.
+  * Added assets for Aurasong skills.
+  * Added assets for Instrument hero skill.
+  * Added assets for 15.0 splash screen.
+  * Added asset for Bard worker ability (in "Misc Icons").
+  * Added asset for Bard package.
+  * Added asset for Bard worker.
+  * Added assets for Ancient Gods Mega and Superior Packs.
+
+# November 27th, 2023
+  * Added assets for Black Friday offers.
+  * Added asset for Champion Titan Soul.
+  * Added asset for Platinum Gauntlets.
+  * Added assets for Mecha Mega and Superior Packs.
+
 # October 31st, 2023
   * Added asset for Platinum War Axe.
   * Added assets for Self Care Mega and Superior Packs.
