@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# December 12th, 2023
+  * Added assets for Christmas Content Pass.
+  * Added assets for Yuletide Mega and Superior Packs.
+
 # November 28th, 2023
   * Added assets for Instruments and Aurasongs.
   * Added assets for Instrument and Aurasong item types.
