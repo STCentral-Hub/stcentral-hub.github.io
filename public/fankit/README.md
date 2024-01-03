@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# January 3rd, 2024
+  * Added assets for Platinum Rings.
+  * Added assets for New Year 2024 Mega and Superior Packs.
+
 # December 12th, 2023
   * Added assets for Christmas Content Pass.
   * Added assets for Yuletide Mega and Superior Packs.
