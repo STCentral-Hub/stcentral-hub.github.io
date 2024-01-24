@@ -4,6 +4,16 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# January 23rd, 2024
+  * Added asset for Platinum Beret.
+  * Added assets for Wonderland Mega and Superior Packs.
+  * Added assets for Year of the Dragon Content Pass.
+  * Added assets for Year of the Dragon Content Pass blueprints.
+  * Added assets for Elemental Barrier threshold status (in "Misc. Icons").
+
+# January 9th, 2024
+  * Added assets for Magic Mega and Superior Packs.
+
 # January 3rd, 2024
   * Added assets for Platinum Rings.
   * Added assets for New Year 2024 Mega and Superior Packs.
