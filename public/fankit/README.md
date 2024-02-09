@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# February 7th, 2024
+  * Added assets for Year of the Dragon Mega and Superior Packs.
+
 # January 23rd, 2024
   * Added asset for Platinum Beret.
   * Added assets for Wonderland Mega and Superior Packs.
