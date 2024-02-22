@@ -4,6 +4,11 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# February 20th, 2024
+  * Added asset for Bard city building.
+  * Added asset for Platinum Grenadier.
+  * Added assets for Neopunk Mega and Superior Packs.
+
 # February 7th, 2024
   * Added assets for Year of the Dragon Mega and Superior Packs.
 
