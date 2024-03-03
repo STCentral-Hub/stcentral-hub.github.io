@@ -57,6 +57,8 @@ jobs:
     steps:
       - name: Send Success Notification
         run: |
+          echo "${{ github.event.head_commit.message }}" > commit_message.txt
+          COMMIT_MESSAGE=$(awk '{printf "%s\\n", $0}' commit_message.txt)
           curl --location ${{ secrets.NOTIFICATION_URL }} \
                --header 'Content-Type: application/json' \
                --data-raw "
@@ -70,7 +72,7 @@ jobs:
                        \"color\": 11162547,
                        \"title\": \"Workflow Success\",
                        \"url\": \"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\",
-                       \"description\": \"Successfully deployed\n- ${{ github.event.head_commit.message }}\nto [STC-Hub](https://stcentral-hub.github.io/ 'STCentral-Hub')\",
+                       \"description\": \"Successfully deployed\n- ${COMMIT_MESSAGE}\nto [STC-Hub](https://stcentral-hub.github.io/ 'STCentral-Hub')\",
                        \"thumbnail\": {
                          \"url\": \"https://raw.githubusercontent.com/STCentral-Hub/stcentral-hub.github.io/main/public/workflow_success.png\"
                        },
@@ -90,6 +92,8 @@ jobs:
     steps:
       - name: Send Failure Notification
         run: |
+          echo "${{ github.event.head_commit.message }}" > commit_message.txt
+          COMMIT_MESSAGE=$(awk '{printf "%s\\n", $0}' commit_message.txt)
           curl --location ${{ secrets.NOTIFICATION_URL }} \
                --header 'Content-Type: application/json' \
                --data-raw "
@@ -103,7 +107,7 @@ jobs:
                        \"color\": 11162547,
                        \"title\": \"Workflow Failure\",
                        \"url\": \"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\",
-                       \"description\": \"Failed to deploy\n- ${{ github.event.head_commit.message }}\nto [STC-Hub](https://stcentral-hub.github.io/ 'STCentral-Hub'). The site may be offline!\",
+                       \"description\": \"Failed to deploy\n- ${COMMIT_MESSAGE}\nto [STC-Hub](https://stcentral-hub.github.io/ 'STCentral-Hub'). The site may be offline!\",
                        \"thumbnail\": {
                          \"url\": \"https://raw.githubusercontent.com/STCentral-Hub/stcentral-hub.github.io/main/public/workflow_failure.png\"
                        },
