@@ -4,6 +4,16 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# March 6th, 2024
+  * Added assets for Void Dimension Mega and Superior Packs.
+
+# February 27th, 2024
+  * Added asset for Darkness Millennium.
+
+# February 23rd, 2024
+  * Added assets for Lilu Blitz Pass (in "Blitz Pass").
+  * Added assets for blueprint types (in "Blueprint Types").
+
 # February 20th, 2024
   * Added asset for Bard city building.
   * Added asset for Platinum Grenadier.
