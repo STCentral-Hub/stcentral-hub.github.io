@@ -4,6 +4,12 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# March 20th, 2024
+  * Added asset for Platinum Sniper.
+  * Added assets for Nilean Dynasty Mega and Superior Packs.
+  * Added assets for Full Bloom Content Pass.
+  * Added asset for Promo Code icon (in "Misc Icons").
+
 # March 6th, 2024
   * Added assets for Void Dimension Mega and Superior Packs.
 
