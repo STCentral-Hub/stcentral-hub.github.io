@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# April 3rd, 2024
+  * Added assets for Tamas Mega and Superior Packs.
+
 # March 20th, 2024
   * Added asset for Platinum Sniper.
   * Added assets for Nilean Dynasty Mega and Superior Packs.
