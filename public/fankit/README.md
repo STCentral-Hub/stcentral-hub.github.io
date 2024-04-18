@@ -4,6 +4,16 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# April 16th, 2024
+  * Added assets for Superhero Mega and Superior Packs.
+  * Added asset for Advanced Research (in "Misc Icons").
+  * Added assets for Tier 14 blueprints.
+  * Added assets for Divine Chest blueprints.
+  * Added asset for Elysium quest and boss.
+  * Added asset for Divine Chest and Key.
+  * Added asset for 16.0 splash screen background.
+  * Added asset for Platinum Scepter.
+
 # April 3rd, 2024
   * Added assets for Tamas Mega and Superior Packs.
 
