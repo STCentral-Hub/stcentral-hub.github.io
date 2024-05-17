@@ -4,6 +4,14 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# May 14th, 2024
+  * Added assets for Cursed King Mega and Superior Packs.
+  * Added assets for Ironclad Content Pass.
+  * Added asset for Platinum Winter Hat.
+
+# May 6th, 2024
+  * Added assets for Chronomancer Mega and Superior Packs.
+
 # April 16th, 2024
   * Added assets for Superhero Mega and Superior Packs.
   * Added asset for Advanced Research (in "Misc Icons").
