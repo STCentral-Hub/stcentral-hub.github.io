@@ -4,6 +4,18 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# June 11th, 2024
+  * Added assets for 17.0 Splash Screen (5th Anniversary).
+  * Added assets for Shop Titans Mega and Superior Packs.
+  * Added assets for Artifact blueprint types.
+  * Added assets for Minor and Greater Artifact chests and keys.
+  * Added assets for Artifact components.
+  * Added assets for Artifact blueprints.
+  * Added assets for Level Loops.
+  * Added asset for Seed of Merit.
+  * Added assets for Supreme Moonstones and Runestone.
+  * Added assets for Tier 14 elements and spirits.
+
 # May 28th, 2024
   * Added assets for Buggy Beetle Mega and Superior Packs.
 
