@@ -4,6 +4,16 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# July 2nd, 2024
+  * Added asset for Platinum Greatsword.
+  * Added assets for Goose Spirit.
+  * Added assets for Summer Vibes Mega and Superior Packs.
+
+# June 16th, 2024
+  * Added asset for Platinum Strudel.
+  * Added asset for Ironclad Grapple.
+  * Added assets for Anniversary Offer packs.
+
 # June 11th, 2024
   * Added assets for 17.0 Splash Screen (5th Anniversary).
   * Added assets for Shop Titans Mega and Superior Packs.
