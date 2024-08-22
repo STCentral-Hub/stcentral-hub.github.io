@@ -4,6 +4,21 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# August 22nd, 2024
+  * Added assets for Dungeon Luncheon Mega and Superior Packs.
+  * Added assets for Community Mace and Spear.
+
+# August 9th, 2024
+  * Added asset for Platinum Bell.
+
+# August 6th, 2024
+  * Added assets for Retro Gaming Mega and Superior Packs.
+  * Updated the icons for Tier 14 elemental enchantments.
+  * Updated icons for city help and friendship (in "Misc Icons").
+
+# July 28th, 2024
+  * Updated asset for Erudite Vector dagger.
+
 # July 24th, 2024
   * Added assets for Olympus Games Mega and Superior Packs.
 
