@@ -4,6 +4,17 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# September 19th, 2024
+  * Added assets for The Monk Mega and Superior Packs.
+
+# September 9th, 2024
+  * Added asset for Platinum Full Plate.
+
+# September 3rd, 2024
+  * Added assets for Back To School: Lacrosse Mega and Superior Packs.
+  * Added assets for Mega Dungeon Content Pass.
+  * Added assets for Break Chance Reduction and Artifact Chest Source (in "Misc Icons").
+
 # August 22nd, 2024
   * Added assets for Dungeon Luncheon Mega and Superior Packs.
   * Added assets for Community Mace and Spear.
