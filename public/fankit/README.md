@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# October 15th, 2024
+  * Added assets for Bloodmoon Mega and Superior Packs.
+
 # October 1st, 2024
   * Added assets for Halloween Neighborhood Content Pass.
   * Added assets for Fire & Ice Mega and Superior Packs.
