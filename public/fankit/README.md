@@ -4,6 +4,15 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# October 29th, 2024
+  * Added assets for Elysium Mega and Superior Packs.
+  * Added assets for Veteran Worker.
+  * Added assets for Dual Wield and Quiver item type.
+  * Added assets for Dual Wields and Quivers.
+  * Added assets for Veteran splash screen.
+  * Added asset for Platinum Gloves.
+  * Added asset for new App Icon.
+
 # October 15th, 2024
   * Added assets for Bloodmoon Mega and Superior Packs.
 
