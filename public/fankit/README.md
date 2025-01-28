@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# January 21st, 2025
+  * Added assets for Year of the Snake Mega and Superior Packs.
+  * Added asset for Ancestor Spirit and Ancestor Spirit enchantment.
+  * Added assets for Year of the Snake Content Pass.
+  * Added asset for 18.2 Splash Screen.
+  * Added assets for Sia and Yami Blitz Pass.
+
 # January 8th, 2025
   * Added assets for Fimbulwinter Mega and Superior Packs. 
 
