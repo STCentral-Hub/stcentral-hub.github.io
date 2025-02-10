@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# February 7th, 2025
+  * Added assets for Sweet Serenade Mega and Superior Packs.
+
 # January 21st, 2025
   * Added assets for Year of the Snake Mega and Superior Packs.
   * Added asset for Ancestor Spirit and Ancestor Spirit enchantment.
