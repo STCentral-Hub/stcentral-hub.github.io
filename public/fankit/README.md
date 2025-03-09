@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# February 19th, 2024
+  * Added assets for Cozy Comforts Mega and Superior Packs.
+  * Added asset for Squirrel Spirit enchantment.
+  * Added assets for Vending Machine.
+  * Added assets for Backfire Hammer artifact.
+  * Added asset for Platinum Pair.
+
 # February 7th, 2025
   * Added assets for Sweet Serenade Mega and Superior Packs.
 
