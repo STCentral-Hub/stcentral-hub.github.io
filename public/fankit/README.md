@@ -4,7 +4,19 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
-# February 19th, 2024
+# March 18th, 2025
+  * Added assets for Paladin Mega and Superior Packs.
+  * Added asset for Gem Fountain in Furniture.
+  * Added assets for Shop Titans Content Pass.
+  * Added asset for Platinum Tankard.
+  * Added assets for Store icon.
+  * Added assets for Platinum Golem/Keybearer.
+  * Updated asset for Squirrel Spirit.
+
+# March 10th, 2025
+  * Added assets for The Month of Lilu Mega and Superior Packs.
+
+# February 19th, 2025
   * Added assets for Cozy Comforts Mega and Superior Packs.
   * Added asset for Squirrel Spirit enchantment.
   * Added assets for Vending Machine.
