@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# April 4th, 2025
+  * Added assets for Heavy Metal Mega and Superior Packs.
+
 # March 18th, 2025
   * Added assets for Paladin Mega and Superior Packs.
   * Added asset for Gem Fountain in Furniture.
