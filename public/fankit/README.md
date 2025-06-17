@@ -1,8 +1,28 @@
 # Shop Titans - Fan Kit
-This fan kit is provided by Kabam Montreal for fans of Shop Titans to use for Shop Titans related projects. 
-You may not redistribute any of these assets or monetize any project using these assets without direct permission from Kabam Montreal. 
+This fan kit is provided by Kabam Montreal for fans of Shop Titans to use for Shop Titans related projects.
+You may not redistribute any of these assets or monetize any project using these assets without direct permission from Kabam Montreal.
 
 # Changelog
+
+# June 17th, 2025
+  * Added assets for 6th Anniversary Mega and Superior Packs.
+  * Added assets for 20.0 Splash Screen.
+  * Added asset for Platinum Aura.
+  * Added assets for Grand Collection Content Pass.
+  * Added assets for Anniversary Sales offers.
+  * Added assets for Collection Card Packs.
+
+# May 30th, 2025
+  * Added assets for Whispering Bog Vol II Mega and Superior Packs.
+
+# May 20th, 2025
+  * Added assets for Dragonboat Festival Content Pass.
+  * Added assets for Sia Champion Mega and Superior Packs.
+  * Added skill icons for Artifacts and Dual Wields.
+
+# April 29th, 2025
+  * Added assets for Plushie Mega and Superior Packs.
+  * Added skill icon for Aura of Storms.
 
 # April 16th, 2025
   * Added assets for Colorful Artist Mega and Superior Packs.
@@ -48,14 +68,14 @@ You may not redistribute any of these assets or monetize any project using these
   * Added assets for Sia and Yami Blitz Pass.
 
 # January 8th, 2025
-  * Added assets for Fimbulwinter Mega and Superior Packs. 
+  * Added assets for Fimbulwinter Mega and Superior Packs.
 
 # January 6th, 2025
-  * Added assets for New Year 2025 Mega and Superior Packs. 
+  * Added assets for New Year 2025 Mega and Superior Packs.
   * Added asset for Platinum Wand.
 
 # December 12th, 2024
-  * Added assets for Christmas 2024 Mega and Superior Packs. 
+  * Added assets for Christmas 2024 Mega and Superior Packs.
   * Added asset for Forsaken Censer.
 
 # December 2nd, 2024
