@@ -4,10 +4,14 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# June 25th, 2025
+  * Added assets for Light & Dark Mega and Superior Packs.
+
 # June 17th, 2025
   * Added assets for 6th Anniversary Mega and Superior Packs.
   * Added assets for 20.0 Splash Screen.
-  * Added asset for Platinum Aura.
+  * Added asset for Platinum Aura, Platinum Golem and Platinum Ward.
+  * Added asset for Blooming Wildwood.
   * Added assets for Grand Collection Content Pass.
   * Added assets for Anniversary Sales offers.
   * Added assets for Collection Card Packs.
