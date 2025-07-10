@@ -4,6 +4,12 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# July 9th, 2025
+  * Added assets for Ice Cream Mega and Superior Packs.
+  * Added asset for Platinum Robe.
+  * Added asset for Card Shard.
+  * Added asset for Stone Coin.
+
 # June 25th, 2025
   * Added assets for Light & Dark Mega and Superior Packs.
 
