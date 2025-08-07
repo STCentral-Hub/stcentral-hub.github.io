@@ -4,6 +4,15 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# August 6th, 2025
+  * Added assets for 1001 Nights Mega and Superior Packs.
+  * Added asset for 20.2 Splash Screen.
+  * Added asset for Aura of Sands skill icon.
+
+# August 4th, 2025
+  * Added assets for Scavenger Mega and Superior Packs.
+  * Added asset for Platinum Lance.
+
 # July 9th, 2025
   * Added assets for Ice Cream Mega and Superior Packs.
   * Added asset for Platinum Robe.
