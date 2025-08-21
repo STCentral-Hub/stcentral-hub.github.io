@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# August 20th, 2025
+  * Added skill icons for Malady.
+  * Added assets for Malady's Welcome Mega and Superior Packs.
+  * Added assets for Malady's Arrival Content Pass.
+  * Added asset for Malady Champion Coin.
+  * Removed _old assets folder for Character Portraits.
+
 # August 6th, 2025
   * Added assets for 1001 Nights Mega and Superior Packs.
   * Added asset for 20.2 Splash Screen.
