@@ -4,6 +4,9 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# September 18th, 2025
+  * Added assets for Jurassic Mega and Superior Parcks.
+
 # September 5th, 2025
   * Added assets for Imbued Blade, Imbued Dagger and Windsworn.
   * Added asset for Fountain Pen blueprint.
