@@ -4,6 +4,26 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# November 11th, 2025
+  * Added assets for Cinderlake Volcano II Mega and Superior Packs.
+
+# November 9th, 2025
+  * Added assets for Pyromancer's Robe and Shattered Totem.
+
+# November 4th, 2025
+  * Added asset for Platinum Crossbow.
+
+# October 15th, 2025
+  * Added assets for Pumpkin Patch Mega and Superior Packs.
+
+# October 7th, 2025
+  * Added assets for the Storm Elemental worker.
+  * Added assets for the 22.0 splash screen.
+  * Added assets for Idols and Catalysts.
+  * Added assets for new skill.
+  * Added assets for the Rushing Winds Content Pass.
+  * Added assets for the Porcelain Mega and Superior Packs.
+
 # September 18th, 2025
   * Added assets for Jurassic Mega and Superior Parcks.
 
