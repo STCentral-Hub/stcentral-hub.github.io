@@ -4,8 +4,11 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# November 18th, 2025
+  * Added assets for Cinderlake Volcano II Superior Pack.
+
 # November 11th, 2025
-  * Added assets for Cinderlake Volcano II Mega and Superior Packs.
+  * Added assets for Cinderlake Volcano II Mega Pack.
 
 # November 9th, 2025
   * Added assets for Pyromancer's Robe and Shattered Totem.
