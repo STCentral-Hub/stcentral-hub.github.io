@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# December 3rd, 2025
+  * Added assets for King Reinhold Mega and Superior Pack.
+  * Added assets for Black Friday offers.
+  * Added assets for 22.2 Splash Screen.
+  * Added asset for Platinum Katar.
+  * Updated assets for some skill icons.
+
 # November 18th, 2025
   * Added assets for Cinderlake Volcano II Superior Pack.
 
