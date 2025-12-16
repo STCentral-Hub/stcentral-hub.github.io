@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# December 15th, 2025
+  * Added assets for Krampus Mega and Superior Pack.
+  * Added assets for Krampus spirit and skill.
+
 # December 3rd, 2025
   * Added assets for King Reinhold Mega and Superior Pack.
   * Added assets for Black Friday offers.
