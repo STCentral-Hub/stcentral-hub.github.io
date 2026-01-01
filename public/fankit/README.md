@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# December 31st, 2025
+  * Added asset for Platinum Quiver.
+  * Added assets for New Year 2026 Mega and Superior Packs.
+
 # December 15th, 2025
   * Added assets for Krampus Mega and Superior Pack.
   * Added assets for Krampus spirit and skill.
