@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# January 7th, 2026
+  * Added assets for Neonpunk II Mega and Superior Packs.
+  * Added skill icon for A.U.R.A. Assistant.
+
 # December 31st, 2025
   * Added asset for Platinum Quiver.
   * Added assets for New Year 2026 Mega and Superior Packs.
