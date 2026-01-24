@@ -4,6 +4,10 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# January 21st, 2026
+  * Added assets for Magical Girl Mega and Superior Packs.
+  * Added asset for Platinum Greaves.
+
 # January 7th, 2026
   * Added assets for Neonpunk II Mega and Superior Packs.
   * Added skill icon for A.U.R.A. Assistant.
