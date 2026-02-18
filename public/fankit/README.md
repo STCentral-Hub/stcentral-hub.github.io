@@ -4,6 +4,12 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# February 12th, 2026
+  * Added assets for Year of the Horse Mega and Superior Packs.
+  * Added assets for Year of the Horse Content Pass.
+  * Added assets for Kirin Spirit.
+  * Added asset for Platinum Ancestor.
+
 # January 21st, 2026
   * Added assets for Magical Girl Mega and Superior Packs.
   * Added asset for Platinum Greaves.
