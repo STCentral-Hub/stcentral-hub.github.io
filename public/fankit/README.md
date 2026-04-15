@@ -4,6 +4,11 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# March 27th, 2026
+  * Added assets for Collection Cards.
+  * Added assets for Platinum Meal.
+  * Added asset for Air Guitar.
+
 # February 12th, 2026
   * Added assets for Year of the Horse Mega and Superior Packs.
   * Added assets for Year of the Horse Content Pass.
