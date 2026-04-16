@@ -4,6 +4,12 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# April 16th, 2026
+  * Added assets for the Cardboard Mega and Superior Packs.
+  * Added assets for Xenotype Mega and Superior Packs.
+  * Added assets for Darkenlord Mega and Superior Packs.
+  * Added assets for Pirates vs Ninjas blueprints.
+
 # March 27th, 2026
   * Added assets for Collection Cards.
   * Added assets for Platinum Meal.
