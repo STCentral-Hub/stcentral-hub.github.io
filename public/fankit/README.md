@@ -4,6 +4,16 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# May 12th, 2026
+  * Added assets for the Spellblade Mega and Superior Packs.
+  * Added assets for Ring of Midas and Amulet of Midas.
+
+# April 28th, 2026
+  * Added assets for the Retro Game Mega and Superior Packs.
+  * Added assets for Platinum Orb.
+  * Added assets for Starforged Blueprints.
+  * Added assets for Starward Creations Content Pass.
+
 # April 16th, 2026
   * Added assets for the Cardboard Mega and Superior Packs.
   * Added assets for Xenotype Mega and Superior Packs.
