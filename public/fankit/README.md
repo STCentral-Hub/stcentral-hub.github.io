@@ -4,6 +4,25 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# May 20th, 2026
+  * Added assets for Otherworldly Chest and Key.
+  * Added assets for Otherworldly Chest blueprints.
+  * Added assets for Stardust Guild Perks.
+  * Added assets for Tier 16 Market Filters.
+  * Added asset for Stardust talent.
+  * Added assets for Pearlescent Chest and Key.
+  * Added assets for "Coral" LCOG Boss and Quest.
+  * Added assets for Pearlescent Nautilus and Precious Pearl.
+  * Added assets for Makers vs Merchant Community Event blueprints.
+  * Added assets for 26.5 Splash Screen.
+  * Added assets for Stardust Bin.
+  * Added assets for Stardust.
+  * Added asset for Starforged blueprint tier.
+  * Added assets for Tier 16 blueprints.
+  * Added assets for Tier Journey Content Pass.
+  * Added assets for Fairytale Mega Pack.
+  * Added assets for pack icon for Spellblade Superior Pack.
+
 # May 12th, 2026
   * Added assets for the Spellblade Mega and Superior Packs.
   * Added assets for Ring of Midas and Amulet of Midas.
