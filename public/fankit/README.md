@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# June 2nd, 2026
+  * Added assets for Tier 16 components.
+  * Added assets for Demonic Mega Pact.
+
+# June 1st, 2026
+  * Added assets for Fairytale Superior Pack.
+
 # May 20th, 2026
   * Added assets for Otherworldly Chest and Key.
   * Added assets for Otherworldly Chest blueprints.
@@ -19,7 +26,7 @@ You may not redistribute any of these assets or monetize any project using these
   * Added assets for Stardust.
   * Added asset for Starforged blueprint tier.
   * Added assets for Tier 16 blueprints.
-  * Added assets for Tier Journey Content Pass.
+  * Added assets for Tierful Journey Content Pass.
   * Added assets for Fairytale Mega Pack.
   * Added assets for pack icon for Spellblade Superior Pack.
 
