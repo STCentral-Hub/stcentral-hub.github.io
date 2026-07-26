@@ -4,6 +4,23 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# July 15th, 2016
+  * Added assets for Summer Sidewalk Sale Content Pass.
+  * Added new Tomb of Titans boosters.
+  * Added new Tomb-Bound chest blueprints.
+  * Updated Royal Merchant icon.
+  * Added data for Olympus Mega Pack.
+  * Added data for Lethal Petal Mega and Superior Packs.
+  * Added assets for Pearlescent Helmet.
+
+# June 19th, 2026
+  * Added assets for 7th Anniversary Mega and Superior Pack.
+  * Added assets for Anniversary Sales.
+  * Added assets for Tomb-Bound Chest blueprints.
+  * Added assets for Tomb spirit and enchantment.
+  * Added assets for Most Fortunate Content Pass.
+  * Added assets for 26.6 Splash Screen.
+
 # June 2nd, 2026
   * Added assets for Tier 16 components.
   * Added assets for Demonic Mega Pact.
