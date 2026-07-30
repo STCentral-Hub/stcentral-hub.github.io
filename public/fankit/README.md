@@ -4,6 +4,13 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# July 27th, 2026
+  * Added assets for Olympus Superior Pack.
+  * Added assets for Meteor Zone Mega Pack.
+
+# July 26th, 2026
+  * Added assets for Nullysium Flash Quest.
+
 # July 15th, 2016
   * Added assets for Summer Sidewalk Sale Content Pass.
   * Added new Tomb of Titans boosters.
