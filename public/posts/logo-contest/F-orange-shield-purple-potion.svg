@@ -4,38 +4,59 @@
         viewBox="0 0 198 231"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        xmlns:cc="http://creativecommons.org/ns#"
-        xmlns:dc="http://purl.org/dc/elements/1.1/"
-        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
     <title>STC Hub: Shield and Potion</title>
-    <metadata>
-        <rdf:RDF>
+      <metadata>
+        <rdf:RDF
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+          xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+          xmlns:plus="http://ns.useplus.org/ldf/xmp/1.0/"
+        >
             <cc:Work rdf:about="">
-                <cc:license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+                <cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-nd/4.0/"/>
+
                 <dc:title>STC Hub: Shield and Potion</dc:title>
                 <dc:description>A purple and green potion on an orange and yellow shield</dc:description>
-                <dc:date>2024/01/04</dc:date>
-                <dc:rights>
-                    <cc:Agent>
-                        <dc:title>STC Hub</dc:title>
-                    </cc:Agent>
-                </dc:rights>
-                <dc:publisher>
-                    <cc:Agent>
-                        <dc:title>STC Hub</dc:title>
-                    </cc:Agent>
-                </dc:publisher>
+                <dc:date>2024-01-04</dc:date>
+                <dc:publisher>STC Hub</dc:publisher>
+
                 <dc:creator>
-                    <cc:Agent>
-                        <dc:title>Chimbambu</dc:title>
-                    </cc:Agent>
+                    <rdf:Seq>
+                       <rdf:li>Chimbambu</rdf:li>
+                    </rdf:Seq>
                 </dc:creator>
+
                 <dc:contributor>
-                    <cc:Agent>
-                        <dc:title>Nerilea Aeliren</dc:title>
-                    </cc:Agent>
+                    <rdf:Seq>
+                        <rdf:li>Nerilea Aeliren</rdf:li>
+                    </rdf:Seq>
                 </dc:contributor>
+
+                <dc:rights>
+                    © 2024 STC Hub. Licensed under CC BY-NC-ND 4.0.
+                    No AI training, dataset inclusion, or automated analysis without permission.
+                </dc:rights>
+
+                <xmpRights:Marked>true</xmpRights:Marked>
+
+                <xmpRights:UsageTerms>
+                    Licensed under CC BY-NC-ND 4.0.
+                    No AI training, dataset inclusion, or automated analysis without permission.
+                </xmpRights:UsageTerms>
+
+                <xmpRights:WebStatement>
+                    https://creativecommons.org/licenses/by-nc-nd/4.0/
+                </xmpRights:WebStatement>
+
+                <photoshop:DateCreated>2024:01:04</photoshop:DateCreated>
+                <photoshop:Credit>STC Hub</photoshop:Credit>
+                <photoshop:Source>STC Hub</photoshop:Source>
+
+                <plus:CopyrightOwnerName>STC Hub</plus:CopyrightOwnerName>
+                <plus:ImageCreatorName>Chimbambu</plus:ImageCreatorName>
             </cc:Work>
         </rdf:RDF>
     </metadata>

@@ -4,6 +4,27 @@ You may not redistribute any of these assets or monetize any project using these
 
 # Changelog
 
+# September 10th, 2026
+* Added assets for Reaper Superior Pack.
+* Added assets for Solaryn Mega and Superior Packs.
+* Added assets for Back to School Mega Pack.
+* Added assets for new Tomb-Bound chest blueprints.
+* Added assets for Wizard Assembly Content Pass.
+* Added asset for Pearlescent Bow.
+* Added assets for Eclipsed Hookblade and Exclipsed Pair blueprints.
+
+# August 11th, 2026
+* Added asset for Autocrafting Machine.
+* Added assets for Soular Harmony Content Pass.
+* Added assets for Masks and Scythes.
+* Added assets for Ripley (Reaper) worker.
+* Added assets for 26.8 Splash Screen.
+* Added assets for Spirit Spirit.
+* Added assets for Reaper Mega Pack.
+* Added assets for Summer Chain Offer blueprints.
+* Added assets for Malady Offer.
+* Added asset for Pearlescent Idol.
+
 # July 27th, 2026
   * Added assets for Olympus Superior Pack.
   * Added assets for Meteor Zone Mega Pack.
